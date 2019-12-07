@@ -60,8 +60,8 @@
   urldate   = {2019-12-06},
 }
 
-@Electronic{BRAIN2019,
-  author  = {BRAIN},
+@Electronic{BRN.AI2019,
+  author  = {BRN.AI},
   title   = {Chatbot Report 2019: Global Trends and Analysis},
   date    = {2019-04-19},
   url     = {https://chatbotsmagazine.com/chatbot-report-2019-global-trends-and-analysis-a487afec05b},

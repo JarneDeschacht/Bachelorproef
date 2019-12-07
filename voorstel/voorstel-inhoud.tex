@@ -2,25 +2,22 @@
 
 \section{Introductie} % The \section*{} command stops section numbering
 \label{sec:introductie}
-
-Hier introduceer je werk. Je hoeft hier nog niet te technisch te gaan.
-
-Je beschrijft zeker:
+Natural Language Processing (NLP) is een term die voor velen onbekend in de oren klinkt. Toch is het iets waar de meeste mensen dagelijks mee in contact komen. Denk maar aan een zoekmachine op het internet, virtuele assistenten en chatbots. NLP betekent de mogelijkheid om als machine menselijke taal te begrijpen en te verwerken. Tijdens deze bachelorproef zal de focus liggen op de chatbots. Chatbots zijn niet meer weg te denken van deze wereld hebben al meermaals aangetoond dat ze nuttig zijn bij het ondersteunen van menselijke taken en dat ze een pak werk kunnen vergemakkelijken \autocite{Atwell2007}.  De impact ervan is de voorbije jaren alleen maar gestegen en deze trend zal ook niet meteen ophouden \autocite{BRAIN2019}.Chatbots vinden vooral hun intrede bij de klantenservice van bedrijven en zijn bijna onmisbaar geworden. Er zijn tientallen tools en ontwikkelmethoden op de markt die het ontwikkelen van chatbots mogelijk maken. Bedrijven zoals Google, Facebook, Amazon, IBM en Microsoft hebben elk hun eigen NLP-platformen ontwikkeld om het creëren van chatbots voor andere bedrijven eenvoudiger te maken. Elk van deze platformen hebben hun eigen sterktes en tekortkomingen en worden continu bijgewerkt en verbeterd. Een digital product studio als In The Pocket heeft regelmatig projecten lopen met klanten waarbij het implementeren van een chatbot een toegevoerde waarde kan betekenen voor het eindresultaat. In The Pocket is officiële partner van Google Cloud en gebruikt dus voornamelijk hun producten bij het uitwerken van de projecten. Het is daarom namelijk interessant voor hen om te onderzoeken hoe de verschillende cloud platformen momenteel van elkaar verschillen en waar bepaalde frameworks meer in uitblinken dan andere. Dit onderzoek kan voor hen een goed uitgangspunt zijn om in de toekomst te bepalen welk NLP-platform de beste oplossing biedt voor een bepaald project. Deze onderzoeksdoelstelling kan worden opgedeeld in een aantal specifieke deelvragen:
 
 \begin{itemize}
-  \item de probleemstelling en context
-  \item de motivatie en relevantie voor het onderzoek
-  \item de doelstelling en onderzoeksvraag/-vragen
+  \item Met welk platform kun je de beste kwalitatieve chatbot bouwen ?
+  \item Wat zijn de verschillende voordelen en tekortkomingen van bepaalde platformen en welke prijs is daar aan verbonden ?
+  \item Welke tool reageert het best op user input en hoe gaat het om met taalvariaties en emoties ?
+  \item Welk platform biedt de beste compatibiliteit en integraties aan ?
 \end{itemize}
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}
 \label{sec:state-of-the-art}
+Er is al heel veel onderzoek gedaan binnen de wereld van artificiële intelligentie en machineleertechnieken, maar omdat alles zo enorm snel evolueert, is het belangrijk dat we blijven onderzoeken voeren en steeds blijven op zoek gaan naar meer antwoorden op de problemen die zich nog stellen. Volgens  \textcite{Hussain2019} zijn er nog een tal van verbeterpunten op het vlak van chatbots mogelijk. Zo zou er meer aandacht besteed moeten worden aan het beter verstaan van taalkundige kenmerken door bijvoorbeeld emotionele-en sentimentsanalyses uit te voeren en zouden we een betere standaard moeten hebben om de kwaliteit van chatbots te testen. Een eerder onderzoek heeft ook al ontdekt dat mensen volledig anders communiceren als ze weten dat ze tegen een machine praten. Zo zouden mensen veel meer berichten sturen naar een chatbot dan dat ze sturen als ze weten dat ze tegen een ander persoon praten \autocite{Hill2015} .
+We kunnen dus zeker concluderen dat chatbots een duidelijke meerwaarde hebben binnen onze maatschappij en dat het onderzoek rond chatbots nog continu blijft verbeteren, maar hoe zit het met de onderlinge vergelijking tussen verschillende chatbots ? Zijn er chatbots beter dan andere ? Volgens het onderzoek van \textcite{Russis2018} is de tool die IBM (Watson) aanbiedt om chatbots in de cloud te bouwen de beste op de markt met als dichte achtervolgers Microsoft (LUIS) en Google (Dialogflow). Dit spreekt het onderzoek van \textcite{Langen2017} direct tegen, want zij besluiten dat LUIS (Microsoft) veruit het beste platform is. Deze platformen verbeteren zich continu en noden en eisen van klanten veranderen ook, dus een vergelijkende studie anno 2020 is dan ook zeker interessant. 
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein. Dit kan bijvoorbeeld een literatuurstudie zijn. Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek? Wat is de relevantie met jouw onderzoek?
-
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Doll1954}! Denk zeker goed na welke werken je refereert en waarom.
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -28,24 +25,37 @@ Verwijs bij elke introductie van een term of bewering over het domein naar de va
 % \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
-
-Je mag gerust gebruik maken van subsecties in dit onderdeel.
-
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
+Bij het uitwerken van deze bachelorproef kan het volledige proces worden opgedeeld in 5 fases.
+In de eerste fase zal er wat algemene uitleg rond chatbots plaatsvinden en zullen bepaalde belangrijke begrippen toegelicht worden. Alsook zal er wat geschiedenis volgen en zal er stilgestaan worden bij de uitdagingen en tekorten in de wereld van chatbots op dit moment.
+Tijdens de tweede fase zal er een vergelijkende studie worden uitgevoerd waarbij er een heel aantal NLP-platformen zullen worden vergeleken met elkaar. Ze zullen worden vergeleken op een aantal vaste criteria zoals prijs, compatibiliteit met andere platformen en api’s, complexiteit, ontwikkeltijd, ondersteuning voor andere talen, ... De grote voor-en nadelen zullen ook uitvoerig besproken worden. Er zal hier ook niet alleen worden gekeken naar de grote marktspelers, maar ook naar kleinere platformen die wat minder in de belangstelling staan zoals Recast.ai, ChatFuel, RASA, AgentBot, …
+Tijdens de derde fase zullen de drie best scorende platformen bepaald worden en zal er een test scenario worden opgesteld waarbij er een heel aantal factoren van deze tools uitvoerig zullen getest en geëvalueerd zullen worden. Deze case zal de volgende aspecten van de gebouwde chatbots zeer uitvoerig gaan testen en evalueren:
+
+\begin{itemize}
+    \item Hoe reageert de chatbot op een normale eenvoudige conversatie zonder al te veel complexe expressies ?
+    \item Hoe gaat de chatbot om met negatieve expressies ? dit kunnen klantenklachten zijn of negatieve emoties
+    \item Hoe goed neemt de chatbot slecht gevormde zinnen en woorden op en hoe accuraat is het antwoord ?
+    \item Hoe accuraat blijft het antwoord van de chatbot als hij heel erg complexe zinnen moet verwerken ?
+    \item Hoe goed gaat de chatbot om met berichten die absoluut niets hebben te maken met de scenario’s waarvoor hij is getraind ?
+\end{itemize}
+
+\bigskip
+Tijdens de volgende fase van het proces zullen de chatbots die gebouwd zijn met de top drie platformen het testscenario doorlopen en zullen alle resultaten geanalyseerd worden.
+De vijfde en laatste fase zal dienen voor de uiteindelijke vergelijking van alle resultaten die bekomen werden met de vorige fasen en zal er een conclusie worden gevormd.
+
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
+Er wordt verwacht dat er geen duidelijke voorkeur zal zijn in platform als het aankomt op simpele conversaties met korte en duidelijke zinnen. Als het aankomt op nieuwe trainingsdata, dan wordt verwacht dat LUIS het beste zal presteren door de active learning technologie die er in geïmplementeerd zit. DialogFlow zou volgens eerder onderzoek dan weer het beste presteren op het herkennen van berichten die niets te maken hebben met waarvoor de chatbot is getraind en op accuraatheid zou volgens eerdere vaststellingen LUIS dan weer het beste presteren \autocite{Russis2018}. Daarentegen wordt er verwacht dat de integratiemogelijkheden van LUIS, Watson en DialogFlow dan weer hoger scoren dan van de andere concurrenten, omdat dit de grote marktspelers zijn.
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
 \label{sec:verwachte_conclusies}
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+Uit dit onderzoek wordt verwacht dat we kunnen concluderen dat het wel degelijk interessant kan zijn voor In The Pocket om in bepaalde scenario’s over te stappen naar een alternatief in plaats van Google producten. Als er een beperkt budget is, dan wordt er verwacht dat er perfect doorgewerkt kan worden met DialogFlow of eventueel wit.ai omdat deze gratis zijn. Op het moment dat de complexiteit toeneemt en de accuraatheid prioriteit is, dan wordt er verwacht dat het beter is om over te stappen naar LUIS (Microsoft). Bij keuze naar een platform met heel erg veel integratiemogelijkheden zou de voorkeur uitgaan naar DialogFlow, LUIS of Watson, maar opnieuw zal het budget daar een belangrijke factor in zijn.
 
