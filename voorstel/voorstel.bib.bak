@@ -68,13 +68,4 @@
   urldate = {2019-12-07},
 }
 
-@Electronic{Joshi2019,
-  author  = {Joshi, Prateek},
-  title   = {How do Transformers Work in NLP? A Guide to the Latest State-of-the-Art Models},
-  year    = {2019},
-  date    = {2019-06-19},
-  url     = {https://www.analyticsvidhya.com/blog/2019/06/understanding-transformers-nlp-state-of-the-art-models/},
-  urldate = {2020-01-08},
-}
-
 @Comment{jabref-meta: databaseType:biblatex;}
