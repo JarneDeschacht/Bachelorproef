@@ -41,10 +41,6 @@ def create_utterance(intent, utterance, *labels):  # labels are optional and ski
 
 
 def add_utterances():
-    utterances = [create_utterance("test", "test1"),
-                  create_utterance(
-                      "test", "test2"),
-                  create_utterance("test", "test3")]
 
     utterances = []
 
@@ -78,8 +74,8 @@ def publish_app():
     print("Application published. Endpoint URL: " +
           responseEndpointInfo.endpoint_url)
 
+
 add_intents()
 add_utterances()
 train_app()
 publish_app()
-
