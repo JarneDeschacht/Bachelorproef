@@ -145,13 +145,4 @@
   urldate = {2020-03-29},
 }
 
-@Electronic{Coucke2017,
-  author  = {Coucke, Alice},
-  title   = {Benchmarking Natural Language Understanding Systems: Google, Facebook, Microsoft, Amazon, and Snips},
-  year    = {2017},
-  date    = {2017-06-02},
-  url     = {https://medium.com/snips-ai/benchmarking-natural-language-understanding-systems-google-facebook-microsoft-and-snips-2b8ddcf9fb19},
-  urldate = {2020-03-29},
-}
-
 @Comment{jabref-meta: databaseType:biblatex;}

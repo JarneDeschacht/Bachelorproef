@@ -68,4 +68,47 @@
   urldate = {2019-12-07},
 }
 
+@Electronic{Joshi2019,
+  author  = {Joshi, Prateek},
+  title   = {How do Transformers Work in NLP? A Guide to the Latest State-of-the-Art Models},
+  year    = {2019},
+  date    = {2019-06-19},
+  url     = {https://www.analyticsvidhya.com/blog/2019/06/understanding-transformers-nlp-state-of-the-art-models/},
+  urldate = {2020-01-08},
+}
+
+@Electronic{Dialogflow2020,
+  author  = {Dialogflow},
+  title   = {Dialogflow documentation},
+  year    = {2020},
+  url     = {https://cloud.google.com/dialogflow/docs},
+  urldate = {2020-03-29},
+}
+
+@Electronic{Andreoli2017,
+  author  = {Andreoli, Giorgio and Billé, Giuseppe and Meleagri, Nicola},
+  title   = {Banks are embracing the power of conversational banking},
+  year    = {2017},
+  url     = {https://www.accenture.com/us-en/insight-conversational-banking},
+  urldate = {2020-03-29},
+}
+
+@Electronic{Patel2020,
+  author  = {Patel, Snigdha},
+  title   = {Top 12 Chatbots Trends and Statistics to Follow in 2020},
+  year    = {2020},
+  date    = {2020-03-16},
+  url     = {https://www.revechat.com/blog/chatbots-trends-stats/},
+  urldate = {2020-03-29},
+}
+
+@Electronic{Carey-Simos2018,
+  author  = {Carey-Simos, George},
+  title   = {Facebook Is Making Chatbots Better At Conversations},
+  year    = {2018},
+  date    = {2018-01-30},
+  url     = {https://wersm.com/facebook-chatbots-better-conversations/},
+  urldate = {2020-03-29},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
