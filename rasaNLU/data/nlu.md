@@ -15,9 +15,9 @@
 ## intent:geefBestemmingen
 - naar waar kan ik allemaal reizen ?
 - geef me alle bestemmingen
-- kan ik van Brugge naar Parijs met de bus ?
-- rijden er bussen naar de Efteling ?
-- is Kopenhagen bereikbaar vanuit gent ?
+- kan ik van [Brugge](vertrek_locatie) naar [Parijs](bestemming) met de bus ?
+- rijden er bussen naar de [Efteling](bestemming) ?
+- is [Kopenhagen](bestemming) bereikbaar vanuit [Gent](vertek_locatie) ?
 - Is er een mogelijkheid om naar Noorwegen te gaan met de bus ?
 - kan ik buiten Europa met de bus ?
 - ik woon in Antwerpen en moet naar Zaventem, kan dat ?
@@ -25,6 +25,19 @@
 - Ik wel met vrienden naar een festival (Rock Werchter), kunnen wij de bus gebruiken ?
 - Is italië bereikbaar met de bus vanuit België ?
 - Ik zou graag een citytrip doen naar Praag
+
+
+## intent:geefOnboardServices
+- Wat kunnen mijn kinderen doen op de bus ?
+- Is er gratis [Wi-Fi](onboardService_type) op de bus ?
+- Is er [wifi](onboardService_type:Wi-Fi) aanwezig op de bus ? 
+- Geef me alle entertainment mogelijkheden
+- kan ik een [film](onboardService_type) kijken tijdens mijn busreis ?
+- Gelieve me alle bezigheden op de bus te geven
+- Graag had ik een overzicht van alle onboard diensten
+- Kan ik online boeken lezen op de bus ?
+- Ik zou graag E-books lezen, kan ik dat op de bus ?
+- Is er een mogelijkheid om audioboeken te beluisteren
 
 ## intent:geefReisTijden
 - Wanneer is de eerst volgende bus van Brugge naar Lille ?
@@ -95,20 +108,6 @@
 - Ik heb een busreis geboekt met mijn kinderen, maar door het slechte weer zou ik die graag annuleren
 - Morgen zal het slecht weer zijn, annuleer mijn boeking
 - Ik zou graag de busreis naar Parijs van morgen annuleren
-
-## intent:geefOnboardServices
-- Welke services bieden jullie aan op de bus ?
-- Geef me alle onboard services
-- Wat kunnen mijn kinderen doen op de bus ?
-- Is er wifi aanwezig op de bus ?
-- Geef me alle entertainment mogelijkheden
-- kan ik een film kijken tijdens mijn busreis ?
-- Gelieve me alle bezigheden op de bus te geven
-- Graag had ik een overzicht van alle onboard diensten
-- Kan ik online boeken lezen op de bus ?
-- Ik zou graag E-books lezen, kan ik dat op de bus ?
-- Is er een mogelijkheid om audioboeken te beluisteren
-- Is er gratis Wi-Fi op de bus ?
 
 ## intent:meldKlachten
 - Mijn bus komt niet af !
