@@ -1,0 +1,30 @@
+greetings,hallo
+greetings,hoi
+greetings,daag
+greetings,merci
+geefBestemmingen,rijden er bussen naar de Efteling ?
+geefReisTijden,"Ik woon in Brugge en heb een vliegtuig morgenochtend in Zaventem, kan ik een bus gebruiken ?"
+geefReisTijden,geef me de laatste bus morgenavond van Kopenhagen naar Malmö
+geefReisTijden,Hoe laat is de bus van Brugge naar Lille zondag ?
+boekBusreis,Gelieve 2 plaatsen te reserveren voor de bus  van Brugge naar Parijs van morgen
+boekBusreis,Boek 4 tickets naar Parijs op 9 augustus
+boekBusreis,Graag had ik 2 tickets gereserveerd voor morgen naar Lille
+geefActueleInfo,Zullen alle bussen rijden door het stormweer ?
+geefActueleInfo,vertragingen in Amsterdam 
+geefActueleInfo,Rijden alle bussen nog tijdens de tijden van het coronavirus ?
+geefActueleInfo,Ik wil weten waarom mijn bus niet komt. Ik ben aan het wachten in Gent
+annuleerBusreis,Ik wil mijn bus afzeggen
+annuleerBusreis,Ik zou graag mijn bus afzeggen doordat mijn kinderen ziek zijn
+annuleerBusreis,Zeg mijn busreis af voor morgen
+annuleerBusreis,Zeg mijn reservering voor morgen af naar Parijs
+annuleerBusreis,"De Efteling is gesloten, ik wil mijn bus afschaffen"
+geefOnboardServices,Waarmee kan ik me bezighouden tijdens de rit ?
+meldKlachten,Mijn bus komt niet af !
+meldKlachten,Ik krijg te horen dat mijn bus geannuleerd is zonder alternatieve oplossing
+meldKlachten,Mijn valies is gestolen
+meldKlachten,Ik ben heel slecht behandeld door de buschauffeur!
+meldKlachten,"Het was ontzettend koud in de bus, chauffeur wou niet helpen"
+meldKlachten,Chauffeur spreekt geen nederlands
+buurBusMetChauffeur,Voor een teamactiviteit wil ik graag een bus huren bij jullie
+buurBusMetChauffeur,Geef me alle mogelijkheden om een bus met een chauffeur te huren
+buurBusMetChauffeur,Boek een bus met chauffeur voor volgende week zondag

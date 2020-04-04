@@ -1,0 +1,120 @@
+greetings,goeiedag
+greetings,goede avond
+greetings,hey
+greetings,tot later
+greetings,bedankt en tot ziens
+greetings,salut
+greetings,tot de volgende keer
+greetings,dag chatbot
+greetings,bedankt voor uw dienst
+greetings,ik dank u
+greetings,hallo daar
+geefBestemmingen,naar waar kan ik allemaal reizen ?
+geefBestemmingen,geef me alle bestemmingen
+geefBestemmingen,kan ik van Brugge naar Parijs met de bus ?
+geefBestemmingen,is Kopenhagen bereikbaar vanuit gent ?
+geefBestemmingen,Is er een mogelijkheid om naar Noorwegen te gaan met de bus ?
+geefBestemmingen,kan ik buiten Europa met de bus ?
+geefBestemmingen,"ik woon in Antwerpen en moet naar Zaventem, kan dat ?"
+geefBestemmingen,Geef me alle skigebieden die jullie ondersteunen
+geefBestemmingen,"Ik wel met vrienden naar een festival (Rock Werchter), kunnen wij de bus gebruiken ?"
+geefBestemmingen,Is italië bereikbaar met de bus vanuit België ?
+geefBestemmingen,Ik zou graag een citytrip doen naar Praag
+geefBestemmingen,"Mijn lief en ik willen naar Rotterdam met de bus, is dit mogelijk ?"
+geefBestemmingen,Geef me alle stops in Finland
+geefBestemmingen,Geef me alle pretparken die jullie bedienen
+geefReisTijden,Wanneer is de eerst volgende bus van Brugge naar Lille ?
+geefReisTijden,geef me alle bussen op zaterdag 8 augustus van Kopenhagen naar Malmö !
+geefReisTijden,wanneer kan ik reizen op 9 augustus 2020 van Gent naar Amsterdam ?
+geefReisTijden,Wanneer rijden de bussen naar Rock Werchter ?
+geefReisTijden,Kan ik morgen om 10 uur in Antwerpen geraken met de bus?
+geefReisTijden,Geef ons de bussen die vertrekken morgen in Gent
+geefReisTijden,kan ik morgen om 17u een bus nemen naar Praag in brussel ?
+geefReisTijden,Zijn er vannacht bussen tussen Parijs en Arras ?
+geefReisTijden,"Ik ga met mijn vrienden gaan skieën van 3 februari tot 10 februari in Val d'Isère, geef me alle bussen die ik kan nemen !"
+geefReisTijden,Mag ik alle bussen van en naar de Efteling vanuit Brussel ?
+geefReisTijden,"Ik woon in Brugge en wil naar Amsterdam, toon me alle bussen op 12 december"
+geefReisTijden,toon me de eerst volgende bussen van Milaan tot in Turijn ?
+boekBusreis,ik zou graag een plaats reserveren op de bus van Brugge naar Parijs van zondag
+boekBusreis,Reserveer een ticket naar parijs voor morgen
+boekBusreis,Wil je 2 tickets reserveren voor de eerstvolgende bus naar Parijs ?
+boekBusreis,"Morgen zou ik graag naar Parijs gaan, wil je een ticket reserveren voor mij"
+boekBusreis,Gelieve een plaats te boeken voor mij naar Lille
+boekBusreis,Ik wil 2 tickets naar de efteling voor zaterdag
+boekBusreis,Boek voor mij een ticket naar zaventem morgen
+boekBusreis,Ik had graag 3 tickets naar Kopenhagen vanuit Malmö
+boekBusreis,Ik zou graag een plaats willen op de volgende bus naar Parijs
+boekBusreis,Wil je voor mij een boeking plaatsen op de bus naar Parijs
+boekBusreis,"Het is mooi weer dit weekend, Boek voor mij een busticket naar de zee"
+boekBusreis,ik wil graag een plaats op de bus naar Parijs
+geefActueleInfo,geef me alle actuele reisinformatie
+geefActueleInfo,Zijn er vertragingen voor de bus van Amsterdam naar Gent van 19u25 ?
+geefActueleInfo,geef me alle vertragingen
+geefActueleInfo,Zijn er vertragingen door het slechte weer vandaag ?
+geefActueleInfo,zijn alle bussen vanuit Brugge op tijd ?
+geefActueleInfo,Wanneer komt mijn bus ?
+geefActueleInfo,Wat is de stand van zaken rond vertragingen ?
+geefActueleInfo,Is er vertraging voor de bus van 7u25 van Brugge naar de Efteling ?
+geefActueleInfo,Zal mijn bus op tijd zijn ?
+geefActueleInfo,Is er nog plaats op de eerstvolgende bus van Kopenhagen naar Bergen
+geefActueleInfo,Zit mijn bus al vol ?
+wijzigBusreis,ik wil graag een bus van een ander uur boeken
+wijzigBusreis,"Ik heb een ticket voor de bus van Brugge naar Antwerpen, maar ik zou graag een andere dag gaan, omdat het slecht weer zal zijn"
+wijzigBusreis,Graag een bus op een ander tijdstip?
+wijzigBusreis,"het is slecht weer vandaag, Verplaats de busreis met een week"
+wijzigBusreis,Gelieve mijn boeking een week te verplaatsen
+wijzigBusreis,Ik wil een andere bus reserveren
+wijzigBusreis,boek een andere stoel voor mijn boeking
+wijzigBusreis,Graag een wijziging in mijn huidige boeking
+wijzigBusreis,Morgen zou ik graag een uur later de bus nemen
+wijzigBusreis,"Reserveer de volgende bus, ik heb mijn bus gemist"
+wijzigBusreis,Ik zou graag een andere dag boeken voor mijn busreis
+wijzigBusreis,Gelieve de busreis te wijzigen naar morgen
+wijzigBusreis,Boek een betere stoel met meer beenruimte
+wijzigBusreis,Graag mijn busreis een maand verplaatsen
+wijzigBusreis,Voor morgen zou ik graag mijn busreis verplaatsen naar de avond
+annuleerBusreis,Gelieve mijn boeking te annuleren
+annuleerBusreis,"Morgen had ik een bus ticket geboekt, gelieve dat te annuleren"
+annuleerBusreis,Graag had ik een annulering van mijn busreis morgen
+annuleerBusreis,Annuleer mijn reis naar Parijs van 9 augustus
+annuleerBusreis,Morgen zou ik graag mijn bus afzeggen
+annuleerBusreis,Gelieve mijn geboekte tickets voor de bus naar Parijs voor morgen te annuleren
+annuleerBusreis,"Ik heb een busreis geboekt met mijn kinderen, maar door het slechte weer zou ik die graag annuleren"
+annuleerBusreis,"Morgen zal het slecht weer zijn, annuleer mijn boeking"
+annuleerBusreis,Ik zou graag de busreis naar Parijs van morgen annuleren
+annuleerBusreis,Schaf mijn bus voor morgen naar Zaventem af
+geefOnboardServices,Welke services bieden jullie aan op de bus ?
+geefOnboardServices,Geef me alle onboard services
+geefOnboardServices,Wat kunnen mijn kinderen doen op de bus ?
+geefOnboardServices,Is er wifi aanwezig op de bus ?
+geefOnboardServices,Geef me alle entertainment mogelijkheden
+geefOnboardServices,kan ik een film kijken tijdens mijn busreis ?
+geefOnboardServices,Gelieve me alle bezigheden op de bus te geven
+geefOnboardServices,Graag had ik een overzicht van alle onboard diensten
+geefOnboardServices,Kan ik online boeken lezen op de bus ?
+geefOnboardServices,"Ik zou graag E-books lezen, kan ik dat op de bus ?"
+geefOnboardServices,Is er een mogelijkheid om audioboeken te beluisteren
+geefOnboardServices,Is er gratis Wi-Fi op de bus ?
+geefOnboardServices,Kunnen mijn kinderen een film kijken ?
+geefOnboardServices,Geef me alle gratis diensten op de bus voor tijdens de rit
+meldKlachten,Ik sta al een uur te wachten aan de halte en de bus is er nog steeds niet !
+meldKlachten,"Na 2,5 uur wachten is er nog steeds geen bus!"
+meldKlachten,De bus stonk enorm tijdens mijn reis !
+meldKlachten,Bus voorziet geen beenruimte voor grotere mensen !
+meldKlachten,De organisatie trok op niets! 
+meldKlachten,Bus is te laat en ik weet van niets
+meldKlachten,Zeer onvriendelijke en agressieve chauffeur
+meldKlachten,Bus komt niet opdagen
+meldKlachten,De bus heeft intussen al 2 uur vertraging en wij weten van niets
+buurBusMetChauffeur,Ik zou graag een bus met chauffeur huren voor een dag
+buurBusMetChauffeur,Is er een mogelijkheid om een bus te huren met een chauffeur voor een skireis
+buurBusMetChauffeur,Gelieve een bus met chauffeur te reserveren voor volgende week
+buurBusMetChauffeur,Indien mogelijk zou ik graag een bus met chauffeur huren voor schoolreis
+buurBusMetChauffeur,Geef me de mogelijkheden om een bus te huren voor een groep kinderen naar een pretpark
+buurBusMetChauffeur,ik wil een bus met chauffeur boeken
+buurBusMetChauffeur,Voor een excursie wil ik een bus met een chauffeur huren
+buurBusMetChauffeur,Ik zou graag een bus huren voor een groepsuitstap
+buurBusMetChauffeur,Is het mogelijk een bus vast te leggen met een bestuurder
+buurBusMetChauffeur,We zijn als school aan het zoeken naar een bus met een bestuurder voor een klasuitstap
+buurBusMetChauffeur,geef me de prijs van een bus met chauffeur voor 1 dag in het binnenland
+buurBusMetChauffeur,indien mogelijk zouden we graag een bus huren om een daguitstap te doen

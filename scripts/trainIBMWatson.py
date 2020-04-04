@@ -1,6 +1,12 @@
 import json
+import csv
 from ibm_watson import AssistantV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+
+with open('noEntityFold1Train.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for row in csv_reader:
+        print(f'{row[0]} : {row[1]}')
 
 # load file with the secret keys
 with open('scripts/keys.json') as f:

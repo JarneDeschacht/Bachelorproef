@@ -1,0 +1,30 @@
+greetings,goeiedag
+greetings,hallo daar
+geefBestemmingen,kan ik van Brugge naar Parijs met de bus ?
+geefBestemmingen,is Kopenhagen bereikbaar vanuit gent ?
+geefBestemmingen,"Ik wel met vrienden naar een festival (Rock Werchter), kunnen wij de bus gebruiken ?"
+geefBestemmingen,Is italië bereikbaar met de bus vanuit België ?
+geefBestemmingen,Geef me alle pretparken die jullie bedienen
+geefReisTijden,Wanneer is de eerst volgende bus van Brugge naar Lille ?
+geefReisTijden,Geef ons de bussen die vertrekken morgen in Gent
+geefReisTijden,toon me de eerst volgende bussen van Milaan tot in Turijn ?
+boekBusreis,Ik had graag 3 tickets naar Kopenhagen vanuit Malmö
+boekBusreis,"Het is mooi weer dit weekend, Boek voor mij een busticket naar de zee"
+geefActueleInfo,Zal mijn bus op tijd zijn ?
+wijzigBusreis,"Ik heb een ticket voor de bus van Brugge naar Antwerpen, maar ik zou graag een andere dag gaan, omdat het slecht weer zal zijn"
+wijzigBusreis,Graag een wijziging in mijn huidige boeking
+wijzigBusreis,Morgen zou ik graag een uur later de bus nemen
+annuleerBusreis,Graag had ik een annulering van mijn busreis morgen
+annuleerBusreis,Annuleer mijn reis naar Parijs van 9 augustus
+annuleerBusreis,Ik zou graag de busreis naar Parijs van morgen annuleren
+geefOnboardServices,Is er wifi aanwezig op de bus ?
+geefOnboardServices,Geef me alle entertainment mogelijkheden
+geefOnboardServices,kan ik een film kijken tijdens mijn busreis ?
+geefOnboardServices,Is er een mogelijkheid om audioboeken te beluisteren
+geefOnboardServices,Kunnen mijn kinderen een film kijken ?
+meldKlachten,"Na 2,5 uur wachten is er nog steeds geen bus!"
+meldKlachten,De bus heeft intussen al 2 uur vertraging en wij weten van niets
+buurBusMetChauffeur,Indien mogelijk zou ik graag een bus met chauffeur huren voor schoolreis
+buurBusMetChauffeur,ik wil een bus met chauffeur boeken
+buurBusMetChauffeur,Ik zou graag een bus huren voor een groepsuitstap
+buurBusMetChauffeur,We zijn als school aan het zoeken naar een bus met een bestuurder voor een klasuitstap
