@@ -1,8 +1,8 @@
 Expected,Predicted,Phrase
 greetings,greetings,hallo
-greetings,,hoi
-greetings,,daag
-greetings,,merci
+greetings,greetings,hoi
+greetings,greetings,daag
+greetings,greetings,merci
 geefBestemmingen,geefReisTijden,rijden er bussen naar de Efteling ?
 geefReisTijden,geefBestemmingen,"Ik woon in Brugge en heb een vliegtuig morgenochtend in Zaventem, kan ik een bus gebruiken ?"
 geefReisTijden,geefReisTijden,geef me de laatste bus morgenavond van Kopenhagen naar Malmö

@@ -1,6 +1,6 @@
 Expected,Predicted,Phrase
 greetings,greetings,bedankt en tot ziens
-greetings,,salut
+greetings,greetings,salut
 greetings,greetings,tot de volgende keer
 greetings,greetings,dag chatbot
 geefBestemmingen,geefOnboardServices,geef me alle bestemmingen
