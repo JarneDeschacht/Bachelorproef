@@ -3,10 +3,20 @@ import csv
 from ibm_watson import AssistantV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
-with open('noEntityFold1Train.csv') as csv_file:
+fold = 5
+
+#----------------------------------------------------------------------
+dataset = {}
+
+with open(f'datasetsCV/noEntityFold{fold}Train.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
-        print(f'{row[0]} : {row[1]}')
+        try:
+            dataset[row[0]].append(row[1])
+        except:
+            dataset[row[0]] = []
+            dataset[row[0]].append(row[1])
+
 
 # load file with the secret keys
 with open('scripts/keys.json') as f:
@@ -23,14 +33,23 @@ assistant = AssistantV1(
 
 assistant.set_service_url('https://api.eu-gb.assistant.watson.cloud.ibm.com')
 
-# Create intent and add training data
-response = assistant.create_intent(
-    workspace_id=workspace_id,
-    intent='test2',
-    examples=[
-        {'text': 'test1'},
-        {'text': 'test2'}
-    ]
-).get_result()
+exampleArr = []
 
-print(json.dumps(response, indent=2))
+for intent in dataset:
+        for example in dataset[intent]:
+            exampleArr.append({'text':example})
+        
+        # Create intent and add training data
+        response = assistant.create_intent(
+            workspace_id=workspace_id,
+            intent=intent,
+            examples=exampleArr
+        ).get_result()
+
+        print(json.dumps(response, indent=2))
+
+        exampleArr = []
+
+
+
+

@@ -1,7 +1,11 @@
 import json
+import csv
 from ibm_watson import AssistantV2
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
+fold = 5
+
+#----------------------------------------------------------------------
 # load file with the secret keys
 with open('scripts/keys.json') as f:
     keys = json.load(f)
@@ -24,14 +28,31 @@ session = assistant.create_session(
     assistant_id=assistant_id
 ).get_result()
 
-# send a message to the assistant
-response = assistant.message(
-    assistant_id=assistant_id,
-    session_id=session['session_id'],
-    input={
-        'message_type': 'text',
-        'text': 'hallo'
-    }
-).get_result()
+results = [('Expected', 'Predicted', 'Phrase')]
 
-print(json.dumps(response, indent=2))
+
+with open(f'datasetsCV/noEntityFold{fold}Test.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for row in csv_reader:
+        # send a query to the assistant
+        response = assistant.message(
+            assistant_id=assistant_id,
+            session_id=session['session_id'],
+            input={
+                'message_type': 'text',
+                'text': row[1]
+            }
+        ).get_result()
+
+        try:
+            results.append((row[0], response['output']
+                        ['intents'][0]['intent'], row[1]))
+        except:
+            results.append((row[0], '', row[1]))
+
+
+with open(f'results/noEntityFold{fold}_IBMWatson.csv', 'w') as f:
+    writer = csv.writer(f, lineterminator='\n')
+    for result in results:
+        writer.writerow(result)
+
