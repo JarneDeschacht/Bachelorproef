@@ -5,7 +5,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
 fold = 5
 
-#----------------------------------------------------------------------
+# ----------------------------------------------------------------------
 # load file with the secret keys
 with open('scripts/keys.json') as f:
     keys = json.load(f)
@@ -46,7 +46,7 @@ with open(f'datasetsCV/noEntityFold{fold}Test.csv') as csv_file:
 
         try:
             results.append((row[0], response['output']
-                        ['intents'][0]['intent'], row[1]))
+                            ['intents'][0]['intent'], row[1]))
         except:
             results.append((row[0], '', row[1]))
 
@@ -55,4 +55,3 @@ with open(f'results/noEntityFold{fold}_IBMWatson.csv', 'w') as f:
     writer = csv.writer(f, lineterminator='\n')
     for result in results:
         writer.writerow(result)
-

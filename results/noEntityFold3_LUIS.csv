@@ -1,0 +1,31 @@
+Expected,Predicted,Phrase
+greetings,greetings,hey
+greetings,greetings,tot later
+geefBestemmingen,geefBestemmingen,naar waar kan ik allemaal reizen ?
+geefBestemmingen,wijzigBusreis,Ik zou graag een citytrip doen naar Praag
+geefBestemmingen,geefBestemmingen,"Mijn lief en ik willen naar Rotterdam met de bus, is dit mogelijk ?"
+geefBestemmingen,geefBestemmingen,Geef me alle stops in Finland
+geefReisTijden,geefReisTijden,geef me alle bussen op zaterdag 8 augustus van Kopenhagen naar Malmö !
+geefReisTijden,geefBestemmingen,Kan ik morgen om 10 uur in Antwerpen geraken met de bus?
+geefReisTijden,geefBestemmingen,Mag ik alle bussen van en naar de Efteling vanuit Brussel ?
+boekBusreis,boekBusreis,Ik wil 2 tickets naar de efteling voor zaterdag
+boekBusreis,boekBusreis,ik wil graag een plaats op de bus naar Parijs
+geefActueleInfo,geefBestemmingen,geef me alle actuele reisinformatie
+geefActueleInfo,boekBusreis,Is er nog plaats op de eerstvolgende bus van Kopenhagen naar Bergen
+geefActueleInfo,geefActueleInfo,Zit mijn bus al vol ?
+wijzigBusreis,wijzigBusreis,Graag een bus op een ander tijdstip?
+wijzigBusreis,annuleerBusreis,Gelieve de busreis te wijzigen naar morgen
+wijzigBusreis,annuleerBusreis,Voor morgen zou ik graag mijn busreis verplaatsen naar de avond
+annuleerBusreis,annuleerBusreis,Gelieve mijn boeking te annuleren
+annuleerBusreis,annuleerBusreis,"Morgen had ik een bus ticket geboekt, gelieve dat te annuleren"
+annuleerBusreis,annuleerBusreis,Morgen zou ik graag mijn bus afzeggen
+annuleerBusreis,annuleerBusreis,Schaf mijn bus voor morgen naar Zaventem af
+geefOnboardServices,geefBestemmingen,Welke services bieden jullie aan op de bus ?
+geefOnboardServices,geefOnboardServices,Geef me alle onboard services
+geefOnboardServices,geefActueleInfo,Wat kunnen mijn kinderen doen op de bus ?
+geefOnboardServices,geefOnboardServices,"Ik zou graag E-books lezen, kan ik dat op de bus ?"
+geefOnboardServices,geefOnboardServices,Geef me alle gratis diensten op de bus voor tijdens de rit
+meldKlachten,meldKlachten,Bus is te laat en ik weet van niets
+meldKlachten,geefActueleInfo,Bus komt niet opdagen
+huurBusMetChauffeur,huurBusMetChauffeur,Is er een mogelijkheid om een bus te huren met een chauffeur voor een skireis
+huurBusMetChauffeur,huurBusMetChauffeur,Is het mogelijk een bus vast te leggen met een bestuurder

@@ -1,8 +1,14 @@
 from azure.cognitiveservices.language.luis.authoring import LUISAuthoringClient
 from msrest.authentication import CognitiveServicesCredentials
 import json
+import csv
 import time
 
+# LUIS CANNOT HANDLE THE 120 UTTERANCES (BATCH FAILS), SPLIT THE DATASET IN 2 TO TRAIN!!!
+
+fold = 5
+
+# ----------------------------------------------------------------------
 # load file with the secret keys
 with open('scripts/keys.json') as f:
     keys = json.load(f)
@@ -11,10 +17,17 @@ app_id = keys['LUIS_app_id']
 app_version = '0.1'
 authoring_endpoint = "https://westus.api.cognitive.microsoft.com"
 authoring_key = keys['LUIS_subscription_key']
-dataset = {
-    'test1': ['test1A', 'test1B', 'test1C'],
-    'test2': ['test2A', 'test2B', 'test2C']
-}
+dataset = {}
+
+with open(f'datasetsCV/noEntityFold{fold}Train.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for row in csv_reader:
+        try:
+            dataset[row[0]].append(row[1])
+        except:
+            dataset[row[0]] = []
+            dataset[row[0]].append(row[1])
+
 
 client = LUISAuthoringClient(
     authoring_endpoint, CognitiveServicesCredentials(authoring_key))

@@ -1,0 +1,31 @@
+Expected,Predicted,Phrase
+greetings,greetings,hallo
+greetings,greetings,hoi
+greetings,greetings,daag
+greetings,greetings,merci
+geefBestemmingen,geefReisTijden,rijden er bussen naar de Efteling ?
+geefReisTijden,geefBestemmingen,"Ik woon in Brugge en heb een vliegtuig morgenochtend in Zaventem, kan ik een bus gebruiken ?"
+geefReisTijden,geefReisTijden,geef me de laatste bus morgenavond van Kopenhagen naar Malmö
+geefReisTijden,geefReisTijden,Hoe laat is de bus van Brugge naar Lille zondag ?
+boekBusreis,boekBusreis,Gelieve 2 plaatsen te reserveren voor de bus  van Brugge naar Parijs van morgen
+boekBusreis,boekBusreis,Boek 4 tickets naar Parijs op 9 augustus
+boekBusreis,boekBusreis,Graag had ik 2 tickets gereserveerd voor morgen naar Lille
+geefActueleInfo,geefReisTijden,Zullen alle bussen rijden door het stormweer ?
+geefActueleInfo,geefActueleInfo,vertragingen in Amsterdam 
+geefActueleInfo,geefReisTijden,Rijden alle bussen nog tijdens de tijden van het coronavirus ?
+geefActueleInfo,meldKlachten,Ik wil weten waarom mijn bus niet komt. Ik ben aan het wachten in Gent
+annuleerBusreis,annuleerBusreis,Ik wil mijn bus afzeggen
+annuleerBusreis,annuleerBusreis,Ik zou graag mijn bus afzeggen doordat mijn kinderen ziek zijn
+annuleerBusreis,annuleerBusreis,Zeg mijn busreis af voor morgen
+annuleerBusreis,annuleerBusreis,Zeg mijn reservering voor morgen af naar Parijs
+annuleerBusreis,wijzigBusreis,"De Efteling is gesloten, ik wil mijn bus afschaffen"
+geefOnboardServices,geefOnboardServices,Waarmee kan ik me bezighouden tijdens de rit ?
+meldKlachten,meldKlachten,Mijn bus komt niet af !
+meldKlachten,geefOnboardServices,Ik krijg te horen dat mijn bus geannuleerd is zonder alternatieve oplossing
+meldKlachten,geefActueleInfo,Mijn valies is gestolen
+meldKlachten,meldKlachten,Ik ben heel slecht behandeld door de buschauffeur!
+meldKlachten,huurBusMetChauffeur,"Het was ontzettend koud in de bus, chauffeur wou niet helpen"
+meldKlachten,huurBusMetChauffeur,Chauffeur spreekt geen nederlands
+huurBusMetChauffeur,huurBusMetChauffeur,Voor een teamactiviteit wil ik graag een bus huren bij jullie
+huurBusMetChauffeur,huurBusMetChauffeur,Geef me alle mogelijkheden om een bus met een chauffeur te huren
+huurBusMetChauffeur,huurBusMetChauffeur,Boek een bus met chauffeur voor volgende week zondag
