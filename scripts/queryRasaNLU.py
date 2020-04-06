@@ -2,7 +2,7 @@ import requests
 import json
 import csv
 
-fold = 5
+fold = 4
 
 # ----------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ with open(f'datasetsCV/noEntityFold{fold}Test.csv') as csv_file:
         results.append((row[0], r['intent']['name'], row[1]))
 
 
-with open(f'results/noEntityFold{fold}_RASA.csv', 'w') as f:
+with open(f'results/noEntityFold{fold}_RASA_TEST.csv', 'w') as f:
     writer = csv.writer(f, lineterminator='\n')
     for result in results:
         writer.writerow(result)

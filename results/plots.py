@@ -26,18 +26,18 @@ luis = [0.96552,
         0.59259,
         0.61538,
         0.90909]
+rasa = [0.92857,
+        0.25000,
+        0.38462,
+        0.75676,
+        0.53333,
+        0.60000,
+        0.62069,
+        0.60000,
+        0.72727,
+        0.90909]
 
 # TODO
-rasa = [0.88235,
-        0.35294,
-        0.42857,
-        0.96774,
-        0.57143,
-        0.81481,
-        0.87500,
-        0.78571,
-        0.53846,
-        0.93750]
 wit = [0.88235,
        0.35294,
        0.42857,
@@ -79,7 +79,8 @@ plt.bar(r5, dialogflow, color='#ef6c00', width=barWidth,
         edgecolor='white', label='Dialogflow')
 
 # Add xticks on the middle of the group bars
-plt.xlabel('groepering per intent per platform', fontweight='bold', fontsize=20)
+plt.xlabel('groepering per intent per platform',
+           fontweight='bold', fontsize=20)
 plt.ylabel('F-score', fontweight='bold', fontsize=20)
 plt.xticks([r + barWidth*2 for r in range(len(ibm_watson))],
            ["greetings",
