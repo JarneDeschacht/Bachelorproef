@@ -16,18 +16,18 @@ ibm_watson = [0.88235,
               0.78571,
               0.53846,
               0.93750]
+luis = [0.96552,
+        0.38710,
+        0.62500,
+        0.90909,
+        0.51613,
+        0.62069,
+        0.82759,
+        0.59259,
+        0.61538,
+        0.90909]
 
 # TODO
-luis = [0.88235,
-        0.35294,
-        0.42857,
-        0.96774,
-        0.57143,
-        0.81481,
-        0.87500,
-        0.78571,
-        0.53846,
-        0.93750]
 rasa = [0.88235,
         0.35294,
         0.42857,
@@ -79,8 +79,8 @@ plt.bar(r5, dialogflow, color='#ef6c00', width=barWidth,
         edgecolor='white', label='Dialogflow')
 
 # Add xticks on the middle of the group bars
-plt.xlabel('F-score per intent per platform', fontweight='bold',fontsize=20)
-plt.ylabel('Score', fontweight='bold',fontsize=20)
+plt.xlabel('groepering per intent per platform', fontweight='bold', fontsize=20)
+plt.ylabel('F-score', fontweight='bold', fontsize=20)
 plt.xticks([r + barWidth*2 for r in range(len(ibm_watson))],
            ["greetings",
             "geefBestemmingen",
@@ -96,4 +96,3 @@ plt.xticks([r + barWidth*2 for r in range(len(ibm_watson))],
 # Create legend & Show graphic
 plt.legend()
 plt.show()
-

@@ -1,7 +1,4 @@
-<!--Examples for rasa core -->
-<!-- not needed for pure intent classification (rasa nlu) -> Out of scope of this bachelor thesis -->
-
-<!-- ## happy path
+## happy path
 * greet
   - utter_greet
 * mood_great
@@ -31,4 +28,4 @@
 
 ## bot challenge
 * bot_challenge
-  - utter_iamabot -->
+  - utter_iamabot
