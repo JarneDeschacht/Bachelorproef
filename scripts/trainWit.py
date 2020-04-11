@@ -1,5 +1,10 @@
 import requests
 import json
+import csv
+
+fold = 5
+
+# ----------------------------------------------------------------------
 
 # load file with the secret keys
 with open('scripts/keys.json') as f:
@@ -12,30 +17,23 @@ headers = {
     'Content-Type': 'application/json'
 }
 
-data = json.dumps([
-    {
-        "text": "hallo",
-        "entities":
-        [
-            {
-                "entity": "intent",
-                "value": "greetings"
-            }
-        ]
-    },
-    {
-        "text": "goeiedag",
-        "entities":
-        [
-            {
-                "entity": "intent",
-                "value": "greetings"
-            }
-        ]
-    }
-])
+formattedDataArr = []
 
-r = requests.post(url, headers=headers,data=data).json()
+with open(f'datasetsCV/noEntityFold{fold}Train.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for row in csv_reader:
+        formattedDataArr.append({
+            "text": row[1],
+            "entities":
+            [
+                {
+                    "entity": "intent",
+                    "value": row[0]
+                }
+            ]
+        })
+
+r = requests.post(url, headers=headers,
+                  data=json.dumps(formattedDataArr)).json()
 
 print(json.dumps(r, indent=2))
-

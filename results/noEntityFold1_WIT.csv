@@ -1,0 +1,31 @@
+Expected,Predicted,Phrase
+greetings,greetings,goeiedag
+greetings,greetings,hallo daar
+geefBestemmingen,geefReisTijden,kan ik van Brugge naar Parijs met de bus ?
+geefBestemmingen,geefActueleInfo,is Kopenhagen bereikbaar vanuit gent ?
+geefBestemmingen,geefReisTijden,"Ik wel met vrienden naar een festival (Rock Werchter), kunnen wij de bus gebruiken ?"
+geefBestemmingen,geefBestemmingen,Is italië bereikbaar met de bus vanuit België ?
+geefBestemmingen,geefBestemmingen,Geef me alle pretparken die jullie bedienen
+geefReisTijden,geefReisTijden,Wanneer is de eerst volgende bus van Brugge naar Lille ?
+geefReisTijden,geefReisTijden,Geef ons de bussen die vertrekken morgen in Gent
+geefReisTijden,geefActueleInfo,toon me de eerst volgende bussen van Milaan tot in Turijn ?
+boekBusreis,boekBusreis,Ik had graag 3 tickets naar Kopenhagen vanuit Malmö
+boekBusreis,boekBusreis,"Het is mooi weer dit weekend, Boek voor mij een busticket naar de zee"
+geefActueleInfo,geefActueleInfo,Zal mijn bus op tijd zijn ?
+wijzigBusreis,wijzigBusreis,"Ik heb een ticket voor de bus van Brugge naar Antwerpen, maar ik zou graag een andere dag gaan, omdat het slecht weer zal zijn"
+wijzigBusreis,wijzigBusreis,Graag een wijziging in mijn huidige boeking
+wijzigBusreis,wijzigBusreis,Morgen zou ik graag een uur later de bus nemen
+annuleerBusreis,annuleerBusreis,Graag had ik een annulering van mijn busreis morgen
+annuleerBusreis,annuleerBusreis,Annuleer mijn reis naar Parijs van 9 augustus
+annuleerBusreis,annuleerBusreis,Ik zou graag de busreis naar Parijs van morgen annuleren
+geefOnboardServices,geefOnboardServices,Is er wifi aanwezig op de bus ?
+geefOnboardServices,geefBestemmingen,Geef me alle entertainment mogelijkheden
+geefOnboardServices,wijzigBusreis,kan ik een film kijken tijdens mijn busreis ?
+geefOnboardServices,geefBestemmingen,Is er een mogelijkheid om audioboeken te beluisteren
+geefOnboardServices,geefOnboardServices,Kunnen mijn kinderen een film kijken ?
+meldKlachten,meldKlachten,"Na 2,5 uur wachten is er nog steeds geen bus!"
+meldKlachten,geefActueleInfo,De bus heeft intussen al 2 uur vertraging en wij weten van niets
+huurBusMetChauffeur,huurBusMetChauffeur,Indien mogelijk zou ik graag een bus met chauffeur huren voor schoolreis
+huurBusMetChauffeur,huurBusMetChauffeur,ik wil een bus met chauffeur boeken
+huurBusMetChauffeur,huurBusMetChauffeur,Ik zou graag een bus huren voor een groepsuitstap
+huurBusMetChauffeur,huurBusMetChauffeur,We zijn als school aan het zoeken naar een bus met een bestuurder voor een klasuitstap

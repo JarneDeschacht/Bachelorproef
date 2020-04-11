@@ -1,17 +1,35 @@
 import requests
 import json
+import csv
+
+fold = 5
+
+# ----------------------------------------------------------------------
 
 # load file with the secret keys
 with open('scripts/keys.json') as f:
     keys = json.load(f)
 
-url = 'https://api.dialogflow.com/v1/query?lang=nl&sessionId=1&v=20170712&query=hallo&timezone=Europe/Brussels'
 client_access_token = keys['Dialogflow_client_access_token']
 headers = {
-    'Authorization': "Bearer {0}".format(client_access_token),
+    'Authorization': f'Bearer {client_access_token}',
     'Content-Type': 'application/json'
 }
 
-r = requests.get(url, headers=headers).json()
+results = [('Expected', 'Predicted', 'Phrase')]
 
-print(json.dumps(r, indent=2))
+with open(f'datasetsCV/noEntityFold{fold}Test.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for row in csv_reader:
+        url = f'https://api.dialogflow.com/v1/query?lang=nl&sessionId=1&v=20200406&query={row[1]}'
+        r = requests.get(url, headers=headers).json()
+
+        try:
+            results.append((row[0], r['result']['metadata']['intentName'], row[1]))
+        except:
+            results.append((row[0], '', row[1]))
+
+with open(f'results/noEntityFold{fold}_DIALOGFLOW.csv', 'w') as f:
+    writer = csv.writer(f, lineterminator='\n')
+    for result in results:
+        writer.writerow(result)

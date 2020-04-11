@@ -27,37 +27,35 @@ luis = [0.96552,
         0.61538,
         0.90909]
 rasa = [0.92857,
-        0.25000,
-        0.38462,
-        0.75676,
-        0.53333,
-        0.60000,
-        0.62069,
-        0.60000,
-        0.72727,
-        0.90909]
-
-# TODO
-wit = [0.88235,
-       0.35294,
-       0.42857,
-       0.96774,
-       0.57143,
-       0.81481,
-       0.87500,
-       0.78571,
-       0.53846,
-       0.93750]
-dialogflow = [0.88235,
-              0.35294,
-              0.42857,
-              0.96774,
-              0.57143,
-              0.81481,
-              0.87500,
-              0.78571,
-              0.53846,
-              0.93750]
+        0.35714,
+        0.40000,
+        0.88235,
+        0.48000,
+        0.73333,
+        0.83333,
+        0.80000,
+        0.52174,
+        0.83333]
+wit = [1.00000,
+0.50000,
+0.46154,
+0.93750,
+0.70968,
+0.86667,
+0.90323,
+0.76923,
+0.85714,
+1.00000]
+dialogflow = [0.93333,
+              0.28571,
+              0.45714,
+              0.78947,
+              0.50000,
+              0.76471,
+              0.84211,
+              0.68571,
+              0.69231,
+              0.83871]
 
 # Set position of bar on X axis
 r1 = np.arange(len(ibm_watson))
@@ -79,7 +77,7 @@ plt.bar(r5, dialogflow, color='#ef6c00', width=barWidth,
         edgecolor='white', label='Dialogflow')
 
 # Add xticks on the middle of the group bars
-plt.xlabel('groepering per intent per platform',
+plt.xlabel('Groepering per intent per platform',
            fontweight='bold', fontsize=20)
 plt.ylabel('F-score', fontweight='bold', fontsize=20)
 plt.xticks([r + barWidth*2 for r in range(len(ibm_watson))],
