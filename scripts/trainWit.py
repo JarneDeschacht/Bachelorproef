@@ -21,7 +21,8 @@ headers = {
 
 formattedDataArr = []
 
-with open(f'datasetsCV/noEntityFold{fold}Train.csv') as csv_file:
+# with open(f'datasetsCV/noEntityFold{fold}Train.csv') as csv_file:
+with open(f'datasetsCV/EntityTrain.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         formattedDataArr.append({

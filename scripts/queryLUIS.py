@@ -19,25 +19,50 @@ clientRuntime = LUISRuntimeClient(
     runtime_endpoint, CognitiveServicesCredentials(subscription_key))
 
 
-def predict(query):
+def validateNoEntity():
+    def predict(query):
 
-    request = {"query": query}
+        request = {"query": query}
 
-    response = clientRuntime.prediction.get_slot_prediction(
-        app_id=app_id, slot_name='staging', prediction_request=request)
+        response = clientRuntime.prediction.get_slot_prediction(
+            app_id=app_id, slot_name='staging', prediction_request=request)
 
-    return response.prediction.top_intent
+        return response.prediction.top_intent
+
+    results = [('Expected', 'Predicted', 'Phrase')]
+
+    with open(f'datasetsCV/noEntityFold{fold}Test.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        for row in csv_reader:
+            results.append((row[0], predict(row[1]), row[1]))
+
+    with open(f'results/noEntityFold{fold}_LUIS.csv', 'w') as f:
+        writer = csv.writer(f, lineterminator='\n')
+        for result in results:
+            writer.writerow(result)
 
 
-results = [('Expected', 'Predicted', 'Phrase')]
+def validateEntity():
 
-with open(f'datasetsCV/noEntityFold{fold}Test.csv') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=',')
-    for row in csv_reader:
-        results.append((row[0], predict(row[1]), row[1]))
+    results = []
+
+    with open(f'datasetsCV/EntityTest.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        for row in csv_reader:
+            request = {"query": row[1]}
+            response = clientRuntime.prediction.get_slot_prediction(
+                app_id=app_id, slot_name='staging', prediction_request=request)
+
+            results.append({
+                "sentence":row[1],
+                "expectedIntent":row[0],
+                "predictedIntent":response.prediction.top_intent,
+                "entities":response.prediction.entities
+            })
+
+    with open('results/Entity_LUIS.json', 'w') as outfile:
+        json.dump(results, outfile)
 
 
-with open(f'results/noEntityFold{fold}_LUIS.csv', 'w') as f:
-    writer = csv.writer(f, lineterminator='\n')
-    for result in results:
-        writer.writerow(result)
+validateEntity()
+            

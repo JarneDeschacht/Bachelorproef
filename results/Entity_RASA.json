@@ -1,0 +1,443 @@
+[
+    {
+        "sentence": "tot de volgende keer",
+        "expectedIntent": "greetings",
+        "predictedIntent": "geefReisTijden",
+        "entities": []
+    },
+    {
+        "sentence": "Graag mijn busreis een maand verplaatsen",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": []
+    },
+    {
+        "sentence": "Gelieve 2 plaatsen te reserveren voor de bus  van Brugge naar Parijs van morgen",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "CARDINAL",
+                "value": "2",
+                "start": 8,
+                "confidence": null,
+                "end": 9,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Brugge",
+                "start": 50,
+                "confidence": null,
+                "end": 56,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Parijs",
+                "start": 62,
+                "confidence": null,
+                "end": 68,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "ik wil graag een bus van een ander uur boeken",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": []
+    },
+    {
+        "sentence": "De organisatie trok op niets! ",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "meldKlachten",
+        "entities": []
+    },
+    {
+        "sentence": "Ik woon in Brugge en wil naar Amsterdam, toon me alle bussen op 12 december",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefReisTijden",
+        "entities": [
+            {
+                "entity": "GPE",
+                "value": "Brugge",
+                "start": 11,
+                "confidence": null,
+                "end": 17,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Amsterdam",
+                "start": 30,
+                "confidence": null,
+                "end": 39,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "DATE",
+                "value": "12 december",
+                "start": 64,
+                "confidence": null,
+                "end": 75,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "Is er wifi aanwezig op de bus ?",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": []
+    },
+    {
+        "sentence": "kan ik van Brugge naar Parijs met de bus ?",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "geefReisTijden",
+        "entities": [
+            {
+                "entity": "GPE",
+                "value": "Brugge",
+                "start": 11,
+                "confidence": null,
+                "end": 17,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Parijs",
+                "start": 23,
+                "confidence": null,
+                "end": 29,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "Kan ik online boeken lezen op de bus ?",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": []
+    },
+    {
+        "sentence": "Ik wel met vrienden naar een festival (Rock Werchter), kunnen wij de bus gebruiken ?",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "geefReisTijden",
+        "entities": []
+    },
+    {
+        "sentence": "Wil je 2 tickets reserveren voor de eerstvolgende bus naar Parijs ?",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "CARDINAL",
+                "value": "2",
+                "start": 7,
+                "confidence": null,
+                "end": 8,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Parijs",
+                "start": 59,
+                "confidence": null,
+                "end": 65,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "Reserveer de volgende bus, ik heb mijn bus gemist",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "geefReisTijden",
+        "entities": []
+    },
+    {
+        "sentence": "Zijn er vertragingen voor de bus van Amsterdam naar Gent van 19u25 ?",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefActueleInfo",
+        "entities": [
+            {
+                "entity": "GPE",
+                "value": "Amsterdam",
+                "start": 37,
+                "confidence": null,
+                "end": 46,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Gent",
+                "start": 52,
+                "confidence": null,
+                "end": 56,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "CARDINAL",
+                "value": "19u25",
+                "start": 61,
+                "confidence": null,
+                "end": 66,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "wanneer kan ik reizen op 9 augustus 2020 van Gent naar Amsterdam ?",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefReisTijden",
+        "entities": [
+            {
+                "entity": "DATE",
+                "value": "9 augustus 2020",
+                "start": 25,
+                "confidence": null,
+                "end": 40,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Gent",
+                "start": 45,
+                "confidence": null,
+                "end": 49,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Amsterdam",
+                "start": 55,
+                "confidence": null,
+                "end": 64,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "Reserveer een ticket naar parijs voor morgen",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "GPE",
+                "value": "parijs",
+                "start": 26,
+                "confidence": null,
+                "end": 32,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "DATE",
+                "value": "morgen",
+                "start": 38,
+                "confidence": null,
+                "end": 44,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "We zijn als school aan het zoeken naar een bus met een bestuurder voor een klasuitstap",
+        "expectedIntent": "huurBusMetChauffeur",
+        "predictedIntent": "huurBusMetChauffeur",
+        "entities": []
+    },
+    {
+        "sentence": "Voor morgen zou ik graag mijn busreis verplaatsen naar de avond",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": []
+    },
+    {
+        "sentence": "Ik sta al een uur te wachten aan de halte en de bus is er nog steeds niet !",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "meldKlachten",
+        "entities": []
+    },
+    {
+        "sentence": "Gelieve mijn geboekte tickets voor de bus naar Parijs voor morgen te annuleren",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerbusreis",
+        "entities": [
+            {
+                "entity": "GPE",
+                "value": "Parijs",
+                "start": 47,
+                "confidence": null,
+                "end": 53,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "Ik zou graag een citytrip doen naar Praag",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "boekBusreis",
+        "entities": []
+    },
+    {
+        "sentence": "Zal mijn bus op tijd zijn ?",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefActueleInfo",
+        "entities": []
+    },
+    {
+        "sentence": "Morgen zal het slecht weer zijn, annuleer mijn boeking",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerbusreis",
+        "entities": []
+    },
+    {
+        "sentence": "Annuleer mijn reis naar Parijs van 9 augustus",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "GPE",
+                "value": "Parijs",
+                "start": 24,
+                "confidence": null,
+                "end": 30,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "DATE",
+                "value": "9 augustus",
+                "start": 35,
+                "confidence": null,
+                "end": 45,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "Ik ga met mijn vrienden gaan skie\u00c3\u00abn van 3 februari tot 10 februari in Val d'Is\u00c3\u00a8re, geef me alle bussen die ik kan nemen !",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefReisTijden",
+        "entities": [
+            {
+                "entity": "DATE",
+                "value": "3 februari",
+                "start": 41,
+                "confidence": null,
+                "end": 51,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "DATE",
+                "value": "10 februari",
+                "start": 56,
+                "confidence": null,
+                "end": 67,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "Kunnen mijn kinderen een film kijken ?",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": [
+            {
+                "entity": "onboardService_type",
+                "start": 25,
+                "end": 29,
+                "extractor": "DIETClassifier",
+                "value": "film"
+            }
+        ]
+    },
+    {
+        "sentence": "Ik had graag 3 tickets naar Kopenhagen vanuit Malm\u00c3\u00b6",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "CARDINAL",
+                "value": "3",
+                "start": 13,
+                "confidence": null,
+                "end": 14,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Kopenhagen",
+                "start": 28,
+                "confidence": null,
+                "end": 38,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Malm\u00c3\u00b6",
+                "start": 46,
+                "confidence": null,
+                "end": 52,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "goeiedag",
+        "expectedIntent": "greetings",
+        "predictedIntent": "greetings",
+        "entities": []
+    },
+    {
+        "sentence": "Kan ik morgen om 10 uur in Antwerpen geraken met de bus?",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefBestemmingen",
+        "entities": [
+            {
+                "entity": "TIME",
+                "value": "10 uur",
+                "start": 17,
+                "confidence": null,
+                "end": 23,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Antwerpen",
+                "start": 27,
+                "confidence": null,
+                "end": 36,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "Is er vertraging voor de bus van 7u25 van Brugge naar de Efteling ?",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefReisTijden",
+        "entities": [
+            {
+                "entity": "CARDINAL",
+                "value": "7u25",
+                "start": 33,
+                "confidence": null,
+                "end": 37,
+                "extractor": "SpacyEntityExtractor"
+            },
+            {
+                "entity": "GPE",
+                "value": "Brugge",
+                "start": 42,
+                "confidence": null,
+                "end": 48,
+                "extractor": "SpacyEntityExtractor"
+            }
+        ]
+    },
+    {
+        "sentence": "Bus is te laat en ik weet van niets",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "geefReisTijden",
+        "entities": []
+    }
+]

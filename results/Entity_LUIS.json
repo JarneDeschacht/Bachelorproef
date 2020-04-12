@@ -1,0 +1,354 @@
+[
+    {
+        "sentence": "tot de volgende keer",
+        "expectedIntent": "greetings",
+        "predictedIntent": "greetings",
+        "entities": {}
+    },
+    {
+        "sentence": "Graag mijn busreis een maand verplaatsen",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": {
+            "number": [
+                1
+            ]
+        }
+    },
+    {
+        "sentence": "Gelieve 2 plaatsen te reserveren voor de bus  van Brugge naar Parijs van morgen",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": {
+            "number": [
+                2
+            ],
+            "locatie": [
+                "Brugge",
+                "Parijs"
+            ],
+            "datum": [
+                "morgen"
+            ]
+        }
+    },
+    {
+        "sentence": "ik wil graag een bus van een ander uur boeken",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": {
+            "number": [
+                1,
+                1
+            ],
+            "onboardService_type": [
+                [
+                    "lezen"
+                ]
+            ]
+        }
+    },
+    {
+        "sentence": "De organisatie trok op niets! ",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "meldKlachten",
+        "entities": {}
+    },
+    {
+        "sentence": "Ik woon in Brugge en wil naar Amsterdam, toon me alle bussen op 12 december",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefReisTijden",
+        "entities": {
+            "locatie": [
+                "Brugge",
+                "Amsterdam"
+            ],
+            "number": [
+                12
+            ],
+            "datum": [
+                "december"
+            ]
+        }
+    },
+    {
+        "sentence": "Is er wifi aanwezig op de bus ?",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefBestemmingen",
+        "entities": {
+            "onboardService_type": [
+                [
+                    "Wi-Fi"
+                ]
+            ]
+        }
+    },
+    {
+        "sentence": "kan ik van Brugge naar Parijs met de bus ?",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "geefBestemmingen",
+        "entities": {
+            "locatie": [
+                "Brugge",
+                "Parijs"
+            ]
+        }
+    },
+    {
+        "sentence": "Kan ik online boeken lezen op de bus ?",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": {
+            "onboardService_type": [
+                [
+                    "lezen"
+                ],
+                [
+                    "lezen"
+                ]
+            ]
+        }
+    },
+    {
+        "sentence": "Ik wel met vrienden naar een festival (Rock Werchter), kunnen wij de bus gebruiken ?",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "geefReisTijden",
+        "entities": {
+            "number": [
+                1
+            ]
+        }
+    },
+    {
+        "sentence": "Wil je 2 tickets reserveren voor de eerstvolgende bus naar Parijs ?",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": {
+            "number": [
+                2
+            ],
+            "locatie": [
+                "Parijs"
+            ]
+        }
+    },
+    {
+        "sentence": "Reserveer de volgende bus, ik heb mijn bus gemist",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": {}
+    },
+    {
+        "sentence": "Zijn er vertragingen voor de bus van Amsterdam naar Gent van 19u25 ?",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefActueleInfo",
+        "entities": {
+            "locatie": [
+                "Amsterdam",
+                "Gent"
+            ]
+        }
+    },
+    {
+        "sentence": "wanneer kan ik reizen op 9 augustus 2020 van Gent naar Amsterdam ?",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefBestemmingen",
+        "entities": {
+            "number": [
+                9,
+                2020
+            ],
+            "locatie": [
+                "Gent",
+                "Amsterdam"
+            ]
+        }
+    },
+    {
+        "sentence": "Reserveer een ticket naar parijs voor morgen",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": {
+            "number": [
+                1
+            ],
+            "locatie": [
+                "parijs"
+            ],
+            "datum": [
+                "morgen"
+            ]
+        }
+    },
+    {
+        "sentence": "We zijn als school aan het zoeken naar een bus met een bestuurder voor een klasuitstap",
+        "expectedIntent": "huurBusMetChauffeur",
+        "predictedIntent": "huurBusMetChauffeur",
+        "entities": {
+            "number": [
+                1,
+                1,
+                1
+            ]
+        }
+    },
+    {
+        "sentence": "Voor morgen zou ik graag mijn busreis verplaatsen naar de avond",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": {
+            "datum": [
+                "morgen"
+            ]
+        }
+    },
+    {
+        "sentence": "Ik sta al een uur te wachten aan de halte en de bus is er nog steeds niet !",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "meldKlachten",
+        "entities": {
+            "number": [
+                1
+            ]
+        }
+    },
+    {
+        "sentence": "Gelieve mijn geboekte tickets voor de bus naar Parijs voor morgen te annuleren",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": {
+            "locatie": [
+                "Parijs"
+            ],
+            "datum": [
+                "morgen"
+            ]
+        }
+    },
+    {
+        "sentence": "Ik zou graag een citytrip doen naar Praag",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "boekBusreis",
+        "entities": {
+            "number": [
+                1
+            ],
+            "locatie": [
+                "Praag"
+            ]
+        }
+    },
+    {
+        "sentence": "Zal mijn bus op tijd zijn ?",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefActueleInfo",
+        "entities": {}
+    },
+    {
+        "sentence": "Morgen zal het slecht weer zijn, annuleer mijn boeking",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": {
+            "datum": [
+                "Morgen"
+            ]
+        }
+    },
+    {
+        "sentence": "Annuleer mijn reis naar Parijs van 9 augustus",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": {
+            "locatie": [
+                "Parijs"
+            ],
+            "number": [
+                9
+            ],
+            "datum": [
+                "augustus"
+            ]
+        }
+    },
+    {
+        "sentence": "Ik ga met mijn vrienden gaan skie\u00c3\u00abn van 3 februari tot 10 februari in Val d'Is\u00c3\u00a8re, geef me alle bussen die ik kan nemen !",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefReisTijden",
+        "entities": {
+            "locatie": [
+                "skie\u00c3"
+            ],
+            "number": [
+                3,
+                10
+            ]
+        }
+    },
+    {
+        "sentence": "Kunnen mijn kinderen een film kijken ?",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": {
+            "number": [
+                1
+            ],
+            "onboardService_type": [
+                [
+                    "films"
+                ]
+            ]
+        }
+    },
+    {
+        "sentence": "Ik had graag 3 tickets naar Kopenhagen vanuit Malm\u00c3\u00b6",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": {
+            "number": [
+                3
+            ],
+            "locatie": [
+                "Kopenhagen",
+                "Malm\u00c3"
+            ]
+        }
+    },
+    {
+        "sentence": "goeiedag",
+        "expectedIntent": "greetings",
+        "predictedIntent": "greetings",
+        "entities": {}
+    },
+    {
+        "sentence": "Kan ik morgen om 10 uur in Antwerpen geraken met de bus?",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefReisTijden",
+        "entities": {
+            "datum": [
+                "morgen"
+            ],
+            "number": [
+                10
+            ],
+            "locatie": [
+                "Antwerpen"
+            ]
+        }
+    },
+    {
+        "sentence": "Is er vertraging voor de bus van 7u25 van Brugge naar de Efteling ?",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefBestemmingen",
+        "entities": {
+            "locatie": [
+                "Brugge"
+            ]
+        }
+    },
+    {
+        "sentence": "Bus is te laat en ik weet van niets",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "meldKlachten",
+        "entities": {}
+    }
+]
