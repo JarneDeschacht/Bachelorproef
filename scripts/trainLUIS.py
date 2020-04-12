@@ -19,7 +19,8 @@ authoring_endpoint = "https://westus.api.cognitive.microsoft.com"
 authoring_key = keys['LUIS_subscription_key']
 dataset = {}
 
-with open(f'datasetsCV/noEntityFold{fold}Train.csv') as csv_file:
+# with open(f'datasetsCV/noEntityFold{fold}Train.csv') as csv_file:
+with open('datasetsCV/EntityTrain.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         try:

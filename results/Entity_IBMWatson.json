@@ -1,0 +1,743 @@
+[
+    {
+        "sentence": "tot de volgende keer",
+        "expectedIntent": "greetings",
+        "predictedIntent": "greetings",
+        "entities": []
+    },
+    {
+        "sentence": "Graag mijn busreis een maand verplaatsen",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    19,
+                    22
+                ],
+                "value": "1",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 1,
+                    "subtype": "integer"
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Gelieve 2 plaatsen te reserveren voor de bus  van Brugge naar Parijs van morgen",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    8,
+                    9
+                ],
+                "value": "2",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 2,
+                    "subtype": "integer"
+                }
+            },
+            {
+                "entity": "sys-date",
+                "location": [
+                    69,
+                    79
+                ],
+                "value": "2020-04-13",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "relative_day": 1,
+                    "granularity": "day",
+                    "range_modifier": "from",
+                    "calendar_type": "GREGORIAN"
+                },
+                "role": {
+                    "type": "date_from",
+                    "confidence": 1
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "ik wil graag een bus van een ander uur boeken",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    13,
+                    16
+                ],
+                "value": "1",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 1,
+                    "subtype": "integer"
+                }
+            },
+            {
+                "entity": "sys-time",
+                "location": [
+                    21,
+                    28
+                ],
+                "value": "01:00:00",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "specific_hour": 1,
+                    "granularity": "hour",
+                    "range_modifier": "from",
+                    "calendar_type": "GREGORIAN"
+                },
+                "alternatives": [
+                    {
+                        "value": "13:00:00",
+                        "confidence": 1
+                    }
+                ],
+                "role": {
+                    "type": "time_from",
+                    "confidence": 1
+                }
+            },
+            {
+                "entity": "onboardService_type",
+                "location": [
+                    39,
+                    45
+                ],
+                "value": "lezen",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "sentence": "De organisatie trok op niets! ",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "greetings",
+        "entities": []
+    },
+    {
+        "sentence": "Ik woon in Brugge en wil naar Amsterdam, toon me alle bussen op 12 december",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefReisTijden",
+        "entities": [
+            {
+                "entity": "sys-date",
+                "location": [
+                    61,
+                    75
+                ],
+                "value": "2020-12-12",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "specific_day": 12,
+                    "specific_month": 12,
+                    "granularity": "day",
+                    "calendar_type": "GREGORIAN"
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Is er wifi aanwezig op de bus ?",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": [
+            {
+                "entity": "onboardService_type",
+                "location": [
+                    6,
+                    10
+                ],
+                "value": "Wi-Fi",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "sentence": "kan ik van Brugge naar Parijs met de bus ?",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "geefBestemmingen",
+        "entities": []
+    },
+    {
+        "sentence": "Kan ik online boeken lezen op de bus ?",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": [
+            {
+                "entity": "onboardService_type",
+                "location": [
+                    14,
+                    20
+                ],
+                "value": "lezen",
+                "confidence": 1
+            },
+            {
+                "entity": "onboardService_type",
+                "location": [
+                    21,
+                    26
+                ],
+                "value": "lezen",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "sentence": "Ik wel met vrienden naar een festival (Rock Werchter), kunnen wij de bus gebruiken ?",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "geefReisTijden",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    25,
+                    28
+                ],
+                "value": "1",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 1,
+                    "subtype": "integer"
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Wil je 2 tickets reserveren voor de eerstvolgende bus naar Parijs ?",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    7,
+                    8
+                ],
+                "value": "2",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 2,
+                    "subtype": "integer"
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Reserveer de volgende bus, ik heb mijn bus gemist",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": []
+    },
+    {
+        "sentence": "Zijn er vertragingen voor de bus van Amsterdam naar Gent van 19u25 ?",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefActueleInfo",
+        "entities": []
+    },
+    {
+        "sentence": "wanneer kan ik reizen op 9 augustus 2020 van Gent naar Amsterdam ?",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefReisTijden",
+        "entities": [
+            {
+                "entity": "sys-date",
+                "location": [
+                    22,
+                    40
+                ],
+                "value": "2020-08-09",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "specific_day": 9,
+                    "specific_month": 8,
+                    "specific_year": 2020,
+                    "granularity": "day",
+                    "calendar_type": "GREGORIAN"
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Reserveer een ticket naar parijs voor morgen",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    10,
+                    13
+                ],
+                "value": "1",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 1,
+                    "subtype": "integer"
+                }
+            },
+            {
+                "entity": "sys-date",
+                "location": [
+                    33,
+                    44
+                ],
+                "value": "2020-04-12",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "relative_day": 1,
+                    "granularity": "day",
+                    "range_modifier": "before",
+                    "calendar_type": "GREGORIAN"
+                },
+                "role": {
+                    "type": "date_to",
+                    "confidence": 1
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "We zijn als school aan het zoeken naar een bus met een bestuurder voor een klasuitstap",
+        "expectedIntent": "huurBusMetChauffeur",
+        "predictedIntent": "huurBusMetChauffeur",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    39,
+                    42
+                ],
+                "value": "1",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 1,
+                    "subtype": "integer"
+                }
+            },
+            {
+                "entity": "sys-number",
+                "location": [
+                    51,
+                    54
+                ],
+                "value": "1",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 1,
+                    "subtype": "integer"
+                }
+            },
+            {
+                "entity": "sys-time",
+                "location": [
+                    66,
+                    74
+                ],
+                "value": "01:00:00",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "specific_hour": 1,
+                    "granularity": "hour",
+                    "range_modifier": "before",
+                    "calendar_type": "GREGORIAN"
+                },
+                "alternatives": [
+                    {
+                        "value": "13:00:00",
+                        "confidence": 1
+                    }
+                ],
+                "role": {
+                    "type": "time_to",
+                    "confidence": 1
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Voor morgen zou ik graag mijn busreis verplaatsen naar de avond",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": [
+            {
+                "entity": "sys-date",
+                "location": [
+                    0,
+                    11
+                ],
+                "value": "2020-04-12",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "relative_day": 1,
+                    "granularity": "day",
+                    "range_modifier": "before",
+                    "calendar_type": "GREGORIAN"
+                },
+                "role": {
+                    "type": "date_to",
+                    "confidence": 1
+                }
+            },
+            {
+                "entity": "sys-time",
+                "location": [
+                    55,
+                    63
+                ],
+                "value": "18:00:00",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "part_of_day": "evening",
+                    "range_link": "time_range_55_63",
+                    "calendar_type": "GREGORIAN"
+                },
+                "role": {
+                    "type": "time_from",
+                    "confidence": 1
+                }
+            },
+            {
+                "entity": "sys-time",
+                "location": [
+                    55,
+                    63
+                ],
+                "value": "23:59:59",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "part_of_day": "evening",
+                    "range_link": "time_range_55_63",
+                    "calendar_type": "GREGORIAN"
+                },
+                "role": {
+                    "type": "time_to",
+                    "confidence": 1
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Ik sta al een uur te wachten aan de halte en de bus is er nog steeds niet !",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "meldKlachten",
+        "entities": [
+            {
+                "entity": "sys-time",
+                "location": [
+                    10,
+                    17
+                ],
+                "value": "01:00:00",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "specific_hour": 1,
+                    "granularity": "hour",
+                    "calendar_type": "GREGORIAN"
+                },
+                "alternatives": [
+                    {
+                        "value": "13:00:00",
+                        "confidence": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sentence": "Gelieve mijn geboekte tickets voor de bus naar Parijs voor morgen te annuleren",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": [
+            {
+                "entity": "sys-date",
+                "location": [
+                    54,
+                    65
+                ],
+                "value": "2020-04-12",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "relative_day": 1,
+                    "granularity": "day",
+                    "range_modifier": "before",
+                    "calendar_type": "GREGORIAN"
+                },
+                "role": {
+                    "type": "date_to",
+                    "confidence": 1
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Ik zou graag een citytrip doen naar Praag",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    13,
+                    16
+                ],
+                "value": "1",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 1,
+                    "subtype": "integer"
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Zal mijn bus op tijd zijn ?",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefActueleInfo",
+        "entities": []
+    },
+    {
+        "sentence": "Morgen zal het slecht weer zijn, annuleer mijn boeking",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": [
+            {
+                "entity": "sys-date",
+                "location": [
+                    0,
+                    6
+                ],
+                "value": "2020-04-13",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "relative_day": 1,
+                    "granularity": "day",
+                    "calendar_type": "GREGORIAN"
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Annuleer mijn reis naar Parijs van 9 augustus",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": [
+            {
+                "entity": "sys-date",
+                "location": [
+                    31,
+                    45
+                ],
+                "value": "2020-08-09",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "specific_day": 9,
+                    "specific_month": 8,
+                    "granularity": "day",
+                    "range_modifier": "from",
+                    "calendar_type": "GREGORIAN"
+                },
+                "role": {
+                    "type": "date_from",
+                    "confidence": 1
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Ik ga met mijn vrienden gaan skie\u00c3\u00abn van 3 februari tot 10 februari in Val d'Is\u00c3\u00a8re, geef me alle bussen die ik kan nemen !",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefBestemmingen",
+        "entities": [
+            {
+                "entity": "sys-date",
+                "location": [
+                    37,
+                    67
+                ],
+                "value": "2021-02-03",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "specific_day": 3,
+                    "specific_month": 2,
+                    "granularity": "day",
+                    "range_link": "date_range_37_67",
+                    "calendar_type": "GREGORIAN"
+                },
+                "alternatives": [
+                    {
+                        "value": "2020-02-03",
+                        "confidence": 1
+                    }
+                ],
+                "role": {
+                    "type": "date_from",
+                    "confidence": 1
+                }
+            },
+            {
+                "entity": "sys-date",
+                "location": [
+                    37,
+                    67
+                ],
+                "value": "2021-02-10",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "specific_day": 10,
+                    "specific_month": 2,
+                    "granularity": "day",
+                    "range_link": "date_range_37_67",
+                    "calendar_type": "GREGORIAN"
+                },
+                "alternatives": [
+                    {
+                        "value": "2020-02-10",
+                        "confidence": 1
+                    }
+                ],
+                "role": {
+                    "type": "date_to",
+                    "confidence": 1
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "Kunnen mijn kinderen een film kijken ?",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    21,
+                    24
+                ],
+                "value": "1",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 1,
+                    "subtype": "integer"
+                }
+            },
+            {
+                "entity": "onboardService_type",
+                "location": [
+                    25,
+                    29
+                ],
+                "value": "Films",
+                "confidence": 1
+            }
+        ]
+    },
+    {
+        "sentence": "Ik had graag 3 tickets naar Kopenhagen vanuit Malm\u00c3\u00b6",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": [
+            {
+                "entity": "sys-number",
+                "location": [
+                    13,
+                    14
+                ],
+                "value": "3",
+                "confidence": 1,
+                "interpretation": {
+                    "numeric_value": 3,
+                    "subtype": "integer"
+                }
+            }
+        ]
+    },
+    {
+        "sentence": "goeiedag",
+        "expectedIntent": "greetings",
+        "predictedIntent": "greetings",
+        "entities": []
+    },
+    {
+        "sentence": "Kan ik morgen om 10 uur in Antwerpen geraken met de bus?",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefBestemmingen",
+        "entities": [
+            {
+                "entity": "sys-date",
+                "location": [
+                    7,
+                    13
+                ],
+                "value": "2020-04-13",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "relative_day": 1,
+                    "granularity": "day",
+                    "datetime_link": "datetime_7_23",
+                    "calendar_type": "GREGORIAN"
+                }
+            },
+            {
+                "entity": "sys-time",
+                "location": [
+                    14,
+                    23
+                ],
+                "value": "10:00:00",
+                "confidence": 1,
+                "interpretation": {
+                    "timezone": "GMT",
+                    "specific_hour": 10,
+                    "granularity": "hour",
+                    "datetime_link": "datetime_7_23",
+                    "calendar_type": "GREGORIAN"
+                },
+                "alternatives": [
+                    {
+                        "value": "22:00:00",
+                        "confidence": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sentence": "Is er vertraging voor de bus van 7u25 van Brugge naar de Efteling ?",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefActueleInfo",
+        "entities": []
+    },
+    {
+        "sentence": "Bus is te laat en ik weet van niets",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "meldKlachten",
+        "entities": []
+    }
+]

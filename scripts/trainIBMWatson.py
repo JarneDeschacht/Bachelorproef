@@ -3,12 +3,13 @@ import csv
 from ibm_watson import AssistantV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
-fold = 5
+fold = 1
 
 #----------------------------------------------------------------------
 dataset = {}
 
-with open(f'datasetsCV/noEntityFold{fold}Train.csv') as csv_file:
+# with open(f'datasetsCV/noEntityFold{fold}Train.csv') as csv_file:
+with open('datasetsCV/EntityTrain.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         try:

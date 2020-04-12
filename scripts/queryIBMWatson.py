@@ -28,30 +28,64 @@ session = assistant.create_session(
     assistant_id=assistant_id
 ).get_result()
 
-results = [('Expected', 'Predicted', 'Phrase')]
+def validateNoEntity(): 
+    results = [('Expected', 'Predicted', 'Phrase')]
+
+    with open(f'datasetsCV/noEntityFold{fold}Test.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        for row in csv_reader:
+            # send a query to the assistant
+            response = assistant.message(
+                assistant_id=assistant_id,
+                session_id=session['session_id'],
+                input={
+                    'message_type': 'text',
+                    'text': row[1]
+                }
+            ).get_result()
+
+            try:
+                results.append((row[0], response['output']
+                                ['intents'][0]['intent'], row[1]))
+            except:
+                results.append((row[0], '', row[1]))
 
 
-with open(f'datasetsCV/noEntityFold{fold}Test.csv') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=',')
-    for row in csv_reader:
-        # send a query to the assistant
-        response = assistant.message(
-            assistant_id=assistant_id,
-            session_id=session['session_id'],
-            input={
-                'message_type': 'text',
-                'text': row[1]
-            }
-        ).get_result()
+    with open(f'results/noEntityFold{fold}_IBMWatson.csv', 'w') as f:
+        writer = csv.writer(f, lineterminator='\n')
+        for result in results:
+            writer.writerow(result)
 
-        try:
-            results.append((row[0], response['output']
-                            ['intents'][0]['intent'], row[1]))
-        except:
-            results.append((row[0], '', row[1]))
+def validateEntity():
+
+    results = []
+
+    with open('datasetsCV/EntityTest.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        for row in csv_reader:
+            # send a query to the assistant
+            response = assistant.message(
+                assistant_id=assistant_id,
+                session_id=session['session_id'],
+                input={
+                    'message_type': 'text',
+                    'text': row[1]
+                }
+            ).get_result()
 
 
-with open(f'results/noEntityFold{fold}_IBMWatson.csv', 'w') as f:
-    writer = csv.writer(f, lineterminator='\n')
-    for result in results:
-        writer.writerow(result)
+            results.append({
+                "sentence":row[1],
+                "expectedIntent":row[0],
+                "predictedIntent":response['output']['intents'][0]['intent'],
+                "entities":response['output']['entities']
+            })
+            # print(json.dumps(usefullResult,indent=2))
+
+
+    with open('results/Entity_IBMWatson.json', 'w') as outfile:
+        json.dump(results, outfile)
+
+
+# Execute the function
+validateEntity()
