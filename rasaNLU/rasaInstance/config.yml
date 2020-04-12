@@ -19,6 +19,9 @@ pipeline:
   - name: EntitySynonymMapper
   - name: ResponseSelector
     epochs: 100
+  - name: SpacyNLP
+  - name: SpacyEntityExtractor
+    dimensions: ["GPE", "LOC","DATE","TIME","QUANTITY","ORDINAL","CARDINAL" ]
 
 # Configuration for Rasa Core.
 # not needed for nlu --> out of scope of this bachelor thesis

@@ -2,6 +2,8 @@ import requests
 import json
 import csv
 
+# WIT CANNOT HANDLE THE 120 UTTERANCES (DATA GETS LOST, NO ERROR), SPLIT THE DATASET IN 2 TO TRAIN!!!
+
 fold = 5
 
 # ----------------------------------------------------------------------
