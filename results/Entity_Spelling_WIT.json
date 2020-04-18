@@ -1,0 +1,810 @@
+[
+    {
+        "sentence": "tot de volgende",
+        "expectedIntent": "greetings",
+        "predictedIntent": "greetings",
+        "entities": {}
+    },
+    {
+        "sentence": "Graag mien reis en maand verplaatse",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.67576775683744,
+                    "value": "wijzigBusreis"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Gelieve 2 plaatsen te rezerveren voor de bus van Bruhhe naar Pareis van morge",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "geefReisTijden",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.52889767947647,
+                    "value": "geefReisTijden"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.85259057590023,
+                    "value": "Pareis",
+                    "type": "value"
+                },
+                {
+                    "suggested": true,
+                    "confidence": 0.90065997838974,
+                    "value": "morge",
+                    "type": "value"
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 2
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "ikwil grg een bus van andr uur boeken",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "wijzigBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.71266307867327,
+                    "value": "wijzigBusreis"
+                }
+            ],
+            "onboardService_type": [
+                {
+                    "confidence": 1,
+                    "value": "E-books",
+                    "type": "value"
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 1
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "De organisatie trok op niks",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "meldklachten",
+        "entities": {
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 0
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Ik woon in Brughe en wil naar Amsterdm, toon me alle bussen p 12 dec",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefReisTijden",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.57610060958523,
+                    "value": "geefReisTijden"
+                }
+            ],
+            "datetime": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "grain": "day",
+                    "value": "2020-12-12T00:00:00.000-08:00",
+                    "values": [
+                        {
+                            "type": "value",
+                            "grain": "day",
+                            "value": "2020-12-12T00:00:00.000-08:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "day",
+                            "value": "2021-12-12T00:00:00.000-08:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "day",
+                            "value": "2022-12-12T00:00:00.000-08:00"
+                        }
+                    ]
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.80325521167285,
+                    "value": "Brughe",
+                    "type": "value"
+                },
+                {
+                    "suggested": true,
+                    "confidence": 0.84417906150072,
+                    "value": "Amsterdm",
+                    "type": "value"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Is wi fi aanwezig opde bus",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.50425441415133,
+                    "value": "geefOnboardServices"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "kan ik van Bruhhe naar Pareis met de bus",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "geefBestemmingen",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.71172063416426,
+                    "value": "geefBestemmingen"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.52821600711667,
+                    "value": "Bruhhe",
+                    "type": "value"
+                },
+                {
+                    "suggested": true,
+                    "confidence": 0.88512109693073,
+                    "value": "Pareis",
+                    "type": "value"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Kan ik onlineboeken lezen opde bus",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.81686599701927,
+                    "value": "geefOnboardServices"
+                }
+            ],
+            "onboardService_type": [
+                {
+                    "confidence": 1,
+                    "value": "E-books",
+                    "type": "value"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Ik wel met vriedn naar een festival (Rock Werchter) kunnen wij de bus gebruiken",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "geefReisTijden",
+        "entities": {
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 1
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Wil je 2 tickets reserver voor de eerstvolgende bus nr Pareis",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.90865616519877,
+                    "value": "boekBusreis"
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 2
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Rezerveer de volgend bus ik heb mijn bus gemist",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "geefActueleInfo",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.62129546879744,
+                    "value": "geefActueleInfo"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Zijn er vertragingenen voor de bus van amsterdam naar hent van 19:25",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefActueleInfo",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.99459173327915,
+                    "value": "geefActueleInfo"
+                }
+            ],
+            "datetime": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "grain": "minute",
+                    "value": "2020-04-18T19:25:00.000-07:00",
+                    "values": [
+                        {
+                            "type": "value",
+                            "grain": "minute",
+                            "value": "2020-04-18T19:25:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "minute",
+                            "value": "2020-04-19T19:25:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "minute",
+                            "value": "2020-04-20T19:25:00.000-07:00"
+                        }
+                    ]
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.86111998558044,
+                    "value": "amsterdam",
+                    "type": "value"
+                },
+                {
+                    "suggested": true,
+                    "confidence": 0.78038736938072,
+                    "value": "hent",
+                    "type": "value"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "wanneer kan ik reizen op 9 aug 2020 van gentnaar amsterdam",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefBestemmingen",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.51532580157922,
+                    "value": "geefBestemmingen"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.93106001615524,
+                    "value": "gentnaar amsterdam",
+                    "type": "value"
+                }
+            ],
+            "datetime": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "grain": "day",
+                    "value": "2020-08-09T00:00:00.000-07:00",
+                    "values": [
+                        {
+                            "type": "value",
+                            "grain": "day",
+                            "value": "2020-08-09T00:00:00.000-07:00"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Reserveer een ticket naar Pareis voor morgen",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.98037030392268,
+                    "value": "boekBusreis"
+                }
+            ],
+            "datetime": [
+                {
+                    "confidence": 1,
+                    "type": "interval",
+                    "to": {
+                        "grain": "day",
+                        "value": "2020-04-19T00:00:00.000-07:00"
+                    },
+                    "values": [
+                        {
+                            "type": "interval",
+                            "to": {
+                                "grain": "day",
+                                "value": "2020-04-19T00:00:00.000-07:00"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.54546463579394,
+                    "value": "Pareis",
+                    "type": "value"
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 1
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "We zijn als school aan het zoeken naar een bus met een bestuurder vr een klasuitstap",
+        "expectedIntent": "huurBusMetChauffeur",
+        "predictedIntent": "huurBusMetChauffeur",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.61552699737252,
+                    "value": "huurBusMetChauffeur"
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 1
+                },
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 1
+                },
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 1
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Voor morgn zou ik graag mijn busreis verplaatsen naar de avond",
+        "expectedIntent": "wijzigBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.75072979698624,
+                    "value": "annuleerBusreis"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.66580140268226,
+                    "value": "de avond",
+                    "type": "value"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Ik sta al een uur te wacht aan de halte en de bus iser nog steeds niet",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "meldKlachten",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.91167262153023,
+                    "value": "meldKlachten"
+                }
+            ],
+            "datetime": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "grain": "hour",
+                    "value": "2020-04-18T13:00:00.000-07:00",
+                    "values": [
+                        {
+                            "type": "value",
+                            "grain": "hour",
+                            "value": "2020-04-18T13:00:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "hour",
+                            "value": "2020-04-19T01:00:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "hour",
+                            "value": "2020-04-19T13:00:00.000-07:00"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Gelieve mijn geboekte tickets voorde bus naar Pareis voor morgn te anuleren",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.73822687398019,
+                    "value": "annuleerBusreis"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.88055998086929,
+                    "value": "Pareis",
+                    "type": "value"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Ik zou graag een cietytrip doen naar praaag",
+        "expectedIntent": "geefBestemmingen",
+        "predictedIntent": "boekBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.52827736554764,
+                    "value": "boekBusreis"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.87500887580913,
+                    "value": "praaag",
+                    "type": "value"
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 1
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Zal mijn bus op tijd zijn",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefActueleInfo",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.66056504014699,
+                    "value": "geefActueleInfo"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "morge zal het slecht weer zijn, annnuleer mijn boeking",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.53901802114653,
+                    "value": "annuleerBusreis"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "annuleeer mijn reis naar Pareis van 9/8",
+        "expectedIntent": "annuleerBusreis",
+        "predictedIntent": "annuleerBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.78485599786361,
+                    "value": "annuleerBusreis"
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 1.125
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.61111386280215,
+                    "value": "Pareis",
+                    "type": "value"
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Ik ga met mijn vrienden gaan skie\u00c3\u00abn van 3 februarie tot 10 feb in Vald'Is\u00c3\u00a8re geefme alle bussen die ik kan nemen",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefBestemmingen",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.67893732744816,
+                    "value": "geefBestemmingen"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.90898501873016,
+                    "value": "Vald'Is\u00c3\u00a8r",
+                    "type": "value"
+                }
+            ],
+            "datetime": [
+                {
+                    "confidence": 1,
+                    "type": "interval",
+                    "to": {
+                        "grain": "day",
+                        "value": "2021-02-10T00:00:00.000-08:00"
+                    },
+                    "values": [
+                        {
+                            "type": "interval",
+                            "to": {
+                                "grain": "day",
+                                "value": "2021-02-10T00:00:00.000-08:00"
+                            }
+                        },
+                        {
+                            "type": "interval",
+                            "to": {
+                                "grain": "day",
+                                "value": "2022-02-10T00:00:00.000-08:00"
+                            }
+                        },
+                        {
+                            "type": "interval",
+                            "to": {
+                                "grain": "day",
+                                "value": "2023-02-10T00:00:00.000-08:00"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 3
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Kunnen mijn kids een fielm kijken",
+        "expectedIntent": "geefOnboardServices",
+        "predictedIntent": "geefOnboardServices",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.73703447712517,
+                    "value": "geefOnboardServices"
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 1
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Ik had graag 3 tickets naar kopen hagen vanuit Malmo",
+        "expectedIntent": "boekBusreis",
+        "predictedIntent": "boekBusreis",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.74221903470846,
+                    "value": "boekBusreis"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.79952021595776,
+                    "value": "kopen",
+                    "type": "value"
+                },
+                {
+                    "suggested": true,
+                    "confidence": 0.93286997079849,
+                    "value": "Malmo",
+                    "type": "value"
+                }
+            ],
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 3
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "goeiendag",
+        "expectedIntent": "greetings",
+        "predictedIntent": "greetings",
+        "entities": {}
+    },
+    {
+        "sentence": "Kan ik morgen om 10 u in antwerpene geraken metde bus",
+        "expectedIntent": "geefReisTijden",
+        "predictedIntent": "geefBestemmingen",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.73838407075178,
+                    "value": "geefBestemmingen"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.61119457925873,
+                    "value": "antwerpene",
+                    "type": "value"
+                }
+            ],
+            "datetime": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "grain": "hour",
+                    "value": "2020-04-19T10:00:00.000-07:00",
+                    "values": [
+                        {
+                            "type": "value",
+                            "grain": "hour",
+                            "value": "2020-04-19T10:00:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "hour",
+                            "value": "2020-04-19T22:00:00.000-07:00"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Iser vertraging voor de bus van 7:25 van Bruggen naar de Efteling",
+        "expectedIntent": "geefActueleInfo",
+        "predictedIntent": "geefReisTijden",
+        "entities": {
+            "intent": [
+                {
+                    "confidence": 0.72134485823129,
+                    "value": "geefReisTijden"
+                }
+            ],
+            "location": [
+                {
+                    "suggested": true,
+                    "confidence": 0.59919168580899,
+                    "value": "Bruggen",
+                    "type": "value"
+                },
+                {
+                    "suggested": true,
+                    "confidence": 0.98804966907004,
+                    "value": "de Efteling",
+                    "type": "value"
+                }
+            ],
+            "datetime": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "grain": "minute",
+                    "value": "2020-04-18T07:25:00.000-07:00",
+                    "values": [
+                        {
+                            "type": "value",
+                            "grain": "minute",
+                            "value": "2020-04-18T07:25:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "minute",
+                            "value": "2020-04-19T07:25:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "minute",
+                            "value": "2020-04-20T07:25:00.000-07:00"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "sentence": "Bs is telaat en ik weet van niks",
+        "expectedIntent": "meldKlachten",
+        "predictedIntent": "geefActueleInfo",
+        "entities": {
+            "number": [
+                {
+                    "confidence": 1,
+                    "type": "value",
+                    "value": 0
+                }
+            ]
+        }
+    }
+]

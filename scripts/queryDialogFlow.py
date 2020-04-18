@@ -41,7 +41,7 @@ def validateNoEntity():
 def validateEntity():
     results = []
 
-    with open(f'datasetsCV/EntityTest.csv') as csv_file:
+    with open(f'datasetsCV/SpellingTest.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             url = f'https://api.dialogflow.com/v1/query?lang=nl&sessionId=1&v=20200406&query={row[1]}'
@@ -70,7 +70,7 @@ def validateEntity():
                     "entities": {}
                 })
 
-    with open('results/Entity_DIALOGFLOW.json', 'w') as outfile:
+    with open('results/Entity_Spelling_DIALOGFLOW.json', 'w') as outfile:
         json.dump(results, outfile)
 
 

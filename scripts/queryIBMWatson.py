@@ -28,7 +28,8 @@ session = assistant.create_session(
     assistant_id=assistant_id
 ).get_result()
 
-def validateNoEntity(): 
+
+def validateNoEntity():
     results = [('Expected', 'Predicted', 'Phrase')]
 
     with open(f'datasetsCV/noEntityFold{fold}Test.csv') as csv_file:
@@ -50,17 +51,17 @@ def validateNoEntity():
             except:
                 results.append((row[0], '', row[1]))
 
-
     with open(f'results/noEntityFold{fold}_IBMWatson.csv', 'w') as f:
         writer = csv.writer(f, lineterminator='\n')
         for result in results:
             writer.writerow(result)
 
+
 def validateEntity():
 
     results = []
 
-    with open('datasetsCV/EntityTest.csv') as csv_file:
+    with open('datasetsCV/SpellingTest.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             # send a query to the assistant
@@ -73,17 +74,22 @@ def validateEntity():
                 }
             ).get_result()
 
+            try:
+                results.append({
+                    "sentence": row[1],
+                    "expectedIntent": row[0],
+                    "predictedIntent": response['output']['intents'][0]['intent'],
+                    "entities": response['output']['entities']
+                })
+            except:
+                results.append({
+                    "sentence": row[1],
+                    "expectedIntent": row[0],
+                    "predictedIntent": '',
+                    "entities": response['output']['entities']
+                })
 
-            results.append({
-                "sentence":row[1],
-                "expectedIntent":row[0],
-                "predictedIntent":response['output']['intents'][0]['intent'],
-                "entities":response['output']['entities']
-            })
-            # print(json.dumps(usefullResult,indent=2))
-
-
-    with open('results/Entity_IBMWatson.json', 'w') as outfile:
+    with open('results/Entity_Spelling_IBMWatson.json', 'w') as outfile:
         json.dump(results, outfile)
 
 

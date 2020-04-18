@@ -46,7 +46,7 @@ def validateEntity():
 
     results = []
 
-    with open(f'datasetsCV/EntityTest.csv') as csv_file:
+    with open(f'datasetsCV/SpellingTest.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             request = {"query": row[1]}
@@ -60,7 +60,7 @@ def validateEntity():
                 "entities":response.prediction.entities
             })
 
-    with open('results/Entity_LUIS.json', 'w') as outfile:
+    with open('results/Entity_Spelling_LUIS.json', 'w') as outfile:
         json.dump(results, outfile)
 
 

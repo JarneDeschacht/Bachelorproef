@@ -31,7 +31,7 @@ def validateNoEntity():
 def validateEntity():
     results = []
 
-    with open('datasetsCV/EntityTest.csv') as csv_file:
+    with open('datasetsCV/SpellingTest.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             data = json.dumps({"text": row[1]})
@@ -44,7 +44,7 @@ def validateEntity():
                 "entities":r['entities']
             })
 
-    with open('results/Entity_RASA.json', 'w') as outfile:
+    with open('results/Entity_Spelling_RASA.json', 'w') as outfile:
         json.dump(results, outfile)
 
 
