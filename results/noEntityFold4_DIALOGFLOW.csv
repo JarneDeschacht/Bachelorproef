@@ -1,6 +1,6 @@
 Expected,Predicted,Phrase
-greetings,greetings,bedankt en tot ziens
-greetings,greetings,salut
+greetings,,bedankt en tot ziens
+greetings,,salut
 greetings,geefReisTijden,tot de volgende keer
 greetings,greetings,dag chatbot
 geefBestemmingen,geefOnboardServices,geef me alle bestemmingen
@@ -17,15 +17,15 @@ boekBusreis,boekBusreis,Wil je voor mij een boeking plaatsen op de bus naar Pari
 geefActueleInfo,geefActueleInfo,geef me alle vertragingen
 geefActueleInfo,geefReisTijden,zijn alle bussen vanuit Brugge op tijd ?
 geefActueleInfo,geefActueleInfo,Wat is de stand van zaken rond vertragingen ?
-wijzigBusreis,boekBusreis,"het is slecht weer vandaag, Verplaats de busreis met een week"
+wijzigBusreis,,"het is slecht weer vandaag, Verplaats de busreis met een week"
 wijzigBusreis,wijzigBusreis,Gelieve mijn boeking een week te verplaatsen
 wijzigBusreis,wijzigBusreis,boek een andere stoel voor mijn boeking
-wijzigBusreis,boekBusreis,"Reserveer de volgende bus, ik heb mijn bus gemist"
-wijzigBusreis,huurBusMetChauffeur,Boek een betere stoel met meer beenruimte
+wijzigBusreis,,"Reserveer de volgende bus, ik heb mijn bus gemist"
+wijzigBusreis,boekBusreis,Boek een betere stoel met meer beenruimte
 wijzigBusreis,wijzigBusreis,Graag mijn busreis een maand verplaatsen
 annuleerBusreis,boekBusreis,Gelieve mijn geboekte tickets voor de bus naar Parijs voor morgen te annuleren
 geefOnboardServices,geefOnboardServices,Kan ik online boeken lezen op de bus ?
 meldKlachten,meldKlachten,Bus voorziet geen beenruimte voor grotere mensen !
-meldKlachten,huurBusMetChauffeur,Zeer onvriendelijke en agressieve chauffeur
-huurBusMetChauffeur,huurBusMetChauffeur,Ik zou graag een bus met chauffeur huren voor een dag
-huurBusMetChauffeur,huurBusMetChauffeur,Geef me de mogelijkheden om een bus te huren voor een groep kinderen naar een pretpark
+meldKlachten,meldKlachten,Zeer onvriendelijke en agressieve chauffeur
+huurBusMetChauffeur,wijzigBusreis,Ik zou graag een bus met chauffeur huren voor een dag
+huurBusMetChauffeur,geefOnboardServices,Geef me de mogelijkheden om een bus te huren voor een groep kinderen naar een pretpark

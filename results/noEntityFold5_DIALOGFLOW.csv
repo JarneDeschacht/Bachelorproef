@@ -1,8 +1,8 @@
 Expected,Predicted,Phrase
 greetings,greetings,hallo
-greetings,greetings,hoi
+greetings,,hoi
 greetings,greetings,daag
-greetings,greetings,merci
+greetings,,merci
 geefBestemmingen,geefReisTijden,rijden er bussen naar de Efteling ?
 geefReisTijden,geefBestemmingen,"Ik woon in Brugge en heb een vliegtuig morgenochtend in Zaventem, kan ik een bus gebruiken ?"
 geefReisTijden,geefBestemmingen,geef me de laatste bus morgenavond van Kopenhagen naar Malmö
@@ -21,8 +21,8 @@ annuleerBusreis,boekBusreis,Zeg mijn reservering voor morgen af naar Parijs
 annuleerBusreis,geefOnboardServices,"De Efteling is gesloten, ik wil mijn bus afschaffen"
 geefOnboardServices,geefOnboardServices,Waarmee kan ik me bezighouden tijdens de rit ?
 meldKlachten,meldKlachten,Mijn bus komt niet af !
-meldKlachten,meldKlachten,Ik krijg te horen dat mijn bus geannuleerd is zonder alternatieve oplossing
-meldKlachten,meldKlachten,Mijn valies is gestolen
+meldKlachten,geefBestemmingen,Ik krijg te horen dat mijn bus geannuleerd is zonder alternatieve oplossing
+meldKlachten,,Mijn valies is gestolen
 meldKlachten,greetings,Ik ben heel slecht behandeld door de buschauffeur!
 meldKlachten,huurBusMetChauffeur,"Het was ontzettend koud in de bus, chauffeur wou niet helpen"
 meldKlachten,meldKlachten,Chauffeur spreekt geen nederlands

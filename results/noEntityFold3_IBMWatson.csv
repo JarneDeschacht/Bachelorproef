@@ -1,10 +1,10 @@
 Expected,Predicted,Phrase
-greetings,greetings,hey
+greetings,,hey
 greetings,greetings,tot later
 geefBestemmingen,geefBestemmingen,naar waar kan ik allemaal reizen ?
 geefBestemmingen,greetings,Ik zou graag een citytrip doen naar Praag
 geefBestemmingen,geefBestemmingen,"Mijn lief en ik willen naar Rotterdam met de bus, is dit mogelijk ?"
-geefBestemmingen,geefReisTijden,Geef me alle stops in Finland
+geefBestemmingen,geefBestemmingen,Geef me alle stops in Finland
 geefReisTijden,geefReisTijden,geef me alle bussen op zaterdag 8 augustus van Kopenhagen naar Malmö !
 geefReisTijden,geefBestemmingen,Kan ik morgen om 10 uur in Antwerpen geraken met de bus?
 geefReisTijden,geefBestemmingen,Mag ik alle bussen van en naar de Efteling vanuit Brussel ?

@@ -1,5 +1,5 @@
 Expected,Predicted,Phrase
-greetings,greetings,hey
+greetings,None,hey
 greetings,greetings,tot later
 geefBestemmingen,geefBestemmingen,naar waar kan ik allemaal reizen ?
 geefBestemmingen,wijzigBusreis,Ik zou graag een citytrip doen naar Praag

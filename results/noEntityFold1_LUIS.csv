@@ -1,5 +1,5 @@
 Expected,Predicted,Phrase
-greetings,greetings,goeiedag
+greetings,None,goeiedag
 greetings,greetings,hallo daar
 geefBestemmingen,geefBestemmingen,kan ik van Brugge naar Parijs met de bus ?
 geefBestemmingen,geefActueleInfo,is Kopenhagen bereikbaar vanuit gent ?

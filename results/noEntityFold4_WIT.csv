@@ -1,31 +1,31 @@
 Expected,Predicted,Phrase
 greetings,greetings,bedankt en tot ziens
-greetings,greetings,salut
-greetings,greetings,tot de volgende keer
-greetings,greetings,dag chatbot
-geefBestemmingen,geefBestemmingen,geef me alle bestemmingen
+greetings,,salut
+greetings,,tot de volgende keer
+greetings,,dag chatbot
+geefBestemmingen,,geef me alle bestemmingen
 geefBestemmingen,geefBestemmingen,kan ik buiten Europa met de bus ?
-geefBestemmingen,geefBestemmingen,"ik woon in Antwerpen en moet naar Zaventem, kan dat ?"
-geefBestemmingen,geefBestemmingen,Geef me alle skigebieden die jullie ondersteunen
+geefBestemmingen,geefReisTijden,"ik woon in Antwerpen en moet naar Zaventem, kan dat ?"
+geefBestemmingen,geefOnboardServices,Geef me alle skigebieden die jullie ondersteunen
 geefReisTijden,geefReisTijden,kan ik morgen om 17u een bus nemen naar Praag in brussel ?
-geefReisTijden,geefReisTijden,Zijn er vannacht bussen tussen Parijs en Arras ?
+geefReisTijden,,Zijn er vannacht bussen tussen Parijs en Arras ?
 boekBusreis,boekBusreis,ik zou graag een plaats reserveren op de bus van Brugge naar Parijs van zondag
 boekBusreis,boekBusreis,"Morgen zou ik graag naar Parijs gaan, wil je een ticket reserveren voor mij"
 boekBusreis,boekBusreis,Boek voor mij een ticket naar zaventem morgen
 boekBusreis,boekBusreis,Ik zou graag een plaats willen op de volgende bus naar Parijs
 boekBusreis,boekBusreis,Wil je voor mij een boeking plaatsen op de bus naar Parijs
 geefActueleInfo,geefActueleInfo,geef me alle vertragingen
-geefActueleInfo,geefActueleInfo,zijn alle bussen vanuit Brugge op tijd ?
-geefActueleInfo,geefActueleInfo,Wat is de stand van zaken rond vertragingen ?
-wijzigBusreis,wijzigBusreis,"het is slecht weer vandaag, Verplaats de busreis met een week"
+geefActueleInfo,,zijn alle bussen vanuit Brugge op tijd ?
+geefActueleInfo,,Wat is de stand van zaken rond vertragingen ?
+wijzigBusreis,meldKlachten,"het is slecht weer vandaag, Verplaats de busreis met een week"
 wijzigBusreis,wijzigBusreis,Gelieve mijn boeking een week te verplaatsen
-wijzigBusreis,boekBusreis,boek een andere stoel voor mijn boeking
-wijzigBusreis,wijzigBusreis,"Reserveer de volgende bus, ik heb mijn bus gemist"
-wijzigBusreis,wijzigBusreis,Boek een betere stoel met meer beenruimte
+wijzigBusreis,wijzigBusreis,boek een andere stoel voor mijn boeking
+wijzigBusreis,geefActueleInfo,"Reserveer de volgende bus, ik heb mijn bus gemist"
+wijzigBusreis,geefBestemmingen,Boek een betere stoel met meer beenruimte
 wijzigBusreis,wijzigBusreis,Graag mijn busreis een maand verplaatsen
 annuleerBusreis,annuleerBusreis,Gelieve mijn geboekte tickets voor de bus naar Parijs voor morgen te annuleren
 geefOnboardServices,geefOnboardServices,Kan ik online boeken lezen op de bus ?
-meldKlachten,meldKlachten,Bus voorziet geen beenruimte voor grotere mensen !
+meldKlachten,,Bus voorziet geen beenruimte voor grotere mensen !
 meldKlachten,meldKlachten,Zeer onvriendelijke en agressieve chauffeur
 huurBusMetChauffeur,huurBusMetChauffeur,Ik zou graag een bus met chauffeur huren voor een dag
 huurBusMetChauffeur,huurBusMetChauffeur,Geef me de mogelijkheden om een bus te huren voor een groep kinderen naar een pretpark

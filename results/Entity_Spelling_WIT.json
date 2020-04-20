@@ -2,7 +2,7 @@
     {
         "sentence": "tot de volgende",
         "expectedIntent": "greetings",
-        "predictedIntent": "greetings",
+        "predictedIntent": "",
         "entities": {}
     },
     {
@@ -82,7 +82,7 @@
     {
         "sentence": "De organisatie trok op niks",
         "expectedIntent": "meldKlachten",
-        "predictedIntent": "meldklachten",
+        "predictedIntent": "",
         "entities": {
             "number": [
                 {
@@ -208,7 +208,7 @@
     {
         "sentence": "Ik wel met vriedn naar een festival (Rock Werchter) kunnen wij de bus gebruiken",
         "expectedIntent": "geefBestemmingen",
-        "predictedIntent": "geefReisTijden",
+        "predictedIntent": "",
         "entities": {
             "number": [
                 {
@@ -268,13 +268,8 @@
                     "confidence": 1,
                     "type": "value",
                     "grain": "minute",
-                    "value": "2020-04-18T19:25:00.000-07:00",
+                    "value": "2020-04-19T19:25:00.000-07:00",
                     "values": [
-                        {
-                            "type": "value",
-                            "grain": "minute",
-                            "value": "2020-04-18T19:25:00.000-07:00"
-                        },
                         {
                             "type": "value",
                             "grain": "minute",
@@ -284,6 +279,11 @@
                             "type": "value",
                             "grain": "minute",
                             "value": "2020-04-20T19:25:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "minute",
+                            "value": "2020-04-21T19:25:00.000-07:00"
                         }
                     ]
                 }
@@ -357,14 +357,14 @@
                     "type": "interval",
                     "to": {
                         "grain": "day",
-                        "value": "2020-04-19T00:00:00.000-07:00"
+                        "value": "2020-04-20T00:00:00.000-07:00"
                     },
                     "values": [
                         {
                             "type": "interval",
                             "to": {
                                 "grain": "day",
-                                "value": "2020-04-19T00:00:00.000-07:00"
+                                "value": "2020-04-20T00:00:00.000-07:00"
                             }
                         }
                     ]
@@ -454,22 +454,22 @@
                     "confidence": 1,
                     "type": "value",
                     "grain": "hour",
-                    "value": "2020-04-18T13:00:00.000-07:00",
+                    "value": "2020-04-20T01:00:00.000-07:00",
                     "values": [
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-18T13:00:00.000-07:00"
+                            "value": "2020-04-20T01:00:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-19T01:00:00.000-07:00"
+                            "value": "2020-04-20T13:00:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-19T13:00:00.000-07:00"
+                            "value": "2020-04-21T01:00:00.000-07:00"
                         }
                     ]
                 }
@@ -697,7 +697,7 @@
     {
         "sentence": "goeiendag",
         "expectedIntent": "greetings",
-        "predictedIntent": "greetings",
+        "predictedIntent": "",
         "entities": {}
     },
     {
@@ -724,17 +724,17 @@
                     "confidence": 1,
                     "type": "value",
                     "grain": "hour",
-                    "value": "2020-04-19T10:00:00.000-07:00",
+                    "value": "2020-04-20T10:00:00.000-07:00",
                     "values": [
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-19T10:00:00.000-07:00"
+                            "value": "2020-04-20T10:00:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-19T22:00:00.000-07:00"
+                            "value": "2020-04-20T22:00:00.000-07:00"
                         }
                     ]
                 }
@@ -771,22 +771,22 @@
                     "confidence": 1,
                     "type": "value",
                     "grain": "minute",
-                    "value": "2020-04-18T07:25:00.000-07:00",
+                    "value": "2020-04-20T07:25:00.000-07:00",
                     "values": [
                         {
                             "type": "value",
                             "grain": "minute",
-                            "value": "2020-04-18T07:25:00.000-07:00"
-                        },
-                        {
-                            "type": "value",
-                            "grain": "minute",
-                            "value": "2020-04-19T07:25:00.000-07:00"
-                        },
-                        {
-                            "type": "value",
-                            "grain": "minute",
                             "value": "2020-04-20T07:25:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "minute",
+                            "value": "2020-04-21T07:25:00.000-07:00"
+                        },
+                        {
+                            "type": "value",
+                            "grain": "minute",
+                            "value": "2020-04-22T07:25:00.000-07:00"
                         }
                     ]
                 }
@@ -796,7 +796,7 @@
     {
         "sentence": "Bs is telaat en ik weet van niks",
         "expectedIntent": "meldKlachten",
-        "predictedIntent": "geefActueleInfo",
+        "predictedIntent": "",
         "entities": {
             "number": [
                 {

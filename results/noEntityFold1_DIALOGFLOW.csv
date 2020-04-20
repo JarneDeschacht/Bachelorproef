@@ -1,7 +1,7 @@
 Expected,Predicted,Phrase
-greetings,greetings,goeiedag
+greetings,,goeiedag
 greetings,greetings,hallo daar
-geefBestemmingen,boekBusreis,kan ik van Brugge naar Parijs met de bus ?
+geefBestemmingen,geefReisTijden,kan ik van Brugge naar Parijs met de bus ?
 geefBestemmingen,geefActueleInfo,is Kopenhagen bereikbaar vanuit gent ?
 geefBestemmingen,geefReisTijden,"Ik wel met vrienden naar een festival (Rock Werchter), kunnen wij de bus gebruiken ?"
 geefBestemmingen,geefActueleInfo,Is italië bereikbaar met de bus vanuit België ?
@@ -19,7 +19,7 @@ annuleerBusreis,annuleerBusreis,Graag had ik een annulering van mijn busreis mor
 annuleerBusreis,geefReisTijden,Annuleer mijn reis naar Parijs van 9 augustus
 annuleerBusreis,annuleerBusreis,Ik zou graag de busreis naar Parijs van morgen annuleren
 geefOnboardServices,geefOnboardServices,Is er wifi aanwezig op de bus ?
-geefOnboardServices,geefBestemmingen,Geef me alle entertainment mogelijkheden
+geefOnboardServices,huurBusMetChauffeur,Geef me alle entertainment mogelijkheden
 geefOnboardServices,wijzigBusreis,kan ik een film kijken tijdens mijn busreis ?
 geefOnboardServices,geefBestemmingen,Is er een mogelijkheid om audioboeken te beluisteren
 geefOnboardServices,geefOnboardServices,Kunnen mijn kinderen een film kijken ?

@@ -1,7 +1,7 @@
 Expected,Predicted,Phrase
-greetings,greetings,goede avond
+greetings,,goede avond
 greetings,greetings,bedankt voor uw dienst
-greetings,greetings,ik dank u
+greetings,,ik dank u
 geefBestemmingen,geefOnboardServices,Is er een mogelijkheid om naar Noorwegen te gaan met de bus ?
 geefReisTijden,geefBestemmingen,wanneer kan ik reizen op 9 augustus 2020 van Gent naar Amsterdam ?
 geefReisTijden,geefBestemmingen,Wanneer rijden de bussen naar Rock Werchter ?
@@ -12,7 +12,7 @@ boekBusreis,boekBusreis,Wil je 2 tickets reserveren voor de eerstvolgende bus na
 boekBusreis,boekBusreis,Gelieve een plaats te boeken voor mij naar Lille
 geefActueleInfo,geefActueleInfo,Zijn er vertragingen voor de bus van Amsterdam naar Gent van 19u25 ?
 geefActueleInfo,geefActueleInfo,Zijn er vertragingen door het slechte weer vandaag ?
-geefActueleInfo,geefActueleInfo,Wanneer komt mijn bus ?
+geefActueleInfo,,Wanneer komt mijn bus ?
 geefActueleInfo,geefReisTijden,Is er vertraging voor de bus van 7u25 van Brugge naar de Efteling ?
 wijzigBusreis,wijzigBusreis,ik wil graag een bus van een ander uur boeken
 wijzigBusreis,wijzigBusreis,Ik wil een andere bus reserveren
@@ -23,7 +23,7 @@ geefOnboardServices,geefOnboardServices,Gelieve me alle bezigheden op de bus te 
 geefOnboardServices,geefOnboardServices,Graag had ik een overzicht van alle onboard diensten
 geefOnboardServices,geefOnboardServices,Is er gratis Wi-Fi op de bus ?
 meldKlachten,meldKlachten,Ik sta al een uur te wachten aan de halte en de bus is er nog steeds niet !
-meldKlachten,meldKlachten,De bus stonk enorm tijdens mijn reis !
+meldKlachten,,De bus stonk enorm tijdens mijn reis !
 meldKlachten,meldKlachten,De organisatie trok op niets! 
 huurBusMetChauffeur,huurBusMetChauffeur,Gelieve een bus met chauffeur te reserveren voor volgende week
 huurBusMetChauffeur,huurBusMetChauffeur,Voor een excursie wil ik een bus met een chauffeur huren

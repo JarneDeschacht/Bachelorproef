@@ -2,7 +2,7 @@
     {
         "sentence": "tot de volgende keer",
         "expectedIntent": "greetings",
-        "predictedIntent": "greetings",
+        "predictedIntent": "",
         "entities": {}
     },
     {
@@ -23,7 +23,7 @@
             "geo-capital": [
                 "Parijs"
             ],
-            "date": "2020-04-13",
+            "date": "2020-04-20",
             "number-integer": 2.0
         }
     },
@@ -156,7 +156,7 @@
         "predictedIntent": "boekBusreis",
         "entities": {
             "geo-city": "Parijs",
-            "date": "2020-04-13",
+            "date": "2020-04-20",
             "number-integer": 1.0,
             "geo-capital": []
         }
@@ -172,7 +172,7 @@
         "expectedIntent": "wijzigBusreis",
         "predictedIntent": "wijzigBusreis",
         "entities": {
-            "date": "2020-04-13",
+            "date": "2020-04-20",
             "geo-city": []
         }
     },
@@ -188,7 +188,7 @@
         "predictedIntent": "annuleerBusreis",
         "entities": {
             "geo-city": "Parijs",
-            "date": "2020-04-13",
+            "date": "2020-04-20",
             "geo-capital": ""
         }
     },
@@ -217,7 +217,7 @@
         "expectedIntent": "annuleerBusreis",
         "predictedIntent": "annuleerBusreis",
         "entities": {
-            "date": "2020-04-13",
+            "date": "2020-04-20",
             "geo-capital": "",
             "geo-city": ""
         }
@@ -256,18 +256,18 @@
         "expectedIntent": "boekBusreis",
         "predictedIntent": "boekBusreis",
         "entities": {
+            "geo-city": "Malm\u00c3",
             "geo-capital": [
                 "Kopenhagen"
             ],
             "number-integer": 3.0,
-            "geo-city": "",
             "date": ""
         }
     },
     {
         "sentence": "goeiedag",
         "expectedIntent": "greetings",
-        "predictedIntent": "greetings",
+        "predictedIntent": "",
         "entities": {}
     },
     {

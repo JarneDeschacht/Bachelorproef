@@ -262,7 +262,7 @@
     {
         "sentence": "goeiendag",
         "expectedIntent": "greetings",
-        "predictedIntent": "greetings",
+        "predictedIntent": "None",
         "entities": {}
     },
     {

@@ -1,7 +1,7 @@
 Expected,Predicted,Phrase
-greetings,greetings,goede avond
-greetings,greetings,bedankt voor uw dienst
-greetings,greetings,ik dank u
+greetings,,goede avond
+greetings,,bedankt voor uw dienst
+greetings,,ik dank u
 geefBestemmingen,geefOnboardServices,Is er een mogelijkheid om naar Noorwegen te gaan met de bus ?
 geefReisTijden,geefBestemmingen,wanneer kan ik reizen op 9 augustus 2020 van Gent naar Amsterdam ?
 geefReisTijden,geefBestemmingen,Wanneer rijden de bussen naar Rock Werchter ?
@@ -13,7 +13,7 @@ boekBusreis,boekBusreis,Gelieve een plaats te boeken voor mij naar Lille
 geefActueleInfo,geefActueleInfo,Zijn er vertragingen voor de bus van Amsterdam naar Gent van 19u25 ?
 geefActueleInfo,geefActueleInfo,Zijn er vertragingen door het slechte weer vandaag ?
 geefActueleInfo,meldKlachten,Wanneer komt mijn bus ?
-geefActueleInfo,geefReisTijden,Is er vertraging voor de bus van 7u25 van Brugge naar de Efteling ?
+geefActueleInfo,,Is er vertraging voor de bus van 7u25 van Brugge naar de Efteling ?
 wijzigBusreis,wijzigBusreis,ik wil graag een bus van een ander uur boeken
 wijzigBusreis,wijzigBusreis,Ik wil een andere bus reserveren
 wijzigBusreis,wijzigBusreis,Ik zou graag een andere dag boeken voor mijn busreis

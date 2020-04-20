@@ -316,7 +316,7 @@
     {
         "sentence": "goeiedag",
         "expectedIntent": "greetings",
-        "predictedIntent": "greetings",
+        "predictedIntent": "None",
         "entities": {}
     },
     {

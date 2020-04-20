@@ -2,7 +2,7 @@
     {
         "sentence": "tot de volgende keer",
         "expectedIntent": "greetings",
-        "predictedIntent": "greetings",
+        "predictedIntent": "",
         "entities": {}
     },
     {
@@ -28,19 +28,19 @@
     {
         "sentence": "Gelieve 2 plaatsen te reserveren voor de bus  van Brugge naar Parijs van morgen",
         "expectedIntent": "boekBusreis",
-        "predictedIntent": "boekBusreis",
+        "predictedIntent": "",
         "entities": {
             "datetime": [
                 {
                     "confidence": 0.99091471714261,
                     "type": "value",
                     "grain": "day",
-                    "value": "2020-04-13T00:00:00.000-07:00",
+                    "value": "2020-04-20T00:00:00.000-07:00",
                     "values": [
                         {
                             "type": "value",
                             "grain": "day",
-                            "value": "2020-04-13T00:00:00.000-07:00"
+                            "value": "2020-04-20T00:00:00.000-07:00"
                         }
                     ]
                 }
@@ -240,7 +240,7 @@
     {
         "sentence": "Ik wel met vrienden naar een festival (Rock Werchter), kunnen wij de bus gebruiken ?",
         "expectedIntent": "geefBestemmingen",
-        "predictedIntent": "geefBestemmingen",
+        "predictedIntent": "",
         "entities": {
             "number": [
                 {
@@ -282,7 +282,7 @@
     {
         "sentence": "Reserveer de volgende bus, ik heb mijn bus gemist",
         "expectedIntent": "wijzigBusreis",
-        "predictedIntent": "boekBusreis",
+        "predictedIntent": "",
         "entities": {}
     },
     {
@@ -301,22 +301,22 @@
                     "confidence": 1,
                     "type": "value",
                     "grain": "minute",
-                    "value": "2020-04-12T19:25:00.000-07:00",
+                    "value": "2020-04-19T19:25:00.000-07:00",
                     "values": [
                         {
                             "type": "value",
                             "grain": "minute",
-                            "value": "2020-04-12T19:25:00.000-07:00"
+                            "value": "2020-04-19T19:25:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "minute",
-                            "value": "2020-04-13T19:25:00.000-07:00"
+                            "value": "2020-04-20T19:25:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "minute",
-                            "value": "2020-04-14T19:25:00.000-07:00"
+                            "value": "2020-04-21T19:25:00.000-07:00"
                         }
                     ]
                 }
@@ -340,7 +340,7 @@
     {
         "sentence": "wanneer kan ik reizen op 9 augustus 2020 van Gent naar Amsterdam ?",
         "expectedIntent": "geefReisTijden",
-        "predictedIntent": "geefReisTijden",
+        "predictedIntent": "",
         "entities": {
             "location": [
                 {
@@ -390,14 +390,14 @@
                     "type": "interval",
                     "to": {
                         "grain": "day",
-                        "value": "2020-04-13T00:00:00.000-07:00"
+                        "value": "2020-04-20T00:00:00.000-07:00"
                     },
                     "values": [
                         {
                             "type": "interval",
                             "to": {
                                 "grain": "day",
-                                "value": "2020-04-13T00:00:00.000-07:00"
+                                "value": "2020-04-20T00:00:00.000-07:00"
                             }
                         }
                     ]
@@ -475,14 +475,14 @@
                     "type": "interval",
                     "to": {
                         "grain": "day",
-                        "value": "2020-04-13T00:00:00.000-07:00"
+                        "value": "2020-04-20T00:00:00.000-07:00"
                     },
                     "values": [
                         {
                             "type": "interval",
                             "to": {
                                 "grain": "day",
-                                "value": "2020-04-13T00:00:00.000-07:00"
+                                "value": "2020-04-20T00:00:00.000-07:00"
                             }
                         }
                     ]
@@ -506,22 +506,22 @@
                     "confidence": 1,
                     "type": "value",
                     "grain": "hour",
-                    "value": "2020-04-12T13:00:00.000-07:00",
+                    "value": "2020-04-20T01:00:00.000-07:00",
                     "values": [
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-12T13:00:00.000-07:00"
+                            "value": "2020-04-20T01:00:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-13T01:00:00.000-07:00"
+                            "value": "2020-04-20T13:00:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-13T13:00:00.000-07:00"
+                            "value": "2020-04-21T01:00:00.000-07:00"
                         }
                     ]
                 }
@@ -545,14 +545,14 @@
                     "type": "interval",
                     "to": {
                         "grain": "day",
-                        "value": "2020-04-13T00:00:00.000-07:00"
+                        "value": "2020-04-20T00:00:00.000-07:00"
                     },
                     "values": [
                         {
                             "type": "interval",
                             "to": {
                                 "grain": "day",
-                                "value": "2020-04-13T00:00:00.000-07:00"
+                                "value": "2020-04-20T00:00:00.000-07:00"
                             }
                         }
                     ]
@@ -633,12 +633,12 @@
                     "confidence": 0.93790572354942,
                     "type": "value",
                     "grain": "day",
-                    "value": "2020-04-13T00:00:00.000-07:00",
+                    "value": "2020-04-20T00:00:00.000-07:00",
                     "values": [
                         {
                             "type": "value",
                             "grain": "day",
-                            "value": "2020-04-13T00:00:00.000-07:00"
+                            "value": "2020-04-20T00:00:00.000-07:00"
                         }
                     ]
                 }
@@ -859,17 +859,17 @@
                     "confidence": 1,
                     "type": "value",
                     "grain": "hour",
-                    "value": "2020-04-13T10:00:00.000-07:00",
+                    "value": "2020-04-20T10:00:00.000-07:00",
                     "values": [
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-13T10:00:00.000-07:00"
+                            "value": "2020-04-20T10:00:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "hour",
-                            "value": "2020-04-13T22:00:00.000-07:00"
+                            "value": "2020-04-20T22:00:00.000-07:00"
                         }
                     ]
                 }
@@ -906,22 +906,22 @@
                     "confidence": 1,
                     "type": "value",
                     "grain": "minute",
-                    "value": "2020-04-13T07:25:00.000-07:00",
+                    "value": "2020-04-20T07:25:00.000-07:00",
                     "values": [
                         {
                             "type": "value",
                             "grain": "minute",
-                            "value": "2020-04-13T07:25:00.000-07:00"
+                            "value": "2020-04-20T07:25:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "minute",
-                            "value": "2020-04-14T07:25:00.000-07:00"
+                            "value": "2020-04-21T07:25:00.000-07:00"
                         },
                         {
                             "type": "value",
                             "grain": "minute",
-                            "value": "2020-04-15T07:25:00.000-07:00"
+                            "value": "2020-04-22T07:25:00.000-07:00"
                         }
                     ]
                 }
