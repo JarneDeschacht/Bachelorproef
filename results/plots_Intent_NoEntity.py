@@ -81,7 +81,7 @@ plt.xlabel('Groepering per intent per platform',
            fontweight='bold', fontsize=20)
 plt.ylabel('F-score', fontweight='bold', fontsize=20)
 plt.xticks([r + barWidth*2 for r in range(len(ibm_watson))],
-           ["greetings",
+           ["begroetingen",
             "geefBestemmingen",
             "geefReisTijden",
             "boekBusreis",

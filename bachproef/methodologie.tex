@@ -7,13 +7,13 @@
 
 Binnen dit hoofdstuk zal het experiment verder worden toegelicht.
 
-In sectie \ref{sec:opzet} zal er worden stilgestaan bij de opzet van het experiment en hoe de platformen geëvalueerd zijn.
+In sectie \ref{sec:opzet} staan we stil bij de opzet van het experiment en hoe de platformen geëvalueerd zijn.
 
-In sectie \ref{sec:dataset} wordt er meer uitleg voorzien rond het testscenario en de opgestelde dataset
+In sectie \ref{sec:dataset} voorzien we meer uitleg rond het testscenario en de opgestelde dataset.
 
 In sectie \ref{sec:validatie} wordt er toegelicht hoe de platformen op een objectieve manier geëvalueerd en vergeleken worden.
 
-In sectie \ref{sec:werking-platformen} wordt er meer uitleg gegeven bij de werking van de verschillende platformen. Daarbij wordt stilgestaan bij creëren van een chatbot, het toevoegen van intents, het trainen met voorbeeldzinnen en hoe de gebouwde chatbots getest kunnen worden
+In sectie \ref{sec:werking-platformen} illustreren we de werking en functionaliteiten van de verschillende platformen. Daarbij wordt stilgestaan bij creëren van een chatbot, het toevoegen van intents, het trainen met voorbeeldzinnen en hoe de gebouwde chatbots getest kunnen worden. 
 
 In sectie \ref{sec:automatisatie} zal ten slotte meer informatie worden gegeven rond de praktische implementatie van het experiment en hoe het trainen en testen van de platformen geautomatiseerd wordt.
 
@@ -21,9 +21,8 @@ In sectie \ref{sec:automatisatie} zal ten slotte meer informatie worden gegeven 
 \section{Opzet}
 \label{sec:opzet}
 
-Om een vergelijking te kunnen maken van het begrijpend vermogen van de platformen, moet er een experiment plaatsvinden waarbij er op een objectieve manier beoordeeld kan worden. Daarom is er een dataset opgesteld waarmee alle platformen zullen getraind en geëvalueerd worden. Op deze manier krijgen alle platformen exact evenveel informatie en kan er objectief geoordeeld worden. Een deel van de dataset zal gebruikt worden voor het trainen en het andere deel zal dienen voor het testen. Deze dataset zal bestaan uit een aantal intents met bijbehorende voorbeeldzinnen die bij dat bepaalde intent horen. Op deze manier kunnen de ML algoritmes modellen bouwen om de juiste intent te herkennen als een gebruiker een bericht naar de chatbot stuurt. Indien intents geen voorbeeldzinnen krijgen, dan zal het trainen onmogelijk zijn, wat een sterke invloed zal hebben op de accuraatheid. De meeste platformen vereisten een minimum van 5 voorbeeldzinnen om het trainen te kunnen starten, maar het is sterk aangewezen om minimum 10-15 voorbeeldzinnen per intent te voorzien \autocite{Greyling2019}. Eens het trainen gedaan is, kan het valideren beginnen. Het is de bedoeling om uiteindelijk een platform aan te duiden die het beste begrijpend vermogen heeft en dus het beste presteert op het herkennen van de juiste intent. Daarbij zal op 3 verschillende manieren geëvalueerd worden. Het hoofddoel van dit onderzoek is om te bepalen welk platform het beste presteert op intent herkenning. Daarbij wordt er beoordeeld op de prestaties bij zowel het gebruik met als het gebruik zonder entities. Het is algemeen aangeraden om entities te gebruiken, maar in dit onderzoek wordt er ook gekeken naar de invloed op de resultaten als er entities worden gebruikt in tegenstelling tot het weglaten van entities. Daarnaast wordt er ook beoordeeld op hoe goed de getrainde applicaties om kunnen gaan met taalvariaties. Gebruikers schrijven vaak niet in het standaard nederlands als ze communiceren via het internet, daarom wordt er verwacht dat ze dit ook niet zullen doen als ze praten met een chatbot. Daarom is het belangrijk dat een chatbot ook de intentie van berichten zo goed mogelijk kan verstaan als gebruikers afkortingen, slecht gevormde woorden en zinnen en dialecten gebruiken.
+Om een vergelijking te kunnen maken van het begrijpend vermogen van de platformen, moet er een experiment plaatsvinden waarbij er op een objectieve manier beoordeeld kan worden. Daarom is er een dataset opgesteld waarmee alle platformen zullen getraind en geëvalueerd worden. Op deze manier krijgen alle platformen exact evenveel informatie en kan er objectief geoordeeld worden. Een deel van de dataset zal gebruikt worden voor het trainen en het andere deel zal dienen voor het testen. Deze dataset zal bestaan uit een aantal intents met bijbehorende voorbeeldzinnen die bij dat bepaalde intent horen. Op deze manier kunnen de ML algoritmes modellen bouwen om de juiste intent te herkennen als een gebruiker een bericht naar de chatbot stuurt. Indien intents geen voorbeeldzinnen krijgen, dan zal het trainen onmogelijk zijn, wat een sterke invloed zal hebben op de accuraatheid. De meeste platformen vereisten een minimum van 5 voorbeeldzinnen om het trainen te kunnen starten, maar het is sterk aangewezen om minimum 10-15 voorbeeldzinnen per intent te voorzien \autocite{Greyling2019}. Eens het trainen gedaan is, kan het valideren beginnen. Het is de bedoeling om uiteindelijk een platform aan te duiden die het beste begrijpend vermogen heeft en dus het beste presteert op het herkennen van de juiste intent. Daarbij zal op 3 verschillende manieren geëvalueerd worden. Het hoofddoel van dit onderzoek is om te bepalen welk platform het beste presteert op intent herkenning. Daarbij wordt er beoordeeld op de prestaties bij zowel het gebruik met als het gebruik zonder entities. Het is algemeen aangeraden om entities te gebruiken, maar in dit onderzoek wordt er ook gekeken naar de invloed op de resultaten als er entities worden gebruikt in tegenstelling tot het weglaten van entities. Daarnaast wordt er ook beoordeeld op hoe goed de getrainde applicaties om kunnen gaan met taalvariaties. Gebruikers schrijven vaak niet in het standaard Nederlands als ze communiceren via het internet, daarom wordt er verwacht dat ze dit ook niet zullen doen als ze praten met een chatbot. Daarom is het belangrijk dat een chatbot ook de intentie van berichten zo goed mogelijk kan verstaan als gebruikers afkortingen, slecht gevormde woorden en zinnen en dialecten gebruiken.
 
-%TODO informatie rondom alles van de entities toevoegen hier
 \section{Dataset}
 \label{sec:dataset}
 
@@ -31,7 +30,7 @@ De dataset is opgesteld op basis van een fictieve use case die werd bepaald in s
 
 Er werd gekozen voor de volgende intents:
 \begin{itemize}
-    \item greetings
+    \item begroetingen
     \item geefBestemmingen
     \item geefReisTijden
     \item boekBusreis
@@ -43,9 +42,19 @@ Er werd gekozen voor de volgende intents:
     \item huurBusMetChauffeur
 \end{itemize}
 
-\textbf{Hier moet nog informatie rondom de gekozen entities komen}
+Voor het valideren van entityherkenning werd gekozen voor de volgende entities:
+\begin{itemize}
+    \item locatie
+    \item datum
+    \item aantal\_tickets
+    \item tijdstip
+    \item onboardService\_type
+\end{itemize}
 
-Elk van deze intents werd voorzien met 15 voorbeeldzinnen. Bij het opstellen is het belangrijk dat er rekening wordt gehouden met een aantal zaken \autocite{Greyling2019}:
+De entity onboardService\_type is een zelfgemaakte entity en voor de andere werd gebruik gemaakt van systeementities. Op deze manier kunnen we de prestaties van zowel systeementities als zelfgemaakte entities beoordelen.
+
+
+Elk van de intents werd voorzien met 15 voorbeeldzinnen. Bij het opstellen is het belangrijk dat er rekening wordt gehouden met een aantal zaken \autocite{Greyling2019}:
 \begin{itemize}
     \item Gebruik korte en lange zinnen
     \item Verschillende synoniemen gebruiken
@@ -60,7 +69,7 @@ Elk van deze intents werd voorzien met 15 voorbeeldzinnen. Bij het opstellen is 
 
 Chatbots zijn voorbeelden van gesuperviseerd leren, daarbij is het de bedoeling dat er op basis van trainingsdata modellen worden opgesteld die voor ongekende input de correcte output kunnen voorspellen. Dit zal ook binnen dit experiment worden toegepast. Er zijn 15 voorbeeldzinnen voorzien per intent en het is de bedoeling dat er een deel van deze zinnen worden gebruikt om de chatbots te trainen en dat het resterende deel wordt gebruikt als input om te valideren dat het model wel de juiste intent kan herkennen.
 
-De meest gebruikte methode is om 80\% van de data te gebruiken om te trainen en dat de resterende 20\% wordt gebruikt om te testen \autocite{Desmarais2018}. Deze methode is eenvoudig te implementeren, maar het probleem hierbij is dat bepaalde data niet wordt gebruikt om te trainen en dat andere data niet wordt gebruikt om te testen. Dat kan resulteren in minder accurate resultaten.
+De meest gebruikte methode is om 80\% van de data te gebruiken om te trainen en dat de resterende 20\% wordt gebruikt om te testen \autocite{Desmarais2018}. Deze methode is vrij eenvoudig te implementeren, maar het probleem hierbij is dat niet alle data voor zowel trainen als testen gebruikt wordt. Dat kan resulteren in minder accurate resultaten.
 
 De oplossing voor dit probleem is K-Fold Cross Validation \autocite{Desmarais2018}. Hierbij wordt de dataset in een aantal gelijke delen verdeeld en wordt er één deel gebruikt voor het testen, waarbij de resterende delen worden gebruikt om te trainen. Dit wordt een aantal keer herhaald, afhankelijk van het aantal delen dat je hebt gekozen, dat zijn het aantal cycli die doorlopen worden. Het meest gebruikte aantal delen is 5, omdat er op deze manier ook aan het 80/20 principe kan voldaan worden. vier delen worden dan gebruikt om de chatbot te trainen (80\%) en het andere deel voor te valideren (20\%). Bij een volgende cyclus wordt er dan doorgeschoven. Het grote voordeel van deze methode is dat het veel betrouwbaarder en robuuster is, omdat er 5 keer zoveel tests zijn dan bij de andere methode en ook omdat alle data gebruikt wordt voor zowel trainen als testen.
 
@@ -108,7 +117,7 @@ Initieel lijken de metrieken precision en recall sterk op elkaar, maar toch zijn
 
 \subsubsection{F-score}
 
-Precision en recall op zich vertellen niet veel over de kwaliteit van het model \autocite{Treml2019}. Ze zijn enkel nuttig indien je zowel de precision als de recall kent. Om dit wat samen te gieten in één duidelijke metriek, bestaat er zoiets als de f-score. Dat is het harmonisch gemiddelde van de recall en de precision. De f-score verteld hoe kwalitatief een classificatiemodel is. Hoe hoger de f-score, hoe beter. Binnen dit onderzoek wordt vooral de f-score gebruikt om de resultaten van platformen met elkaar te vergelijken.
+Precision en recall op zich vertellen niet veel over de kwaliteit van het model \autocite{Treml2019}. Ze zijn enkel nuttig indien je zowel de precision als de recall kent. Om dit wat samen te gieten in één duidelijke metriek, bestaat er zoiets als de f-score. Dat is het harmonisch gemiddelde van de recall en de precision. De f-score vertelt hoe kwalitatief een classificatiemodel is. Hoe hoger de f-score, hoe beter. Binnen dit onderzoek wordt vooral de f-score gebruikt om de resultaten van platformen met elkaar te vergelijken.
 
 De f-score (harmonisch gemiddelde) bereken je als volgt:
 \begin{itemize}
@@ -127,7 +136,7 @@ In deze sectie zal worden toegelicht hoe de verschillende platformen functionere
 \subsection{Dialogflow}
 \label{subsec:werking-platformen-dialogflow}
 
-Dialogflow is een heel erg gebruiksvriendelijk platform die zowel voor technische als geen technische mensen verstaanbaar en te gebruiken is. Het helpt natuurlijk wel als je enige technische kennis hebt om alles vlotter te verstaan. Het enige die nodig is om aan de slag te gaan met Dialogflow is een Google account. Iedereen kan er mee aan de slag omdat het grotendeels gratis is De betaalde versie is eerder voor bedrijven die complexe chatbots willen opzetten en veel gebruikers zullen hebben. Doordat het onderdeel is van Google Cloud Platform, kan er ook makkelijk gebruik gemaakt worden van de diverse google services die beschikbaar zijn. Er zijn ook vele analysemogelijkheden aanwezig die gebruikt kunnen worden om prestaties te monitoren. Dialogflow gebruikt de term agenten (agents) voor hun chatbots. Dat doen ze omdat ze de vergelijking willen maken met menselijke call center agenten \autocite{GoogleCloud2020}. Agenten verwerken conversaties met eindgebruikers. Er zijn ook heel wat voorgebouwde agenten beschikbaar die gratis gebruikt kunnen worden. Bij het maken van een agent moet een naam opgegeven worden en moet er een standaardtaal gekozen worden. Het is mogelijk om extra talen toe te voegen indien er een meertalige agent gebouwd moet worden. Het is ook mogelijk om de agent te linken aan een Google Cloud project, op die manier is de samenwerking met andere services eenvoudiger. 
+Dialogflow is een heel erg gebruiksvriendelijk platform dat zowel voor technische als geen technische mensen verstaanbaar en te gebruiken is. Het helpt natuurlijk wel als je enige technische kennis hebt om alles vlotter te verstaan. Het enige dat nodig is om aan de slag te gaan met Dialogflow is een Google account. Iedereen kan er mee aan de slag omdat het grotendeels gratis is. De betaalde versie is eerder voor bedrijven die complexe chatbots willen opzetten die gebruik maken van functies die niet in de gratis versie zitten zoals sentimentanalyses of chatbots willen opzetten die meer verzoeken per minuut hebben dan de quota voor de gratis versie (zie \ref{subsec:nlp-platformen-vegelijking-platformen}). Doordat het onderdeel is van Google Cloud Platform, kan er ook makkelijk gebruik gemaakt worden van de diverse google services die beschikbaar zijn. Er zijn ook vele analysemogelijkheden aanwezig die gebruikt kunnen worden om prestaties te monitoren. Dialogflow gebruikt de term agenten (agents) voor hun chatbots. Dat doen ze omdat ze de vergelijking willen maken met menselijke call center agenten \autocite{GoogleCloud2020}. Agenten verwerken conversaties met eindgebruikers. Er zijn ook heel wat voorgebouwde agenten beschikbaar die gratis gebruikt kunnen worden. Bij het maken van een agent moet een naam opgegeven worden en moet er een standaardtaal gekozen worden. Het is mogelijk om extra talen toe te voegen indien er een meertalige agent gebouwd moet worden. Het is ook mogelijk om de agent te linken aan een Google Cloud project, op die manier is de samenwerking met andere services eenvoudiger. 
 
 \begin{figure}[H]
     \label{fig:dialogflow-create}
@@ -136,7 +145,7 @@ Dialogflow is een heel erg gebruiksvriendelijk platform die zowel voor technisch
     \caption{Het creëren van een agent in Dialogflow}
 \end{figure}
 
-Agenten gebruiken intents om de intentie van berichten die gebruikers sturen te achterhalen. Bij het toevoegen en configureren van intents moet er een naam opgegeven worden en kunnen er diverse trainingszinnen toegevoegd worden. Dialogflow vereist een minimum van 5 voorbeeldzinnen per intent. Het is ook mogelijk om bij voorbeeldzinnen entities/parameters toe te voegen. Er zijn heel wat entities ingebouwd in het systeem die ook allemaal gratis gebruikt kunnen worden. Per intent kunnen er ook antwoorden voorzien worden die de agent stuurt als die intent geclassificeerd wordt. Er is ook de mogelijkheid om events toe te voegen die dan deze intent gaan uitvoeren zonder dat het getriggerd moet worden door tekst of spraak.
+Agenten gebruiken intents om de intentie van berichten die gebruikers sturen te achterhalen. Bij het toevoegen en configureren van intents moet er een naam opgegeven worden en kunnen er diverse trainingszinnen toegevoegd worden. Dialogflow vereist een minimum van 5 voorbeeldzinnen per intent. Het is ook mogelijk om bij voorbeeldzinnen entities/parameters toe te voegen. Er zijn heel wat entities ingebouwd in het systeem die ook allemaal gratis gebruikt kunnen worden. Per intent kunnen er ook antwoorden voorzien worden die de agent stuurt als die intent geclassificeerd wordt.
 
 \begin{figure}[H]
     \label{fig:dialogflow-intent}
@@ -154,7 +163,7 @@ Het is ook mogelijk om contexten toe te voegen aan intents, dat wordt gebruikt o
     \caption{Het toevoegen van contexten in een intent in Dialogflow}
 \end{figure}
 
-Aangezien er heel wat systeementiteiten zijn voorzien in Dialogflow, kan het zijn dat het niet meteen nodig is om zelf entities aan te maken, maar het is wel mogelijk. Bij het aanmaken van een entiteit kunnen verschillende waarden toegevoegd worden om de agent deze entiteit te doen herkennen bij user input. Er kunnen synoniemen gegeven worden en er is ook de mogelijkheid om een specifiek patroon op te geven waarvoor een entiteit herkent wordt in zinnen. De gemaakte entiteiten kunnen dan net zoals systeementiteiten toegevoegd worden aan voorbeeldzinnen in de intents.
+Aangezien er heel wat systeementiteiten zijn voorzien in Dialogflow, kan het zijn dat het niet meteen nodig is om zelf entities aan te maken, maar het is wel mogelijk. Bij het aanmaken van een entiteit kunnen verschillende waarden toegevoegd worden om de agent deze entiteit te doen herkennen bij user input. Er kunnen synoniemen gegeven worden en er is ook de mogelijkheid om een specifiek patroon op te geven waarvoor een entiteit herkend wordt in zinnen. De gemaakte entiteiten kunnen dan net zoals systeementiteiten toegevoegd worden aan voorbeeldzinnen in de intents.
 
 \begin{figure}[H]
     \label{fig:dialogflow-entity}
@@ -186,7 +195,7 @@ De chatbot testen kan ook via de user interface (UI) gebeuren. Dit kan worden ge
 \subsection{IBM Watson}
 \label{subsec:werking-platformen-ibm-watson}
 
-IBM watson is het chatbotplatform die ontwikkeld is door IBM. Het is een onderdeel van IBM cloud en zeer goed vergelijkbaar met Google Cloud. Ze bieden ongeveer dezelfde functionaliteiten aan. Om een chatbot op te zetten heb je enkel een IBM Cloud account nodig. IBM Watson is gekend voor zijn zeer gebruiksvriendelijke grafische user interface (GUI) en voor de snelheid waarmee een chatbot ontwikkeld kan worden. IBM Watson biedt ook analysemogelijkheden aan op hun chatbotplatform en gebruikt de naam assistent voor zijn chatbots. het aanmaken van een assistent is heel erg eenvoudig. Een naam en een beschrijving is het enige die gevraagd wordt op een assistent aan te maken.
+IBM watson is het chatbotplatform die ontwikkeld is door IBM. Het is een onderdeel van IBM cloud en zeer goed vergelijkbaar met Google Cloud. Ze bieden ongeveer dezelfde functionaliteiten aan. Om een chatbot op te zetten heb je enkel een IBM Cloud account nodig. IBM Watson is gekend voor zijn zeer gebruiksvriendelijke grafische user interface (GUI) en voor de snelheid waarmee een chatbot ontwikkeld kan worden. IBM Watson biedt ook analysemogelijkheden aan op hun chatbotplatform en gebruikt de naam assistent voor zijn chatbots. het aanmaken van een assistent is heel erg eenvoudig. Een naam en een beschrijving is het enige dat gevraagd wordt om een assistent aan te maken.
 
 \begin{figure}[H]
     \label{fig:watson-create}
