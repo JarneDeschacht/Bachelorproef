@@ -195,8 +195,31 @@ Het laatste platform die onderzocht wordt is eentje die nogal sterk afwijkt van 
 \subsection{Vergelijking van platformen}
 \label{subsec:nlp-platformen-vegelijking-platformen}
 
-%TODO tabel hier in toevoegen
-\textbf{Vergelijkende tabel moet hier nog komen}
+\begin{center}
+    \newcolumntype{P}[1]{>{\hspace{0pt}}p{#1}}
+    \begin{longtable}{| P{2.2cm} | p{2.2cm} |  p{2.2cm} | p{2.2cm} | p{2.2cm} | p{2.2cm} |}
+        \hline
+        \textbf{Naam}                                                  & \textbf{Watson}                                                              & \textbf{LUIS}                           & \textbf{Rasa}                                         & \textbf{Wit.ai}                                 & \textbf{Dialogflow}                                    \\  \hline
+        \textbf{Provider}                                              & IBM                                                                     & Microsoft                      & Rasa Technologies Inc.                       & Facebook                               & Google                                        \\  \hline
+        \textbf{Gebruiksvriendelijkheid}                               & Hoog                                                                    & Gemiddeld                      & Laag                                         & Gemiddeld                              & Hoog                                          \\  \hline
+        \textbf{Prijs initieel gebruik}                                & Gratis                                                                  & Gratis                         & Gratis                                       & Gratis                                 & Gratis                                        \\  \hline
+        \textbf{Limieten gratis gebruik}                               & 10000 API calls, 25 intents en 25 entities per maand                    & 10000 API calls per maand      & Onbeperkt                                    & Onbeperkt                              & 180 API calls per minuut                     \\  \hline
+        \textbf{Ondersteunde talen}                                    & 13                                                                      & 13                             & Allemaal                                     & 135                                    & 20                                            \\  \hline
+        \textbf{Systeem intents}                                       & Nee                                                                     & Ja, grote lijst                & Ja, door specifieke componenten te gebruiken & Nee, Wit.ai bestaat uit enkel entities & Ja, uitgebreide lijst van voorgebouwde agents \\  \hline
+        \textbf{Systeem entities}                                      & Ja, 5 in het Nederlands                                                 & Ja, 11 in het Nederlands       & Ja, door specifieke componenten te gebruiken & Ja, 26 in het Nederlands               & Ja, grote lijst voor het Nederlands           \\  \hline
+        \textbf{Sentimentanalyse}                                      & Ja                                                                      & Ja                             & Ja                                           & Ja                                     & Ja                                            \\  \hline
+        \textbf{Integraties met bestaande diensten}                    & 3 + alles van IBM Cloud                                                 & 11 + alles van Microsoft Azure & 9                                            & 1, Facebook Messenger                  & 18 + Alles van Google Cloud                   \\  \hline
+        \textbf{Mogelijkheid tot integratie in eigen websites en apps} & Ja                                                                      & Ja                             & Ja                                           & Ja                                     & Ja                                            \\  \hline
+        \textbf{SDK's}                                                 & C\#, Go, Java, Node.js, Python, Ruby, Android, Swift, Unity, Salesforce & C\#, Node.js, Python           & Python                                       & Node.js, Python, Ruby, Go              & C\#, Go, Java, Node.js, PHP, Python, Ruby     \\  \hline
+        \textbf{Voorziet API om chatbot te gebruiken en beheren}       & Ja                                                                      & Ja                             & Ja                                           & Ja                                     & Ja                                            \\  \hline
+        \textbf{Voorziet hosting}                                      & Ja                                                                      & Ja                             & Nee                                          & Ja                                     & Ja                                            \\  \hline
+        \textbf{Spraakondersteuning}                                   & Ja                                                                      & Ja                             & Ja                                           & Ja                                     & Ja                                            \\  \hline
+        \textbf{All-in-one platform}                                   & Ja                                                                      & Nee, enkel NLU                 & Ja                                           & Nee, enkel NLU                         & Ja                                            \\  \hline
+        \textbf{Default fallback intent}                               & Ja                                                                      & Ja                             & Ja                                           & Nee                                    & Ja   \\ \hline    
+        \caption{Vergelijkende tabel van de platformen op basis van de officiële documentatie}                                    
+    \end{longtable}
+\label{tbl:platformen}
+\end{center}
 
 De platformen die hierboven besproken werden, werden ook al vaak in voorgaande studies met elkaar vergeleken. Daaruit bleken telkens andere platformen de bovenhand te nemen. Deze onderzoeken werden ook niet in het Nederlands gedaan, dus een nederlandse vergelijking anno 2020 is dan ook zeker niet overbodig.
 
