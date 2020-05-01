@@ -8,7 +8,7 @@
 \section{Intentherkenning zonder het gebruik van entities}
 \label{intent}
 
-Bij het eerste en belangrijkste experiment werden geen entities gebruikt in de dataset en werd puur beoordeeld op intentherkenning. Elk platform is uitgebreid getest door middel van 5-fold cross validation. Elk platform is dus 5 keer gebouwd, getraind en getest geweest om een objectief beeld te krijgen van hoe goed elk platform de juiste intent kan herkennen bij een specifieke input. Van alle resultaten werden confusion matrices opgesteld en werden de precision, recall en f-score berekend.
+Bij het eerste en belangrijkste experiment werden geen entities gebruikt in de dataset en werd puur beoordeeld op intentherkenning. Elk platform is uitgebreid getest door middel van 5-fold cross validation. Elk platform is dus 5 keer gebouwd, getraind en getest geweest om een objectief beeld te krijgen van hoe goed elk platform de juiste intent kan herkennen bij een specifieke input. Van alle resultaten werden confusion matrices opgesteld en werden de precision, recall en f-scores berekent.
 
 \begin{figure}[H]
     \label{fig:confusion-matrix-watson}
@@ -48,7 +48,7 @@ Bij het eerste en belangrijkste experiment werden geen entities gebruikt in de d
 \subsection{Onderlinge vergelijking}
 \label{subsec:intent-onderling}
 
-Op het eerste zicht valt het op dat er geen platform veel sterker presteert dan een andere. De gemiddelde resulaten van Wit.ai zijn de beste met eerstvolgende achtervolgers IBM Watson en Rasa. Die resultaten verschillen telkens maar 1 procent, dus dat is praktisch verwaarloosbaar. Dialogflow presteert wel duidelijk iets minder dan de andere 4 platformen. Daarnaast is het ook duidelijk dat er ook duidelijke verschillen zitten in de gemiddelde resultaten van de cycli zelf. De resultaten van cyclus 2 liggen duidelijk hoger dan de andere gemiddelden en cyclus 5 scoort duidelijk het slechtst. Dat is volledig te wijten aan toeval van hoe het algoritme de dataset verdeeld heeft tijdens de uitvoering van cross validation. Als laatste is het ook belangrijk om stil te staan bij de f-scores van de individuele intents. Daarbij valt het op dat bepaalde intents heel opmerkelijk slechter scoren in vergelijking met andere. Dat komt doordat de platformen vaak die intents die slechter scoren met elkaar ging verwisselen. Dat kan ook duidelijk worden vastgesteld in de verschillende confusion matrices.
+Op het eerste zicht valt het op dat er geen platform veel sterker presteert dan een andere. De gemiddelde resulaten van Wit.ai zijn de beste met eerstvolgende achtervolgers IBM Watson en Rasa. Die resultaten verschillen telkens maar 1 procent, dus dat is praktisch verwaarloosbaar. Dialogflow presteert wel duidelijk iets minder dan de andere 4 platformen. Daarnaast is het ook zichtbaar dat er ook duidelijke verschillen zitten in de gemiddelde resultaten van de cycli zelf. De resultaten van cyclus 2 liggen duidelijk hoger dan de andere gemiddelden en cyclus 5 scoort duidelijk het slechtst. Dat is volledig te wijten aan toeval van hoe het algoritme de dataset verdeeld heeft tijdens de uitvoering van cross validation. Als laatste is het ook belangrijk om stil te staan bij de f-scores van de individuele intents. Daarbij valt het op dat bepaalde intents opmerkelijk slecht scoren in vergelijking met andere. Dat komt doordat de platformen vaak die intents die slechter scoren met elkaar ging verwisselen. Dat kan ook duidelijk worden vastgesteld in de verschillende confusion matrices.
 
 \begin{center}
     \begin{longtable}{| l | l | l | l | l |  l | l |}
@@ -74,7 +74,7 @@ Op het eerste zicht valt het op dat er geen platform veel sterker presteert dan 
 
 \section{Intent-en-entityherkenning}
 
-Bij het tweede experiment werd gekeken naar hoe goed de platformen entities kunnen afleiden uit de input en hoe het zit met intentherkenning bij het gebruik van entities. Daarbij werd in tegenstelling tot het eerste experiment maar 1 iteratie uitgevoerd, omdat het eerste experiment het hoofdexperiment is van deze bachelorproef en daar dus extra aandacht aan besteed werd. 5 fold cross validation uitvoeren neemt erg veel tijd in beslag, daarom dat er een keuze moest gemaakt worden. Voor dit experiment werd de dataset door middel van een algoritme verdeeld in 2 delen, een dataset om te trainen (80\% van de data) en een dataset om te valideren (20\% van de data). Alle platformen werden getraind en gevalideerd op een manier dat er nu wel entities worden gebruikt. Uit de resultaten valt het meteen op dat de f-scores gemiddeld een pak hoger liggen dan bij het eerste experiment. Dit moet met een korrel zout genomen worden, doordat er maar 1 iteratie is en omdat er nieuwe train-en-test datasets gegenereerd zijn en dus door toeval ‘makkelijkere’ testzinnen kunnen gebruikt zijn. Bij deze resultaten is het duidelijk dat IBM watson de betere resultaten kan voorleggen en dat het in tegenstelling tot het vorige experiment Wit.ai is die het slechtste scoort.
+Bij het tweede experiment, werd gekeken naar hoe goed de platformen entities kunnen afleiden uit de input en hoe het zit met intentherkenning bij het gebruik van entities. Daarbij werd in tegenstelling tot het eerste experiment maar 1 iteratie uitgevoerd, omdat het eerste experiment het hoofdexperiment is van deze bachelorproef en daar dus extra aandacht aan besteed werd. 5 fold cross validation uitvoeren neemt erg veel tijd in beslag, daarom dat er een keuze moest gemaakt worden. Voor dit experiment werd de dataset door middel van een algoritme verdeeld in 2 delen, een dataset om te trainen (80\% van de data) en een dataset om te valideren (20\% van de data). Alle platformen werden getraind en gevalideerd op een manier dat ze nu wel entities bevatten. Uit de resultaten valt het meteen op dat de f-scores gemiddeld hoger liggen dan bij het eerste experiment. Dit moet met een korrel zout genomen worden, doordat er maar 1 iteratie is uitgevoerd en omdat er nieuwe train-en-test datasets gegenereerd zijn. Door toeval kunnen er ‘makkelijkere’ testzinnen gebruikt zijn. Bij deze resultaten is het duidelijk dat IBM Watson de betere resultaten kan voorleggen en dat het in tegenstelling tot het vorige experiment Wit.ai is die het slechtst scoort.
 
 
 \begin{center}
@@ -93,11 +93,11 @@ Bij het tweede experiment werd gekeken naar hoe goed de platformen entities kunn
 
 \subsection{Entityherkenning}
 
-Het belangrijkste deel van dit experiment is natuurlijk het valideren van de entitiyherkenning. Daarbij werd gebruik gemaakt van zowel systeementiteiten als van zelf gedefinieerde entiteiten. IBM Watson heeft tot op heden geen systeementiteit die locaties gaat herkennen in het nederlands, dat kon dus niet beoordeeld worden. Bij LUIS is het nog een pak erger, daar zijn er geen systeementiteiten in het nederlands voor het herkennen van locaties, datums en tijdstippen. Dit bestond vroeger wel, maar dat is stopgezet in december 2018. Er is een alternatief die op basis van machine learning alles gaat herkennen, maar dit bleek niet vlot te werken en dus geen resultaten op te leveren.
+Het belangrijkste deel van dit experiment is het valideren van de entitiyherkenning. Daarbij werd gebruik gemaakt van zowel systeementiteiten als van zelf gedefinieerde entiteiten. IBM Watson heeft tot op heden geen systeementiteit die locaties kan herkennen in het Nederlands, dat kon dus niet beoordeeld worden. Bij LUIS is het nog een stuk erger, daar zijn er geen systeementiteiten in het Nederlands voor het herkennen van locaties, datums en tijdstippen. Dit bestond vroeger wel, maar dat is stopgezet in december 2018. Er is een alternatief die op basis van machine learning alles zou herkennen, maar dit bleek niet vlot te werken en dus geen resultaten op te leveren.
 
 Door deze tekorten liggen de scores van beide platformen voor entityherkenning een stuk lager, maar op de andere entities scoren ze wel aanzienlijk goed. 
 
-Uit de resultaten valt het meteen op dat Wit.ai de grote winnaar is bij het herkennen van parameterwaarden. Ook in de grafiek waarbij de scores per entity worden voorgesteld is het duidelijk. Wit.ai scoort op elke entieit minstens even goed of een pak beter dan zijn concurrenten.
+Uit de resultaten valt het meteen op dat Wit.ai de grote winnaar is bij het herkennen van parameterwaarden. Ook in de grafiek waarbij de scores per entity worden voorgesteld is het duidelijk. Wit.ai scoort op elke entiteit minstens even goed of een stuk beter dan zijn concurrenten.
 
 \begin{center}
     \begin{longtable}{| l | l |}
@@ -122,9 +122,9 @@ Uit de resultaten valt het meteen op dat Wit.ai de grote winnaar is bij het herk
 
 \section{Invloed van spelling op Intent-en-entityherkenning}
 
-Als laatste werd er gekeken naar hoe goed de platformen intents en entities kunnen herkennen als er een aanzienlijke hoeveelheid taalfouten in staan. Dit is delicaat om te valideren omdat we met te kleine datasets werken om een volledig beeld te kunnen geven. Het is daarom ook slechts een indicatie van hoe goed de platformen hiermee omgaan. Er werden zowel taalfouten in intents als in entities beoordeeld. Opnieuw werd er slechts 1 iteratie uitgevoerd met dezelfde reden als voorgaande experiment. Er werd gebruik gemaakt van dezelfde datasets als bij het vorige experiment om een vergelijking te kunnen maken.
+Als laatste werd er gekeken naar hoe goed de platformen intents en entities kunnen herkennen als er een aanzienlijke hoeveelheid taalfouten in staan. Dit is delicaat om te valideren, omdat we met te kleine datasets werken om een volledig beeld te kunnen geven. Het is daarom ook slechts een indicatie van hoe goed de platformen hiermee omgaan. Er werden zowel taalfouten in intents als in entities beoordeeld. Opnieuw werd er slechts 1 iteratie uitgevoerd met dezelfde reden als voorgaand experiment. Er werd gebruik gemaakt van dezelfde datasets als bij het vorige experiment om een vergelijking te kunnen maken.
 
-Wat opvalt is dat de resultaten van intentherkenning duidelijk lager als er spellingsfouten gemaakt worden. Daarbij blijft IBM Watson wel het beste scoren. De sterkste daling in resultaten kunnen we vinden bij Dialogflow, die 22\% lager scoort.
+Wat opvalt is dat de resultaten van intentherkenning duidelijk lager liggen als er spellingsfouten gemaakt worden. Daarbij blijft IBM Watson wel het beste scoren. De sterkste daling in resultaten kunnen we vinden bij Dialogflow, die 22\% lager scoort.
 
 \begin{center}
     \begin{longtable}{| l | l |}
@@ -142,7 +142,7 @@ Wat opvalt is dat de resultaten van intentherkenning duidelijk lager als er spel
 
 \subsection{Entityherkenning}
 
-Opnieuw werden ook de prestaties van entityherkenning in acht genomen. Daarbij gelden dezelfde limitaties als vorig experiment van IBM Watson en LUIS. Hierbij liggen de resultaten ook gemiddeld lager dan voordien. De grote winnaar blijft immers wel Wit.ai die nog steeds heel erg goede resultaten kan voorleggen. De grootste dalers zijn Rasa en Dialogflow die respectievelijk dalen met 34\% en 27\%.
+Opnieuw werden ook de prestaties van entityherkenning in acht genomen. Daarbij gelden dezelfde limitaties als vorig experiment van IBM Watson en LUIS. Hierbij liggen de resultaten ook gemiddeld lager dan voordien. De grote winnaar blijft immers wel Wit.ai, die nog steeds heel erg goede resultaten kan voorleggen. De grootste dalers zijn Rasa en Dialogflow die respectievelijk dalen met 34\% en 27\%.
 
 \begin{center}
     \begin{longtable}{| l | l |}
