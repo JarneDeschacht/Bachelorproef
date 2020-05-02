@@ -3,7 +3,7 @@
 
 In het vorig hoofdstuk werd deze bachelorproef al kort ingeleid. In dit hoofdstuk zal de huidige kennis binnen dit onderzoeksdomein verder besproken worden.
 
-In sectie \ref{sec:chatbots} zal er besproken worden wat chatbots zijn, welke soorten er bestaan, wat de voor -en nadelen zijn, wat de verbeterpunten en toekomstmogelijkheden zijn en hoe chatbots er voor staan op het vlak van beveiliging en hoe dit verbeterd kan worden.
+In sectie \ref{sec:chatbots} zal er besproken worden wat chatbots zijn, welke soorten er bestaan, wat de voor -en nadelen zijn, wat de verbeterpunten en toekomstmogelijkheden zijn en hoe chatbots er nu voorstaan op het vlak van beveiliging en hoe dit verbeterd kan worden.
 
 In sectie \ref{sec:nlp} wordt er ingezoomd op Natural Language Processing en de subdomeinen NLU en NLG.
 
@@ -19,7 +19,7 @@ In sectie \ref{sec:nlp-platformen} zullen de interessantste platformen kort geï
 \subsubsection{Rule-based chatbot}
 \label{subsubsec:chatbots-soorten-rule-based-chatbot}
 
-Dit is de eenvoudigste en het traagste type chatbot. Deze bot bevat geen machine learning of artificiële intelligentie, maar werkt op basis van voorgeprogrammeerde regels. Bij dit type kan je enkel communiceren via een vaste selectie vragen en bevelen. Bij antwoord van de chatbot, kun je ook enkel terug antwoorden door uit een lijst van mogelijke antwoorden te kiezen. Dit type zorgt voor weinig vrijheid, waardoor het enkel goed is voor basis klantvragen. Doordat alles manueel geprogrammeerd moet worden, is het ook telkens veel werk om nieuwe regels toe te voegen en de functionaliteit uit te breiden. Indien je een bericht stuurt naar deze bot die hij niet kent, dan weet hij ook gewoonweg niet wat hij ermee moet doen. Het grote voordeel van dit type is dat hij altijd accuraat antwoord geeft, net doordat alles voorgedefinieerd is. Binnen deze bachelorproef zullen chatbots van dit type niet onderzocht en verder toegelicht worden.
+Dit is het eenvoudigste, maar het traagste type chatbot. Deze bot bevat geen machine learning of artificiële intelligentie, maar werkt op basis van voorgeprogrammeerde regels. Bij dit type kan je enkel communiceren via een vaste selectie vragen en bevelen. Bij antwoord van de chatbot, kun je ook enkel terug antwoorden uit een beperkt aantal mogelijke antwoorden uit een lijst. Dit type zorgt voor weinig vrijheid, waardoor het enkel inzetbaar is voor basis klantvragen. Doordat alles manueel geprogrammeerd moet worden, is het telkens veel werk om nieuwe regels toe te voegen en de functionaliteit uit te breiden. Indien je een bericht stuurt naar deze bot die hij niet kent, dan weet hij ook niet wat hij hiermee moet doen. Het grote voordeel van dit type is dat hij altijd accuraat antwoord geeft, net doordat alles voorgedefinieerd is. Binnen deze bachelorproef zullen chatbots van dit type niet verder onderzocht en toegelicht worden.
 
 \begin{figure}[!htbp]
     \label{fig:rule-based-chatbot-example}
@@ -32,7 +32,7 @@ Dit is de eenvoudigste en het traagste type chatbot. Deze bot bevat geen machine
 \label{subsubsec:chatbots-soorten-ml-based-chatbot}
 
 
-Dit type chatbot wordt ook wel de NLP-chatbot of de AI-powered chatbot genoemd. Bij deze soort wordt in tegenstelling tot de rule-based chatbot wel sterk gebruik gemaakt van artificiële intelligentie en machine learning. De bot kan vragen beantwoorden die hij nog nooit eerder heeft gehoord en elimineert dus de limitatie van het rule-based type. NLP-chatbots leren van voorgaande taken en maken op die manier zichzelf slimmer en breiden hun kennis uit. Ze gebruiken ook speciale functies en algoritmes om de zinnen echt te verstaan en verder te verwerken. Dit type biedt de gebruiker veel meer vrijheid, maar is moeilijker om te ontwikkelen. De accuraatheid van deze soort is dan ook gemiddeld lager. Binnen deze bachelorproef zal de focus enkel liggen op chatbots van dit type. Wanneer er gesproken wordt over chatbots of gewoonweg bots, wordt er steeds een chatbot van dit type bedoeld.
+Dit type chatbot wordt ook wel de NLP-chatbot of de AI-powered chatbot genoemd. Bij deze soort wordt in tegenstelling tot de rule-based chatbot wel sterk gebruik gemaakt van artificiële intelligentie en machine learning. De bot kan vragen beantwoorden die hij nog nooit eerder heeft gekregen en elimineert dus de limitatie van het rule-based type. NLP-chatbots leren van voorgaande taken en maken zichzelf op deze manier slimmer en breiden hun kennis uit. Ze gebruiken ook speciale functies en algoritmes om de zinnen beter te verstaan en verder te verwerken. Dit type biedt de gebruiker veel meer vrijheid, maar is moeilijker om te ontwikkelen. De accuraatheid van deze soort is dan ook gemiddeld lager. Binnen deze bachelorproef zal de focus enkel liggen op chatbots van dit type. Wanneer er gesproken wordt over chatbots of gewoonweg bots, wordt er steeds een chatbot van dit type bedoeld.
 
 \subsection{Voor- en nadelen}
 \label{subsec:chatbots-voor-en-nadelen}
@@ -43,23 +43,23 @@ Dit type chatbot wordt ook wel de NLP-chatbot of de AI-powered chatbot genoemd. 
 \begin{itemize}
     \item \textbf{Menselijke taken overnemen:} \\
     
-    Chatbots worden ingezet voor heel wat verschillende toepassingen en kunnen menselijke taken overnemen. Een voorbeeld hiervan is reminders sturen van de agenda van een persoon, zodat hij zelf niet meer hoeft te kijken wanneer hij bijvoorbeeld een meeting heeft. Chatbots nemen ook veel werk van de werknemers van klantendiensten en callcenters over door de grote hoeveelheid mensen die er kunnen geholpen en bereikt worden op hetzelfde moment. \\
+    Chatbots worden ingezet voor heel wat verschillende toepassingen en kunnen menselijke taken overnemen. Een voorbeeld hiervan is reminders sturen naar een persoon uit zijn agenda. Zo hoeft die persoon niet meer te kijken wanneer hij bijvoorbeeld een meeting heeft. Chatbots nemen ook werk van de werknemers van klantendiensten en callcenters over, door de grote hoeveelheid mensen die er kunnen geholpen en bereikt worden op hetzelfde moment. Menselijke werknemers kunnen maar 1 persoon op hetzelfde moment verder helpen, bij chatbots is er geen limitatie op het aantal conversaties op hetzelfde moment. \\
     
     \item \textbf{Snellere interactie tussen onderneming en klant:} \\
     
-    Uit een studie van \textcite{Social2016} blijkt dat klanten er van uit gaan dat er binnen de 4 uur een antwoord wordt gegeven als er contact wordt opgenomen met de klantenservice via social media. Nu blijkt dat er in de realiteit een gemiddelde van 10 uur tussen zit, voordat er een antwoord wordt gegeven. Dit probleem wordt met chatbots onmiddellijk opgelost, omdat er real-time communicatie is tussen klant en bedrijf. Er wordt direct een antwoord gegeven en dat heeft een positieve invloed op de tevredenheid van klanten en het succes van ondernemingen. \\
+    Uit een studie van \textcite{Social2016} blijkt dat klanten er van uit gaan dat er binnen de 4 uur een antwoord wordt gegeven als er contact wordt opgenomen met de klantenservice via social media. Nu blijkt dat er in de realiteit een gemiddelde van 10 uur tussen zit voordat er een antwoord wordt gegeven. Dit probleem wordt met chatbots opgelost, omdat er real-time communicatie is tussen klant en bedrijf. Er wordt direct een antwoord gegeven en dat heeft een positieve invloed op de tevredenheid van klanten en het succes van ondernemingen. \\
     
     \item \textbf{Herkenbare interface:} \\
     
-    Mensen zijn tegenwoordig volledig thuis binnen de verschillende messaging apps (Facebook, WhatsApp, Slack, …), omdat veel mensen het dag in dag uit gebruiken om te communiceren met vrienden, familie en collega’s. Chatbots bieden een conversationele interface aan die heel erg gelijklopend is met de interface waarmee mensen comfortabel zijn. Soms zijn ze zelf volledig hetzelfde, bijvoorbeeld door een integratie met Facebook, WhatsApp of Slack. Doordat het herkenbaar overkomt, zullen mensen niet twijfelen om er gebruik van te maken. \\
+    Mensen zijn tegenwoordig volledig thuis binnen de verschillende messaging apps (Facebook, WhatsApp, Slack, …), omdat veel mensen het dag in dag uit gebruiken om te communiceren met vrienden, familie en collega’s. Chatbots bieden een conversationele interface aan die heel erg gelijklopend is met de interface waarmee mensen comfortabel zijn. Soms zijn ze zelf volledig hetzelfde, bijvoorbeeld door een integratie met Facebook, WhatsApp of Slack. Doordat het vertrouwd overkomt, zullen mensen minder twijfelen om er gebruik van te maken. \\
     
     \item \textbf{Altijd beschikbaar:} \\
     
-    Doordat chatbots geautomatiseerde gesprekspartners zijn, werken ze de hele dag door zonder vakanties te nemen en zonder ziek te vallen. Dit biedt voor gebruikers de mogelijkheid om eender wanneer op de dag gebruik te maken van deze systemen. \\
+    Doordat chatbots geautomatiseerde gesprekspartners zijn, kunnen ze een hele dag doorwerken zonder onderbrekingen. Dit biedt voor gebruikers de mogelijkheid om eender wanneer op de dag gebruik te maken van deze systemen. \\
     
     \item \textbf{Kosten besparen:} \\
     
-    Zonder een chatbot, krijgt een bedrijf vaak dezelfde standaardvragen van klanten. Om al deze vragen te beantwoorden zijn werknemers nodig. Personeel moet natuurlijk ook betaald worden en werknemers kunnen menselijke fouten maken. Door het implementeren van een bot, is er een aanzienlijke hoeveelheid werk die geautomatiseerd wordt en dus geen menselijke acties meer vereisen. Op die manier kan een bedrijf op kosten besparen. \\
+    Zonder een chatbot krijgt een bedrijf vaak dezelfde standaardvragen van klanten. Om al deze vragen te beantwoorden zijn werknemers nodig. Personeel moet natuurlijk betaald worden en werknemers kunnen menselijke fouten maken. Door het implementeren van een bot, is er een aanzienlijke hoeveelheid werk die geautomatiseerd wordt en dus geen menselijke acties meer vereisen. Op die manier kan een bedrijf op kosten besparen. \\
     
     \item \textbf{Data gebruiken voor verbeteringen:} \\
     
@@ -73,36 +73,36 @@ Dit type chatbot wordt ook wel de NLP-chatbot of de AI-powered chatbot genoemd. 
 \begin{itemize}
     \item \textbf{Extra mogelijkheden voor cybercriminelen:} \\
     
-    Mensen sturen regelmatig gevoelige informatie naar chatbots zoals kredietkaartgegevens, betalingsinformatie en wachtwoorden. Dit biedt voor cybercriminelen nieuwe mogelijkheden om deze informatie te onderscheppen en te misbruiken. Het is belangrijk dat er hier de nodige aandacht aan besteed wordt. \\
+    Mensen sturen regelmatig gevoelige informatie naar chatbots zoals kredietkaartgegevens, betalingsinformatie en wachtwoorden. Dit biedt voor cybercriminelen nieuwe mogelijkheden om deze informatie te onderscheppen en te misbruiken. Het is belangrijk dat er hier de nodige aandacht aan besteed wordt voor de veiligheid van de consument. \\
     
     \item \textbf{Kan uit de hand lopen bij slechte supervisie:} \\
     
-    Bots gaan leren van de informatie die ze krijgen toegestuurd om zichzelf slimmer te maken. Dit betekent dat het belangrijk is dat wij als mensen goed monitoren wat er allemaal gebeurt, zodat niets uit de hand loopt. Een voorbeeld van slechte supervisie is de twitterbot Tay die in 2016 werd ontworpen door Microsoft als een experiment. Mensen stuurden deze chatbot racistische informatie door en na minder dan een dag stuurde de bot zelf racistische tweets de wereld in. Kort daarna werd het experiment stopgezet \autocite{Vincent2016}. \\
+    Bots gaan zichzelf slimmer maken aan de hand van de informatie die ze toegestuurd krijgen. Dit betekent dat het belangrijk is dat wij, als mensen, goed monitoren wat er allemaal gebeurt, zodat niets uit de hand loopt. Een voorbeeld van slechte supervisie is de twitterbot Tay die in 2016 werd ontworpen door Microsoft als een experiment. Mensen stuurden deze chatbot racistische informatie door en na minder dan een dag stuurde de bot zelf racistische tweets de wereld in. Kort daarna werd het experiment stopgezet \autocite{Vincent2016}. \\
     
 \end{itemize}
 
 \subsection{Verbetermogelijkheden}
 \label{subsec:verbetermogelijkheden}
 
-Volgens \textcite{Hussain2019} zijn er nog veel verbeterpunten mogelijk op het vlak van chatbots. Zo zou er meer focus moeten liggen op het beter verstaan van taalkundige elementen door bijvoorbeeld emotionele-en sentimentanalyses uit te voeren. Chatbots zijn geen menselijke gesprekspartners en hebben daardoor dus ook geen emoties, maar emoties kunnen wel belangrijk zijn om een conversatie goed te laten verlopen. Tegenwoordig wordt hier sterk op ingezet, maar tot op het heden, staat dit nog niet op punt. Er zou ook een betere standaard moeten zijn om de kwaliteit van chatbots te testen.
+Volgens \textcite{Hussain2019} zijn er nog veel verbeterpunten mogelijk op het vlak van chatbots. Zo zou er meer focus moeten liggen op het beter verstaan van taalkundige elementen door bijvoorbeeld emotionele-en sentimentanalyses uit te voeren. Chatbots zijn geen menselijke gesprekspartners en hebben daardoor dus ook geen empathie, maar empathie kan belangrijk zijn om een conversatie goed te laten verlopen. Tegenwoordig wordt hier sterk op ingezet, maar tot op het heden, staat dit nog niet op punt. Er zou ook een betere standaard moeten zijn om de kwaliteit van chatbots te testen.
 
 Een eerder onderzoek heeft aangetoond dat mensen anders communiceren als ze weten dat ze met een machine converseren. Zo zouden mensen hun taal aanpassen als ze tegen een chatbot praten, zoals mensen ook doen als ze bijvoorbeeld tegen een kind bezig zijn \autocite{Hill2015}. Het is uiteindelijk de bedoeling dat mensen niet weten ofdat ze tegen een chatbot praten of niet. Op die manier zullen ze hun taal niet aanpassen en zal het meest optimale resultaat behaald worden. 
 
-Er zijn ook nog heel wat scenario’s waarbij chatbots geen gunstige antwoorden geven. Volgens \textcite{BRAIN2019} verstaan chatbots in 59\% van de gevallen regelmatig berichten niet zoals gehoopt en worden in 29\% van de gevallen accenten of taalvariaties niet goed verstaan. Er is dus zeker nog progressie nodig om het maximale uit chatbots te halen.
+Er zijn ook nog heel wat scenario’s waarbij chatbots geen gunstige antwoorden geven. Volgens \textcite{BRAIN2019} verstaan chatbots in 59\% van de gevallen regelmatig de berichten niet zoals gehoopt en worden in 29\% van de gevallen accenten of taalvariaties niet correct verstaan. Er is dus zeker nog progressie nodig om het maximale uit chatbots te halen.
 
 \subsection{Toekomstperspectief}
 \label{subsec:toekomstperspectief}
 
-Chatbots hebben nog veel groeimarge en zullen in de toekomst nog een stevigere marktpositie innemen. Volgens \textcite{Andreoli2017} is er een enorm potentieel voor conversationele banking. We komen in een tijdperk waarbij chatbots en messaging applicaties zoals Facebook Messenger, WhatsApp, … enorme populariteit verkrijgen, zelfs meer dan sociale media. De banking industrie moet mee in dat tijdperk, omdat chatbots bidirectionele interactie ondersteunen in real-time voor klanten, perfect geschikt zijn voor mobiele toestellen en zeer goed geïntegreerd kunnen worden in de verschillende messaging apps. 
+Chatbots hebben veel groeimarge en zullen in de toekomst nog een stevigere marktpositie innemen. Volgens \textcite{Andreoli2017} is er potentieel voor conversationele banking. We komen in een tijdperk waarbij chatbots en messaging applicaties zoals Facebook Messenger, WhatsApp, … enorme populariteit verkrijgen, zelfs meer dan sociale media. De banking industrie moet mee in dat tijdperk, omdat chatbots bidirectionele interactie ondersteunen in real-time voor klanten, perfect geschikt zijn voor mobiele toestellen en zeer goed geïntegreerd kunnen worden in de verschillende messaging apps. Door in te spelen op deze technologieën, zullen banken meer klanten kunnen bereiken dan voordien.
 
-Verder zullen chatbots volgens \textcite{Patel2020} ook op kwalitatief vlak sterk groeien in de toekomst. Zo zullen er betere sentimentanalyses uitgevoerd worden om beter de emotie van klanten in te schatten en gepast te verwerken en op te antwoorden. Chatbots zullen ook beter in staat moeten zijn om dialecten en accenten goed op te vangen. Verder zullen ze in de komende jaren ook meer en meer deel worden van ons dagelijkse leven.  
+Verder zullen chatbots volgens \textcite{Patel2020} ook op kwalitatief vlak sterk groeien in de toekomst. Zo zullen er betere sentimentanalyses uitgevoerd worden om beter de emotie van klanten in te schatten en gepast te verwerken zodat chatbots meer aangepaste antwoorden kunnen geven. Chatbots zullen ook beter in staat moeten zijn om dialecten en accenten goed op te vangen. Verder zullen ze in de komende jaren ook meer en meer deel worden van ons dagelijkse leven.  
 
-Chatbots zullen zich in de toekomst ook meer en meer gedragen als mensen, waardoor het onderscheiden van bots en echte gesprekspartners moeilijker wordt. Tegenwoordig gedragen bots zich nog vaak oppervlakkig en hebben ze geen persoonlijkheid, daardoor komen ze onnatuurlijk over. Facebook is op dit moment sterk aan het inzetten op het geven van een echte persoonlijkheid aan hun chatbots. Daardoor zullen hun chatbots zich gedragen als een echt persoon met specifieke karaktereigenschappen \autocite{Carey-Simos2018}.
+Chatbots zullen zich in de toekomst ook meer gedragen als mensen, waardoor het onderscheiden van bots en echte gesprekspartners moeilijker wordt. Tegenwoordig gedragen bots zich nog vaak oppervlakkig en hebben ze geen persoonlijkheid, waardoor ze onnatuurlijk overkomen. Facebook is op dit moment sterk aan het inzetten op het geven van een echte persoonlijkheid aan hun chatbots. Daardoor zullen hun chatbots zich gedragen als een echt persoon met specifieke karaktereigenschappen \autocite{Carey-Simos2018}.
 
 \subsection{Security}
 \label{subsec:security}
 
-Chatbots beloven veel voordelen, maar er is ook redelijk wat speculatie rond de veiligheid van deze systemen. Chatbots bieden voor cybercriminelen nieuwe manieren aan om data te onderscheppen van gebruikers. Veel data die circuleert tussen mens en bot zijn niet gevoelig, maar soms kunnen kredietkaartgegevens, logingegevens en dergelijke wel passeren. Deze data mag natuurlijk niet onderschept worden, want dat zou problemen veroorzaken als die data in de verkeerde handen komt. Organisaties maken zich zorgen over hoe veilig chatbots zijn, waar informatie opgeslagen wordt en hoe alles beveiligd wordt \autocite{Shanbhag2018}.
+Chatbots beloven veel voordelen, maar er is ook enige bezorgdheid rond de veiligheid van deze systemen. Chatbots bieden voor cybercriminelen nieuwe manieren aan om data te onderscheppen van gebruikers. Veel data die circuleert tussen mens en bot zijn niet gevoelig, maar soms kunnen kredietkaartgegevens, logingegevens en dergelijke wel passeren. Deze data mag natuurlijk niet onderschept worden, want dat zou problemen kunnen veroorzaken. Organisaties maken zich zorgen over de veiligheid van chatbots, waar informatie opgeslagen wordt en hoe alles beveiligd wordt \autocite{Shanbhag2018}.
 
 
 Volgens \textcite{Shanbhag2018} zijn er een aantal manieren om de veiligheid van chatbots te verbeteren:
@@ -114,11 +114,11 @@ Volgens \textcite{Shanbhag2018} zijn er een aantal manieren om de veiligheid van
     
     \item \textbf{Two-factor authenticatie:} \\
     
-    De identiteit van chatbotgebruikers moet bevestigd worden door twee verschillende kanalen. Voorbeelden van deze kanalen zijn webpagina’s, sms’en, vingerafdruk, etc. \\
+    De identiteit van de chatbotgebruikers moet bevestigd worden door twee verschillende kanalen. Voorbeelden van deze kanalen zijn webpagina’s, sms’en, vingerafdruk, etc. Deze techniek wordt tegenwoordig vaak gebruikt in veel verschillende toepassingen. Een voorbeeld hiervan is dat je bij het aanmelden op Google eerst een code moet ingeven die je via sms hebt ontvangen. \\
     
     \item \textbf{Authenticatie timeouts:} \\
     
-    Gebruikers worden automatisch uitgelogd als ze een bepaalde tijd inactief zijn. \\
+    Gebruikers worden automatisch uitgelogd als ze voor een bepaalde tijd inactief zijn. \\
     
     \item \textbf{Biometrische authenticatie:} \\
     
@@ -126,7 +126,7 @@ Volgens \textcite{Shanbhag2018} zijn er een aantal manieren om de veiligheid van
     
     \item \textbf{Self-destructing messages:} \\
     
-    Gevoelige data die wordt verstuurd over het kanaal, wordt na een bepaalde tijd vernietigd en wordt dus niet meer bijgehouden. \\
+    Gevoelige data die wordt verstuurd over het kanaal, wordt niet bijgehouden en kan dus niet onderschept worden. \\
 \end{itemize}
 
 Een aantal van deze technieken worden in de meeste chatbots automatisch toegepast.
@@ -138,21 +138,21 @@ Een aantal van deze technieken worden in de meeste chatbots automatisch toegepas
 \subsection{Natural Language Understanding (NLU)}
 \label{subsec:nlp-nlu}
 
-Natural Language Understanding is een onderdeel van NLP en is een techniek die verantwoordelijk is om aan de hand van algoritmes, machines menselijke taal (tekst of spraak) te leren verstaan en interpreteren. NLU gebruikt vele technieken zoals sentiments-en-contextuele analyses en gaat ook de relatie tussen woorden in zinnen achterhalen. Ook slecht gevormde zinnen en woorden moeten verstaan worden. Het doel van NLU is om de intentie van de berichten te achterhalen. Daarbij is NLU ook verantwoordelijk om de juiste parameters/entities te extraheren uit zinnen. Intenties kunnen op veel verschillende manieren geformuleerd worden. Bijvoorbeeld, de zin “welk weer is het buiten”,  kun je op honderden manieren formuleren, maar de intentie blijft steeds hetzelfde, namelijk te weten komen welk weer het is.
+Natural Language Understanding is een onderdeel van NLP en is een techniek die verantwoordelijk is om machines de menselijke taal te leren verstaan en interpreteren aan de hand van algoritmes. NLU gebruikt veel technieken zoals sentiments-en-contextuele analyses en gaat ook de relatie tussen woorden in zinnen achterhalen. Ook slecht gevormde zinnen en woorden moeten verstaan worden. Het doel van NLU is om de intentie van de berichten te achterhalen. Daarbij is NLU ook verantwoordelijk om de juiste parameters/entities te extraheren uit zinnen. Intenties kunnen op veel verschillende manieren geformuleerd worden. Bijvoorbeeld, de zin “welk weer is het buiten”,  kun je op verschillende manieren formuleren, maar de intentie blijft hetzelfde, namelijk weten welk weer het is.
 
 
 \subsection{Natural Language Generation (NLG)}
 \label{subsec:nlp-nlg}
 
 
-Natural Language Generation is een ander onderdeel van NLP en is een techniek waarbij structurele data (input) wordt omgezet in natural language, dat is menselijke taal. Menselijke tekst of spraak wordt dus gegenereerd door machines. In deze bachelorproef zal er niet verder worden ingegaan op NLG, maar zal de focus enkel liggen op het begrijpend vermogen van de chatbots (NLU).
+Natural Language Generation is een ander onderdeel van NLP en is een techniek waarbij structurele data (input) wordt omgezet in natural language (menselijke taal). Menselijke tekst of spraak wordt dus gegenereerd door machines. In deze bachelorproef zal er niet verder worden ingegaan op NLG, maar zal de focus liggen op het begrijpend vermogen van de chatbots (NLU).
 
 
 \subsection{NLP vs NLU}
 \label{subsec:nlp-nlp-vs-nlu}
 
 
-De termen NLP en NLU worden vaak met elkaar verward en door elkaar gebruikt. NLU is een onderdeel van NLP en bij het verstaan van menselijke tekst, zal NLP kijken naar wat er is gezegd, terwijl NLU zal kijken naar wat er is bedoeld. NLP kan tekst en spraak analyseren en verschillende technieken toepassen met de bedoeling om menselijke input (ongestructureerde data) om te zetten in structurele data, maar de bedoeling/intentie van berichten achterhalen, is een specifieke taak van NLU. 
+De termen NLP en NLU worden vaak met elkaar verward en door elkaar gebruikt, NLU is een onderdeel van NLP. Bij het verstaan van menselijke tekst, zal NLP kijken naar wat er is gezegd, terwijl NLU zal kijken naar wat er is bedoeld. NLP kan tekst en spraak analyseren en technieken toepassen met de bedoeling om menselijke input (ongestructureerde data) om te zetten in structurele data, maar de bedoeling/intentie van berichten achterhalen, is een specifieke taak van NLU. 
 
 \begin{figure}[!htbp]
     \label{fig:nlp-nlu-nlg}
