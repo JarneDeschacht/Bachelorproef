@@ -163,7 +163,7 @@ Het is mogelijk om contexten toe te voegen aan de intents, dat wordt gebruikt om
     \caption{Het toevoegen van contexten in een intent in Dialogflow}
 \end{figure}
 
-Aangezien er heel wat systeementiteiten zijn voorzien in Dialogflow, kan het zijn dat het niet meteen nodig is om zelf entities aan te maken, maar het is wel mogelijk. Bij het aanmaken van een entiteit kunnen verschillende waarden toegevoegd worden om de agent deze entiteit te doen herkennen bij user input. Er kunnen synoniemen gegeven worden en er is ook de mogelijkheid om een specifiek patroon op te geven waarvoor een entiteit herkent wordt in zinnen. De gemaakte entiteiten kunnen dan net zoals systeementiteiten toegevoegd worden aan voorbeeldzinnen in de intents.
+Aangezien er heel wat systeementiteiten zijn voorzien in Dialogflow, kan het zijn dat het niet meteen nodig is om zelf entities aan te maken, maar het is wel mogelijk. Bij het aanmaken van een entiteit kunnen verschillende waarden toegevoegd worden om de agent deze entiteit te doen herkennen bij user input. Er kunnen synoniemen gegeven worden en er is een mogelijkheid om een specifiek patroon op te geven waarvoor een entiteit herkend wordt in zinnen. De gemaakte entiteiten kunnen dan net zoals systeementiteiten toegevoegd worden aan voorbeeldzinnen in de intents.
 
 \begin{figure}[H]
     \label{fig:dialogflow-entity}
@@ -172,7 +172,7 @@ Aangezien er heel wat systeementiteiten zijn voorzien in Dialogflow, kan het zij
     \caption{Het aanmaken en beheren van een entiteit in Dialogflow}
 \end{figure}
 
-Met Dialogflow is het ook mogelijk om voorgaande berichten van eindgebruikers te valideren, zodat die zinnen gebruikt kunnen worden als extra voorbeeldzinnen bij de intents. Op deze manier wordt de agent steeds slimmer doorheen zijn levensloop. Het is ook mogelijk om een intentclassificatie te weigeren en ook om de herkende intent te wijzigen en toch goed te keuren. 
+Met Dialogflow is het mogelijk om voorgaande berichten van eindgebruikers te valideren, zodat die zinnen gebruikt kunnen worden als extra voorbeeldzinnen bij de intents. Op deze manier wordt de agent steeds slimmer doorheen zijn levensloop. Het is ook mogelijk om een intentclassificatie te weigeren en ook om de herkende intent te wijzigen en toch goed te keuren. 
 
 \begin{figure}[H]
     \label{fig:dialogflow-validate}
@@ -181,9 +181,9 @@ Met Dialogflow is het ook mogelijk om voorgaande berichten van eindgebruikers te
     \caption{Het valideren van user input om het model uit te breiden in Dialogflow}
 \end{figure}
 
-Dialogflow is eenvoudig te integreren met andere diensten. Het enige dat je als ontwikkelaar moet doen is de integratie aanzetten en dan komt er informatie beschikbaar die uitlegt wat je precies moet doen om het te activeren. Het is ook mogelijk om zelf een applicatie te schrijven die gebruik maakt van de API van Dialogflow.
+Dialogflow is eenvoudig te integreren met andere diensten. Het enige dat je hiervoor als ontwikkelaar moet doen is de integratie aanzetten. Er komt dan informatie beschikbaar op het scherm die uitlegt wat je precies moet doen om het te activeren. Het is ook mogelijk om zelf een applicatie te schrijven die gebruik maakt van de API van Dialogflow.
 
-De chatbot testen kan ook via de user interface (UI) gebeuren. Dit kan worden gedaan door een bericht te sturen naar de ingebouwde conversatiemodule. Bij het sturen van een bericht krijg je informatie over welke intent is herkent, wat het antwoord is en welke paramaters herkent werden. Het is ook mogelijk om meer gedetailleerde resultaten te zien. Opnieuw zal er in deze bachelorproef geen speciale aandacht besteed worden aan het antwoorden naar gebruikers.
+De chatbot testen kan via de user interface (UI) gebeuren, dit kan worden gedaan door een bericht te sturen naar de ingebouwde conversatiemodule. Bij het sturen van een bericht krijg je informatie over welke intent is herkend, wat het antwoord is en welke paramaters herkend werden. Het is ook mogelijk om meer gedetailleerde resultaten te zien. Opnieuw zal er in deze bachelorproef geen speciale aandacht besteed worden aan het antwoorden naar gebruikers.
 
 \begin{figure}[H]
     \label{fig:dialogflow-test}
@@ -195,7 +195,7 @@ De chatbot testen kan ook via de user interface (UI) gebeuren. Dit kan worden ge
 \subsection{IBM Watson}
 \label{subsec:werking-platformen-ibm-watson}
 
-IBM Watson is het chatbotplatform die ontwikkeld is door IBM. Het is een onderdeel van IBM cloud en is zeer goed vergelijkbaar met Google Cloud. Ze bieden ongeveer dezelfde functionaliteiten aan. Om een chatbot op te zetten heb je enkel een IBM Cloud account nodig. IBM Watson is gekend voor zijn zeer gebruiksvriendelijke grafische user interface (GUI) en voor de snelheid waarmee een chatbot ontwikkeld kan worden. IBM Watson biedt ook analysemogelijkheden aan op hun chatbotplatform en gebruikt de naam assistent voor zijn chatbots. het aanmaken van een assistent is heel erg eenvoudig. Een naam en een beschrijving is het enige dat gevraagd wordt om een assistent aan te maken.
+IBM Watson is het chatbotplatform die ontwikkeld is door IBM. Het is een onderdeel van IBM cloud en is goed vergelijkbaar met Google Cloud, want ze bieden ongeveer dezelfde functionaliteiten aan. Om een chatbot op te zetten heb je enkel een IBM Cloud account nodig. IBM Watson is gekend voor zijn zeer gebruiksvriendelijke grafische user interface (GUI) en voor de snelheid waarmee een chatbot ontwikkeld kan worden. IBM Watson biedt ook analysemogelijkheden aan op hun chatbotplatform en gebruikt de naam 'assistent' voor hun chatbots. Het aanmaken van een assistent is heel eenvoudig, want er wordt enkel een naam en een beschrijving gevraagd.
 
 \begin{figure}[H]
     \label{fig:watson-create}
@@ -204,7 +204,7 @@ IBM Watson is het chatbotplatform die ontwikkeld is door IBM. Het is een onderde
     \caption{Het aanmaken van een assistent in IBM Watson}
 \end{figure}
 
-IBM werkt voor het trainen van zijn assistenten met zogenaamde skills. Een skill bevat alles om klantvragen te beantwoorden. Het is niet zo dat er bij IBM Watson assistent per assistent wordt getraind, maar er wordt een skill aangemaakt die dan kan toegevoegd worden aan de assistent naar keuze. Er kunnen dus meerdere skills aan één assistent toegevoegd worden. Bij het aanmaken van een skill is het noodzakelijk om een naam en een standaardtaal op te geven. Door verschillende skills met verschillende talen toe te voegen aan een assistent, kan er dus ook een meertalige chatbot gemaakt worden.
+IBM werkt voor het trainen van zijn assistenten met zogenaamde skills, deze bevatten alles om vragen van klanten te kunnen beantwoorden.Bij IBM Watson wordt er niet per assistent getraind, maar er wordt een skill aangemaakt die kan worden toegevoegd aan de assistent naar keuze. Er kunnen dus meerdere skills aan één assistent toegevoegd worden. Bij het aanmaken van een skill is het noodzakelijk om een naam en een standaardtaal op te geven. Door verschillende skills met verschillende talen toe te voegen aan een assistent, kan er dus ook een meertalige chatbot gemaakt worden.
 
 \begin{figure}[H]
     \label{fig:watson-skill}
@@ -213,7 +213,7 @@ IBM werkt voor het trainen van zijn assistenten met zogenaamde skills. Een skill
     \caption{Het aanmaken van een skill in IBM Watson}
 \end{figure}
 
-Eens een skill is aangemaakt, kan het configureren van de skill beginnen. Het toevoegen van een intent is opnieuw heel erg eenvoudig. Een naam en een aantal voorbeeldzinnen is alles die nodig zijn. IBM Watson legt geen restricties op het aantal voorbeeldzinnen, maar opnieuw is het aangeraden om er toch 10-15 te voorzien per intent. Het configureren van intents verschilt ook met de andere platformen, omdat er geen entities toegevoegd kunnen worden aan de intents en aan de voorbeeldzinnen. Dat is een functionaliteit die IBM met hun chatbotplatform achter de schermen gaat doen voor de ontwikkelaar. Watson gaat zelf op zoek naar entiteiten in de voorbeeldzinnen zonder dat de ontwikkelaar daar enige tijd in hoeft te stoppen. Dat betekent dat het proces van het ontwikkelen van een chatbot efficiënter kan verlopen. Watson heeft ook een aantal ingebouwde entities waarvoor je niets hoeft te doen. Hoe goed deze methode zal werken, zal blijken uit het experiment.
+Eens een skill is aangemaakt, kan het configureren van de skill beginnen. Het toevoegen van een intent is ook hier eenvoudig, want er is enkel een naam en een aantal voorbeeldzinnen nodig. IBM Watson legt geen restricties op het aantal voorbeeldzinnen, maar opnieuw is het aangeraden om er 10-15 te voorzien per intent. Het configureren van intents verschilt ook met de andere platformen, omdat er geen entities toegevoegd kunnen worden aan de intents en aan de voorbeeldzinnen. Dat is een functionaliteit die IBM met hun chatbotplatform achter de schermen gaat doen voor de ontwikkelaar. Watson gaat zelf op zoek naar entiteiten in de voorbeeldzinnen zonder dat de ontwikkelaar daar enige tijd in hoeft te stoppen. Dat betekent dat het proces van het ontwikkelen van een chatbot efficiënter kan verlopen. Watson heeft net zoals bovenstaande platformen een aantal ingebouwde entities waarvoor je niets hoeft te doen. Hoe goed deze methode zal werken, zal blijken uit het experiment.
 
 \begin{figure}[H]
     \label{fig:watson-intent}
@@ -222,7 +222,7 @@ Eens een skill is aangemaakt, kan het configureren van de skill beginnen. Het to
     \caption{Het configureren van een intent in IBM Watson}
 \end{figure}
 
-In IBM Watson kunnen ook eigen entiteiten toegevoegd worden. Dat komt vrijwel volledig overeen met hoe dat gedaan wordt in Dialogflow. Er kunnen waarden voor die entiteit toegevoegd worden alsook synoniemen. Het is ook mogelijk om op basis van patronen entiteiten uit berichten te halen. Het enige verschil met Dialogflow is de manier dat entiteiten gebruikt worden. Zoals eerder vermeld moet de ontwikkelaar buiten het creëren van de entiteit niets doen om het te gebruiken.
+In IBM Watson kunnen ook eigen entiteiten toegevoegd worden, dat komt vrijwel volledig overeen met hoe dat gedaan wordt in Dialogflow. Er kunnen waarden voor die entiteit toegevoegd worden alsook synoniemen. Het is ook mogelijk om op basis van patronen entiteiten uit berichten te halen. Het enige verschil met Dialogflow is de manier dat entiteiten gebruikt worden, want zoals eerder vermeld moet de ontwikkelaar buiten het creëren van de entiteit niets doen om het te gebruiken.
 
 \begin{figure}[H]
     \label{fig:watson-entity}
@@ -231,7 +231,7 @@ In IBM Watson kunnen ook eigen entiteiten toegevoegd worden. Dat komt vrijwel vo
     \caption{Het configureren van een entiteit in IBM Watson}
 \end{figure}
 
-Het is met IBM Watson ook mogelijk om een volledige conversatieflow van een skill vast te leggen. Als ontwikkelaar kan je verschillende nodes en subnodes toevoegen en die volledig configureren naar eigen wens. Deze nodes kunnen worden uitgevoerd als een intent, contextvariabele of entity herkent wordt door het model. In de nodes kunnen er ook antwoorden voorzien worden die de assistent zal geven. Deze functionaliteit zal ook binnen deze bachelorproef niet beoordeeld worden, omdat dit geen invloed heeft op de prestaties van intentclassificatie. Het is immers wel een interessante functionaliteit die een rol kan spelen in het kiezen naar een platform.
+Het is met IBM Watson ook mogelijk om een volledige conversatieflow van een skill vast te leggen. Als ontwikkelaar kan je verschillende nodes en subnodes toevoegen en die volledig configureren naar eigen wens. Deze nodes kunnen worden uitgevoerd als een intent, contextvariabele of entity herkent wordt door het model. In de nodes kunnen er ook antwoorden voorzien worden die de assistent zal geven, deze functionaliteit zal binnen deze bachelorproef niet beoordeeld worden, omdat dit geen invloed heeft op de prestaties van intentclassificatie. Het is immers wel een interessante functionaliteit die een rol kan spelen in het kiezen naar een platform.
 
 \begin{figure}[H]
     \label{fig:watson-dialogen}
@@ -249,7 +249,7 @@ Het is met IBM Watson ook mogelijk om een volledige conversatieflow van een skil
 
 Watson biedt een beperkt aantal ingebouwde integraties aan (Facebook \& Slack), maar het is wel mogelijk om zelf een applicatie te bouwen die gebruik maakt van de aangeboden API.
 
-De gebouwde skills kunnen ook getest worden via een ingebouwde conversatiemodule. Bij het versturen van een bericht, wordt er antwoord gegeven en is het zichtbaar welke intent herkent is.
+De gebouwde skills kunnen ook getest worden via een ingebouwde conversatiemodule. Bij het versturen van een bericht, wordt er een antwoord gegeven waarin duidelijk wordt aangegeven welke intent is herkend.
 
 \begin{figure}[H]
     \label{fig:watson-test}
@@ -270,7 +270,7 @@ LUIS is de NLU-tool van Microsoft en is onderdeel van het Microsoft Azure cloud 
     \caption{Het aanmaken van een applicatie via LUIS}
 \end{figure}
 
-Het toevoegen en configureren van intents is vrij gelijkaardig aan de manier die Dialogflow toepast. Het is opnieuw belangrijk dat er genoeg voorbeeldzinnen per intent zijn om er voor te zorgen dat de applicatie goed getraind kan worden. LUIS gebruikt de naam 'utterances' om voorbeeldzinnen te beschrijven. Bij LUIS is het opnieuw vereist om zelf aan te geven welke woorden entiteiten zijn. Dit kunnen zowel systeementiteiten als zelfgemaakte entiteiten zijn.
+Het toevoegen en configureren van intents is vrij gelijkaardig aan de manier die Dialogflow toepast. Het is opnieuw belangrijk dat er genoeg voorbeeldzinnen per intent zijn om ervoor te zorgen dat de applicatie goed getraind kan worden. LUIS gebruikt de naam 'utterances' om voorbeeldzinnen te beschrijven. Bij LUIS is het opnieuw vereist om zelf aan te geven welke woorden entiteiten zijn, dit kunnen zowel systeementiteiten als zelfgemaakte entiteiten zijn.
 
 \begin{figure}[H]
     \label{fig:luis-intent}
@@ -279,7 +279,7 @@ Het toevoegen en configureren van intents is vrij gelijkaardig aan de manier die
     \caption{Het configureren van een intent in LUIS}
 \end{figure}
 
-LUIS biedt een een grote hoeveelheid vooraf gebouwde intents, entities en zelfs domeinen aan. Domeinen zijn een verzameling van vooraf getrainde modellen van intents en entities die samenwerken. Dat kan een grote impact hebben op de prestaties van LUIS. Verder is het ook mogelijk om zelf entities toe te voegen en te gebruiken. Indien je als ontwikkelaar systeementiteiten wil gebruiken, is het wel noodzakelijk om die eerst toe te voegen. Indien je dit niet doet, zal het niet mogelijk zijn om ze te gebruiken in de utterances. Er zijn verschillende soorten entiteittypes om uit te kiezen. Opvallend is wel dat er bij LUIS geen waarden voor de entiteit moeten meegegeven worden.
+LUIS biedt een een grote hoeveelheid vooraf gebouwde intents, entities en zelfs domeinen aan. Domeinen zijn een verzameling van vooraf getrainde modellen van intents en entities die samenwerken. Dit kan een grote impact hebben op de prestaties van LUIS. Verder is het mogelijk om zelf entities toe te voegen en te gebruiken. Indien je als ontwikkelaar systeementiteiten wil gebruiken, is het wel noodzakelijk om die eerst toe te voegen, want indien je dit niet doet, zal het niet mogelijk zijn om ze te gebruiken in de utterances. Er zijn verschillende soorten entiteittypes om uit te kiezen. Opvallend is wel dat er bij LUIS geen waarden voor de entiteit moeten meegegeven worden.
 
 \begin{figure}[H]
     \label{fig:luis-entity}
@@ -288,7 +288,7 @@ LUIS biedt een een grote hoeveelheid vooraf gebouwde intents, entities en zelfs 
     \caption{Het aanmaken van een entiteit binnen LUIS}
 \end{figure}
 
-Met LUIS is het net zoals bij Dialogflow mogelijk om eerder ingevoerde data van gebruikers toe te wijzen aan een specifieke intent. Het enige verschil bij LUIS is dat enkel utterances waarover hij onzeker is nog moet goedgekeurd worden, de rest gebeurt automatisch.
+Met LUIS is het net zoals bij Dialogflow mogelijk om eerder ingevoerde data van gebruikers toe te wijzen aan een specifieke intent. Het enige verschil bij LUIS is dat enkel utterances waarover hij onzeker is nog moet goedgekeurd worden door de ontwikkelaar, de rest gebeurt automatisch.
 
 \begin{figure}[H]
     \label{fig:luis-validate}
@@ -297,7 +297,7 @@ Met LUIS is het net zoals bij Dialogflow mogelijk om eerder ingevoerde data van 
     \caption{Het beoordelen van utterances waarover LUIS onzeker is}
 \end{figure}
 
-Voor LUIS getest kan worden, is het verplicht om het model te trainen. Dat moet manueel gebeuren. Indien je dit niet doet, is het gewoonweg niet mogelijk om berichten te sturen naar de chatbot.
+Voor LUIS getest kan worden, is het verplicht om het model te trainen, dit moet manueel gebeuren. Indien je dit niet doet, is het niet mogelijk om berichten te sturen naar de chatbot.
 
 \begin{figure}[H]
     \label{fig:luis-train}
@@ -306,8 +306,8 @@ Voor LUIS getest kan worden, is het verplicht om het model te trainen. Dat moet 
     \caption{Het manueel trainen van de LUIS applicatie}
 \end{figure}
 
-Eens de applicatie getraind is, kan er getest worden. Testen kan opnieuw gebeuren via een ingebouwde module. Bij het versturen van een bericht naar de gebouwde LUIS app, krijg je informatie over welke intent herkent is.
-Het is ook duidelijk zichtbaar welke entities herkent zijn. Ook zal LUIS automatisch een sentimentanalyse uitvoeren. Daarbij wordt aangegeven hoe positief of negatief LUIS dit bericht interpreteert.
+Eens de applicatie getraind is, kan er getest worden, dit kan gebeuren via een ingebouwde module. Bij het versturen van een bericht naar de gebouwde LUIS app, krijgt de gebruiker informatie over welke intent herkend is.
+Het is duidelijk zichtbaar welke entities herkend zijn. Ook zal LUIS automatisch een sentimentanalyse uitvoeren, daarbij wordt aangegeven hoe positief of negatief LUIS dit bericht interpreteert.
 
 \begin{figure}[H]
     \label{fig:luis-test}
@@ -319,9 +319,9 @@ Het is ook duidelijk zichtbaar welke entities herkent zijn. Ook zal LUIS automat
 \subsection{Wit.ai}
 \label{subsec:werking-platformen-wit}
 
-Wit.ai is de NLU-tool van Facebook en is volledig gratis te gebruiken. Het heeft net zoals de vorige platformen een eenvoudige grafische user interface die gebruikt kan worden. Het enige dat je nodig hebt om aan de slag te gaan met Wit.ai is een Github account of een Facebook account. Het staat volledig gratis gehost op het internet en kan dus via de API van overal bereikt worden. Het bevat geen mogelijkheid om dialogen te configureren en antwoorden in te stellen. Indien je dit wenst, moet er zelf een applicatie worden ontwikkeld die gebruik maakt van de aangeboden API.
+Wit.ai is de NLU-tool van Facebook en is volledig gratis te gebruiken. Het heeft net zoals de vorige platformen een eenvoudige grafische user interface die gebruikt kan worden. Het enige dat je nodig hebt om aan de slag te gaan met Wit.ai is een Github account of een Facebook account. Het staat volledig gratis gehost op het internet en kan via de API bereikt worden. Het bevat geen mogelijkheid om dialogen te configureren en antwoorden in te stellen. Indien je dit wenst, moet er zelf een applicatie worden ontwikkeld die gebruik maakt van de aangeboden API.
 
-Het aanmaken van een applicatie binnen Wit.ai is heel erg eenvoudig. Een naam en een standaardtaal is alles die vereist is. Het is ook mogelijk om een applicatie te importeren van een backup. Er is ook de keuze om de data die verwerkt wordt in de applicatie te delen met de volledige community of niet.
+Het aanmaken van een applicatie binnen Wit.ai is heel erg eenvoudig, een naam en een standaardtaal is alles die vereist is. Het is ook mogelijk om een applicatie te importeren van een backup en er is de keuze om de data die verwerkt wordt in de applicatie te delen met de volledige community of niet.
 
 \begin{figure}[H]
     \label{fig:wit-create}
@@ -330,7 +330,7 @@ Het aanmaken van een applicatie binnen Wit.ai is heel erg eenvoudig. Een naam en
     \caption{Het aanmaken van een applicatie in Wit.ai}
 \end{figure}
 
-Nu de applicatie aangemaakt is, kan het trainen beginnen. De werking van intents en entities binnen Wit.ai wijkt af van hoe de andere platformen hiermee omgaan. Binnen Wit.ai bestaan er enkel entities, geen intents. Intents worden gezien als een instantie van een entity. Parameterwaarden worden dus ook als entities gezien, net zoals intents. Bij het toevoegen van nieuwe trainingsdata, moet dus altijd minstens één entity toegevoegd worden, namelijk de entity ‘intent’. Net zoals bij andere entities kunnen dan verschillende waarden toegevoegd worden. Deze waarden komen dan overeen met de namen van de mogelijke intents. Dit klinkt erg verwarrend, maar onderstaande voorbeelden verduidelijken deze werking.
+Nu de applicatie aangemaakt is, kan het trainen beginnen. De werking van intents en entities binnen Wit.ai wijkt af van hoe de andere platformen hiermee omgaan. Binnen Wit.ai bestaan er enkel entities, geen intents, intents worden gezien als een instantie van een entity. Parameterwaarden worden dus ook als entities gezien, net zoals intents. Bij het toevoegen van nieuwe trainingsdata, moet dus altijd minstens één entity toegevoegd worden, namelijk de entity ‘intent’. Net zoals bij andere entities kunnen dan verschillende waarden toegevoegd worden, deze waarden komen dan overeen met de namen van de mogelijke intents. Dit klinkt erg verwarrend, maar onderstaande voorbeelden verduidelijken deze werking.
 
 \begin{figure}[H]
     \label{fig:wit-train}
@@ -346,7 +346,7 @@ Nu de applicatie aangemaakt is, kan het trainen beginnen. De werking van intents
     \caption{Het kiezen van een intent bij het trainen in Wit.ai}
 \end{figure}
 
-Net zoals bij andere platformen, is het mogelijk om extra entities toe te voegen aan de voorbeeldzinnen. Er is keuze uit een aantal voorgedefinieerde entities, maar het is ook mogelijk om zelf entities aan te maken.
+Net zoals bij andere platformen is het mogelijk om extra entities toe te voegen aan de voorbeeldzinnen. Er is keuze uit een aantal voorgedefinieerde entities, maar het is ook mogelijk om zelf entities aan te maken.
 
 \begin{figure}[H]
     \label{fig:wit-entity}
@@ -364,7 +364,7 @@ Het is ook mogelijk om extra waarden en synoniemen toe te voegen aan de entities
     \caption{Het beheren van entities in Wit.ai}
 \end{figure}
 
-Wit.ai bevat geen module om de gebouwde applicatie te valideren. Het biedt wel een API aan om dat te doen. Deze API zal later ook gebruikt worden om training te automatiseren, maar meer daarover in een latere sectie. Om gebruik te maken van deze API, werd een tool genaamd Postman gebruikt. Daarmee kan heel eenvoudig een verzoek naar de server van Wit.ai verstuurd worden om de chatbot te testen.
+Wit.ai bevat geen module om de gebouwde applicatie te valideren, het biedt wel een API aan om dat te doen. Deze API zal later ook gebruikt worden om training te automatiseren, maar meer hierover in een latere sectie. Om gebruik te maken van deze API, werd een tool, genaamd Postman, gebruikt. Daarmee kan eenvoudig een verzoek naar de server van Wit.ai verstuurd worden om de chatbot te testen.
 
 \begin{figure}[H]
     \label{fig:wit-test}
@@ -376,7 +376,7 @@ Wit.ai bevat geen module om de gebouwde applicatie te valideren. Het biedt wel e
 \subsection{Rasa}
 \label{subsec:werking-platformen-rasa}
 
-Zoals eerder vermeld is Rasa een tool die qua gebruik sterk afwijkt van de eerder besproken platformen. Het vereist heel wat meer technische kennis in vergelijking met de andere. Om gebruik te maken van Rasa moet het platform eerst lokaal gedownload worden. De makkelijkste manier om dit te doen is door gebruik te maken van Pip. Pip is een tool die gebruikt wordt om softwarepakketten die geschreven zijn in de programmeertaal Python te installeren. Rasa biedt in tegenstelling tot de eerder besproken platformen ook geen grafische user interface (GUI) aan. Dat betekent dat alles in de command line interface (CLI) moet gebeuren. De CLI is de grote tegenhanger van de GUI en is een andere manier om met software te communiceren. De CLI wordt gebruikt op basis van tekstcommando's.
+Zoals eerder vermeld is Rasa een tool die qua gebruik sterk afwijkt van de eerder besproken platformen, omdat het meer technische kennis vereist in vergelijking met de andere. Om gebruik te maken van Rasa moet het platform eerst lokaal gedownload worden. De makkelijkste manier om dit te doen is door gebruik te maken van Pip. Pip is een tool die gebruikt wordt om softwarepakketten die geschreven zijn in de programmeertaal Python te installeren. Rasa biedt in tegenstelling tot de eerder besproken platformen ook geen grafische user interface (GUI) aan. Dit betekent dat alles in de command line interface (CLI) moet gebeuren. De CLI is de grote tegenhanger van de GUI en is een andere manier om met software te communiceren, want de CLI wordt enkel gebruikt op basis van tekstcommando's.
 
 \begin{figure}[H]
     \label{fig:rasa-install}
@@ -385,7 +385,7 @@ Zoals eerder vermeld is Rasa een tool die qua gebruik sterk afwijkt van de eerde
     \caption{Voorbeeld van een commando binnen de CLI waarbij rasa geïnstalleerd wordt door middel van Pip}
 \end{figure}
 
-Eens Rasa succesvol geïnstalleerd is, kan er een project opgestart worden. Dat kan met het commando ‘rasa init’ . Daarbij zal er de vraag komen in welke map het project geïnstalleerd moet worden en of dat er een voorbeeldmodel getraind moet worden. Eens dat gelukt is, kan de configuratie van de chatbot beginnen.
+Eens Rasa succesvol geïnstalleerd is, kan er een project opgestart worden, dat kan met het commando ‘rasa init’. Daarbij zal er de vraag komen in welke map het project geïnstalleerd moet worden en of dat er een voorbeeldmodel getraind moet worden. Eens dat gelukt is, kan de configuratie van de chatbot beginnen.
 
 \begin{figure}[H]
     \label{fig:rasa-create}
@@ -403,7 +403,7 @@ Rasa bestaat uit twee hoofdmodules, Rasa NLU en Rasa Core. De focus binnen dit o
     \caption{Het configureren van de intents en voorbeeldzinnen met entities in Rasa}
 \end{figure}
 
-Het moeilijkste deel bij het gebruik van Rasa is het vastleggen van de configuratie van rasa NLU en rasa Core. Rasa kan door de ontwikkelaar volledig op maat van een project afgesteld worden. Berichten die via Rasa binnenkomen, worden verwerkt door softwarepakketten die je als ontwikkelaar zelf kunt kiezen. Dat is iets die in de andere platformen achter de schermen voor ons wordt gedaan, dus daar hebben we niet altijd controle over. Binnen deze bachelorproef wordt er beperkt tot de Nederlandse taal, dus moeten er componenten worden gebruikt die Nederlands ondersteunen. De configuratie vastleggen kan opnieuw via een bestand (config.yml) die bij het creëren aangemaakt werd. Bij het vastleggen van de configuratie werden de aanbevelingen vanuit de officiële documentatie gebruikt. Het voornaamste is dat er componenten worden gebruikt die overweg kunnen met de Nederlandse taal. Voor entityherkenning werd eveneens een specifieke component gebruikt. Dat is nodig om entiteiten zoals locaties, datums, tijdstippen, etc. te kunnen extraheren. Deze component werd enkel gebruikt voor experimenten waarbij entities nodig zijn.  De configuratie van Rasa Core heeft eveneens tal van mogelijkheden, maar dit behoort niet tot de scope van deze bachelorproef. Over alle opties en mogelijkheden van Rasa , kan een totaal nieuwe bachelorproef geschreven worden. 
+Het moeilijkste deel bij het gebruik van Rasa is het vastleggen van de configuratie van rasa NLU en rasa Core. Rasa kan door de ontwikkelaar volledig op maat van een project afgesteld worden. Berichten die via Rasa binnenkomen, worden verwerkt door softwarepakketten die je als ontwikkelaar zelf kunt kiezen. Dat is iets die in de andere platformen achter de schermen voor ons wordt gedaan, waardoor er hier niet altijd controle over is. Binnen deze bachelorproef wordt er beperkt tot de Nederlandse taal, dus moeten er componenten worden gebruikt die Nederlands ondersteunen. De configuratie vastleggen kan opnieuw via een bestand (config.yml) die bij het creëren aangemaakt werd. Bij het vastleggen van de configuratie werden de aanbevelingen vanuit de officiële documentatie gebruikt. Het voornaamste is dat er componenten worden gebruikt die overweg kunnen met de Nederlandse taal. Voor entityherkenning werd eveneens een specifieke component gebruikt, dat is nodig om entiteiten zoals locaties, datums, tijdstippen, etc. te kunnen extraheren. Deze component werd enkel gebruikt voor experimenten waarbij entities nodig zijn.  De configuratie van Rasa Core heeft eveneens tal van mogelijkheden, maar dit behoort niet tot de scope van deze bachelorproef. Over alle opties en mogelijkheden van Rasa, kan een volledige bachelorproef geschreven worden. 
 
 \begin{figure}[H]
     \label{fig:rasa-config}
@@ -414,7 +414,7 @@ Het moeilijkste deel bij het gebruik van Rasa is het vastleggen van de configura
 
 Met Rasa Core is het zoals eerder vermeld mogelijk om dialogen en antwoorden naar eindgebruikers te configureren. Rasa Core wordt standaard mee geïnstalleerd, maar zal binnen deze bachelorproef niet verder gebruikt en besproken worden.
 
-Eens de configuratie van rasa gebeurt is en er een aantal intents toegevoegd zijn, kan het trainen en testen van de chatbot gebeuren. Het is mogelijk om afzonderlijke modules te trainen. Om enkel de NLU-module te trainen, moet er in de CLI het commando ‘rasa train nlu’ uitgevoerd worden.
+Eens de configuratie van Rasa is gebeurd en er een aantal intents toegevoegd zijn, kan het trainen en testen van de chatbot gebeuren. Het is mogelijk om afzonderlijke modules te trainen. Om enkel de NLU-module te trainen, moet er in de CLI het commando ‘rasa train nlu’ uitgevoerd worden.
 
 \begin{figure}[H]
     \label{fig:rasa-train}
@@ -423,7 +423,7 @@ Eens de configuratie van rasa gebeurt is en er een aantal intents toegevoegd zij
     \caption{Het trainen van de NLU module van Rasa}
 \end{figure}
 
-Als de training succesvol afgerond is, dan is het mogelijk om de NLU module te testen. Dit kan gedaan worden door het commando ‘rasa shell nlu’ uit te voeren. Daarbij wordt een server opgestart waarnaar berichten kunnen worden gestuurd en intents en entities herkent kunnen worden. 
+Als de training succesvol afgerond is, dan is het mogelijk om de NLU module te testen. Dit kan gedaan worden door het commando ‘rasa shell nlu’ uit te voeren. Daarbij wordt een server opgestart waarnaar berichten kunnen worden gestuurd en intents en entities herkend kunnen worden. 
 
 \begin{figure}[H]
     \label{fig:rasa-test}
@@ -435,9 +435,9 @@ Als de training succesvol afgerond is, dan is het mogelijk om de NLU module te t
 \section{Automatisatie}
 \label{sec:automatisatie}
 
-Tot nu toe werd er telkens via een user interface rechtstreeks gewerkt op de verschillende platformen om bijvoorbeeld een model te trainen of om een model te testen. Deze manier van werken is goed, maar zal bij grote hoeveelheden data heel erg veel tijd in beslag nemen. Stel je maar voor dat er 10000 voorbeeldzinnen  en 100 intents zijn en dat dit allemaal via de user interface moet ingevoerd worden. Volgens 5-fold cross validation moeten er dan een aantal keer 8000 zinnen getraind worden en 2000 zinnen getest. Dit zou volgens de werking in de sectie hierboven beschreven enorm veel tijd in beslag nemen en na een mum van tijd onbeheersbaar worden. Om dit op te lossen bieden de platformen een oplossing aan genaamd een API. API’s zijn een andere manier om te communiceren met de platformen. Het is mogelijk om vanuit een eigen geprogrammeerde applicatie te communiceren met deze API’s en eigenlijk van volledig dezelfde functionaliteiten gebruik te maken als hierboven beschreven, zonder dat er rechtstreeks op de platformen moet gewerkt worden. Dat betekent dat we zelf code kunnen schrijven die het volledige proces van het trainen en het valideren van de platformen kan automatiseren door gebruik te maken van die API’s. De platformen bieden ook een andere oplossing voor dit probleem aan, genaamd SDK's. Dat staat voor Software Development Kit en dat is een tool die de werking met de platformen vanuit eigen geschreven code nog eenvoudiger maakt. Achterliggend zullen SDK's ook gebruik maken van de API's, maar de ontwikkelaar moet daar zelf minder voor instaan. Binnen deze bachelorproef werd verder enkel nog gebruik gemaakt van de verschillende API’s en SDK's. Dit met het resultaat dat het experiment veel sneller uitgevoerd en herhaald kan worden zonder dat dit allemaal manueel via de user interface van de platformen moet gebeuren.
+Tot nu toe werd er telkens via een user interface rechtstreeks gewerkt op de verschillende platformen om bijvoorbeeld een model te trainen of te testen. Deze manier van werken is goed, maar zal bij grote hoeveelheden data heel veel tijd in beslag nemen. Stel je maar voor dat er 10000 voorbeeldzinnen  en 100 intents zijn en dat dit via de user interface moet ingevoerd worden. Volgens 5-fold cross validation moeten er dan een aantal keer 8000 zinnen getraind worden en 2000 zinnen getest. Dit zou volgens de werking in de sectie hierboven beschreven enorm veel tijd in beslag nemen en onbeheersbaar worden. Om dit op te lossen bieden de platformen een oplossing aan genaamd een API. dit is een andere manier om te communiceren met de platformen. Het is mogelijk om vanuit een eigen geprogrammeerde applicatie te communiceren met deze API’s en eigenlijk van volledig dezelfde functionaliteiten gebruik te maken als hierboven beschreven, zonder dat er rechtstreeks op de platformen moet gewerkt worden. Dit betekent dat we zelf de code kunnen schrijven die het volledige proces van het trainen en het valideren van de platformen kan automatiseren door gebruik te maken van die API’s. De platformen bieden ook een andere oplossing voor dit probleem aan, genaamd SDK's. Dat staat voor Software Development Kit en dat is een tool die de werking met de platformen vanuit eigen geschreven code eenvoudiger maakt. Achterliggend zullen SDK's ook gebruik maken van de API's, maar de ontwikkelaar moet daar zelf minder voor instaan. Binnen deze bachelorproef werd verder enkel nog gebruik gemaakt van de verschillende API’s en SDK's. Dit met het resultaat dat het experiment veel sneller uitgevoerd en herhaald kan worden zonder dat dit manueel via de user interface van de platformen moet gebeuren.
 
-Alle automatisatiescrips zijn geschreven in de programmeertaal Python en maken gebruik van de API’s en SDK's aangeboden door de verschillende platformen. Er zijn scripts geschreven voor zowel het trainen als het testen van de verschillende platformen voor alle experimenten die uitgevoerd zijn. Voor het toepassen van Cross validation werd eveneens een script geschreven die de initiële dataset random verdeeld in 5 verschillende delen en daarmee dan de juiste train-en-test datasets mee zal vormen zoals beschreven in sectie 3.3. Daarvoor werd gebruik gemaakt van Scikit-learn, dat is een softwarepakket die verschillende functionaliteiten voor machine learning aanbiedt voor de programmeertaal Python. Scikit-learn bevat een module die cross validation zal uitvoeren \autocite{sklearn2020}. De gevormde datasets worden weggeschreven in bestanden die door de andere scripts gebruikt worden voor het trainen en het valideren.
+Alle automatisatiescrips zijn geschreven in de programmeertaal Python en maken gebruik van de API’s en SDK's aangeboden door de verschillende platformen. Er zijn scripts geschreven voor zowel het trainen, als het testen van de verschillende platformen voor alle experimenten die uitgevoerd zijn. Voor het toepassen van Cross validation werd eveneens een script geschreven die de initiële dataset willekeurig verdeeld in vijf verschillende delen en daarmee dan de juiste train-en-test datasets mee zal vormen zoals beschreven in sectie 3.3. Daarvoor werd gebruik gemaakt van Scikit-learn, dat is een softwarepakket dat verschillende functionaliteiten voor machine learning aanbiedt voor de programmeertaal Python. Scikit-learn bevat een module die cross validation zal uitvoeren \autocite{sklearn2020}. De gevormde datasets worden weggeschreven in bestanden die door de andere scripts gebruikt worden voor het trainen en het valideren.
 
 \begin{figure}[H]
     \label{fig:code-kfold}

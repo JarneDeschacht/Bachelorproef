@@ -8,7 +8,7 @@
 \section{Intentherkenning zonder het gebruik van entities}
 \label{intent}
 
-Bij het eerste en belangrijkste experiment werden geen entities gebruikt in de dataset en werd puur beoordeeld op intentherkenning. Elk platform is uitgebreid getest door middel van 5-fold cross validation. Elk platform is dus 5 keer gebouwd, getraind en getest geweest om een objectief beeld te krijgen van hoe goed elk platform de juiste intent kan herkennen bij een specifieke input. Van alle resultaten werden confusion matrices opgesteld en werden de precision, recall en f-scores berekent.
+Bij het eerste en belangrijkste experiment werden geen entities gebruikt in de dataset en werd puur beoordeeld op intentherkenning. Elk platform is uitgebreid getest door middel van 5-fold cross validation. Elk platform is dus vijf keer gebouwd, getraind en getest geweest om een objectief beeld te krijgen van hoe goed elk platform de juiste intent kan herkennen bij een specifieke input. Van alle resultaten werden confusion matrices opgesteld en werden de precision, recall en F-scores berekend.
 
 \begin{figure}[H]
     \label{fig:confusion-matrix-watson}
@@ -48,7 +48,7 @@ Bij het eerste en belangrijkste experiment werden geen entities gebruikt in de d
 \subsection{Onderlinge vergelijking}
 \label{subsec:intent-onderling}
 
-Op het eerste zicht valt het op dat er geen platform veel sterker presteert dan een andere. De gemiddelde resulaten van Wit.ai zijn de beste met eerstvolgende achtervolgers IBM Watson en Rasa. Die resultaten verschillen telkens maar 1 procent, dus dat is praktisch verwaarloosbaar. Dialogflow presteert wel duidelijk iets minder dan de andere 4 platformen. Daarnaast is het ook zichtbaar dat er ook duidelijke verschillen zitten in de gemiddelde resultaten van de cycli zelf. De resultaten van cyclus 2 liggen duidelijk hoger dan de andere gemiddelden en cyclus 5 scoort duidelijk het slechtst. Dat is volledig te wijten aan toeval van hoe het algoritme de dataset verdeeld heeft tijdens de uitvoering van cross validation. Als laatste is het ook belangrijk om stil te staan bij de f-scores van de individuele intents. Daarbij valt het op dat bepaalde intents opmerkelijk slecht scoren in vergelijking met andere. Dat komt doordat de platformen vaak die intents die slechter scoren met elkaar ging verwisselen. Dat kan ook duidelijk worden vastgesteld in de verschillende confusion matrices.
+Op het eerste zicht valt het op dat er geen platform veel sterker presteert dan een andere. De gemiddelde resulaten van Wit.ai zijn de beste, met eerstvolgende achtervolgers IBM Watson en Rasa. Die resultaten verschillen telkens maar één procent, dus dat is praktisch verwaarloosbaar. Dialogflow presteert wel duidelijk minder dan de andere vier platformen. Daarnaast is het ook opvallend dat er duidelijke verschillen zitten in de gemiddelde resultaten van de cycli zelf. De resultaten van cyclus twee liggen duidelijk hoger dan de andere gemiddelden en cyclus vijf scoort duidelijk het slechtst. Dat is volledig te wijten aan toeval van hoe het algoritme de dataset heeft verdeeld tijdens de uitvoering van cross validation. Als laatste is het ook belangrijk om stil te staan bij de F-scores van de individuele intents, daarbij valt het op dat bepaalde intents opmerkelijk slecht scoren in vergelijking met andere. Dit komt omdat de platformen de intents, die slechter scoorden, vaak ging verwisselen met elkaar. Dat kan ook duidelijk worden vastgesteld in de verschillende confusion matrices.
 
 \begin{center}
     \begin{longtable}{| l | l | l | l | l |  l | l |}
@@ -60,7 +60,7 @@ Op het eerste zicht valt het op dat er geen platform veel sterker presteert dan 
         \textbf{Wit.ai} & 0,61818 & 0,67857 & 1,00000 & 0,67925 & 0,54902 & \textbf{0,71273} \\ \hline  
         \textbf{Dialogflow} & 0,64407 & 0,71429 & 0,67797 & 0,60714 & 0,56140 & \textbf{0,64111} \\ \hline  
         \textbf{GEMIDDELD} & \textbf{0,647818} & \textbf{0,738574} & \textbf{0,67797} & \textbf{0,60714} & \textbf{0,5614} &    \\ \hline
-        \caption{Tabel met f-scores per platform voor intentherkenning zonder entities}                                    
+        \caption{Tabel met F-scores per platform voor intentherkenning zonder entities}                                    
     \end{longtable}
     \label{tbl:results-intent-no-entity}
 \end{center}
@@ -69,12 +69,12 @@ Op het eerste zicht valt het op dat er geen platform veel sterker presteert dan 
     \label{fig:chart-intent-no-entity}
     \centering
     \includegraphics[width=\textwidth]{chart-intent}
-    \caption{Grafiek die de f-scores per intent per platform visualiseert voor intentherkenning zonder entities}
+    \caption{Grafiek die de F-scores per intent per platform visualiseert voor intentherkenning zonder entities}
 \end{figure}
 
 \section{Intent-en-entityherkenning}
 
-Bij het tweede experiment, werd gekeken naar hoe goed de platformen entities kunnen afleiden uit de input en hoe het zit met intentherkenning bij het gebruik van entities. Daarbij werd in tegenstelling tot het eerste experiment maar 1 iteratie uitgevoerd, omdat het eerste experiment het hoofdexperiment is van deze bachelorproef en daar dus extra aandacht aan besteed werd. 5 fold cross validation uitvoeren neemt erg veel tijd in beslag, daarom dat er een keuze moest gemaakt worden. Voor dit experiment werd de dataset door middel van een algoritme verdeeld in 2 delen, een dataset om te trainen (80\% van de data) en een dataset om te valideren (20\% van de data). Alle platformen werden getraind en gevalideerd op een manier dat ze nu wel entities bevatten. Uit de resultaten valt het meteen op dat de f-scores gemiddeld hoger liggen dan bij het eerste experiment. Dit moet met een korrel zout genomen worden, doordat er maar 1 iteratie is uitgevoerd en omdat er nieuwe train-en-test datasets gegenereerd zijn. Door toeval kunnen er ‘makkelijkere’ testzinnen gebruikt zijn. Bij deze resultaten is het duidelijk dat IBM Watson de betere resultaten kan voorleggen en dat het in tegenstelling tot het vorige experiment Wit.ai is die het slechtst scoort.
+Bij het tweede experiment werd gekeken naar hoe goed de platformen entities kunnen afleiden uit de input en hoe het zit met intentherkenning bij het gebruik van entities. Daarbij werd, in tegenstelling tot het eerste experiment, maar één iteratie uitgevoerd. Dit komt omdat het eerste experiment het hoofdexperiment is van deze bachproef en hier is dus extra aandacht aan besteed. 5-fold cross validation uitvoeren neemt erg veel tijd in beslag, daarom dat er een keuze moest worden gemaakt. Voor dit experiment werd de dataset door middel van een algoritme verdeeld in twee delen, een dataset om te trainen (80\% van de data) en een dataset om te valideren (20\% van de data). Alle platformen werden getraind en gevalideerd op een manier dat ze nu wel entities bevatten. Uit de resultaten valt het meteen op dat de F-scores gemiddeld hoger liggen dan bij het eerste experiment. Dit moet met een korrel zout genomen worden, doordat er maar één iteratie is uitgevoerd en omdat er nieuwe train-en-test datasets gegenereerd zijn. Dus door toeval kunnen er ‘makkelijkere’ testzinnen gebruikt zijn. Bij deze resultaten is het duidelijk dat IBM Watson de betere resultaten kan voorleggen en dat het in tegenstelling tot het vorige experiment Wit.ai is die het slechtst scoort.
 
 
 \begin{center}
@@ -86,18 +86,16 @@ Bij het tweede experiment, werd gekeken naar hoe goed de platformen entities kun
         \textbf{Rasa} & 0,70000 \\ \hline  
         \textbf{Wit.ai} & 0,65455  \\ \hline  
         \textbf{Dialogflow} & 0,72414 \\ \hline  
-        \caption{Tabel met f-scores per platform voor intentherkenning met het gebruik van entities}                                    
+        \caption{Tabel met F-scores per platform voor intentherkenning met het gebruik van entities}                                    
     \end{longtable}
     \label{tbl:results-intent-entity}
 \end{center}
 
 \subsection{Entityherkenning}
 
-Het belangrijkste deel van dit experiment is het valideren van de entitiyherkenning. Daarbij werd gebruik gemaakt van zowel systeementiteiten als van zelf gedefinieerde entiteiten. IBM Watson heeft tot op heden geen systeementiteit die locaties kan herkennen in het Nederlands, dat kon dus niet beoordeeld worden. Bij LUIS is het nog een stuk erger, daar zijn er geen systeementiteiten in het Nederlands voor het herkennen van locaties, datums en tijdstippen. Dit bestond vroeger wel, maar dat is stopgezet in december 2018. Er is een alternatief die op basis van machine learning alles zou herkennen, maar dit bleek niet vlot te werken en dus geen resultaten op te leveren.
+Het belangrijkste deel van dit experiment is het valideren van de entitiyherkenning, hierbij werd gebruik gemaakt van zowel systeementiteiten, als van zelf gedefinieerde entiteiten. IBM Watson heeft tot op heden geen systeementiteit die locaties kan herkennen in het Nederlands, dat kon dus niet beoordeeld worden. Bij LUIS is het problematischer, daar zijn er geen systeementiteiten in het Nederlands voor het herkennen van locaties, datums en tijdstippen, dit bestond vroeger wel, maar dat is stopgezet in december 2018. Er is een alternatief die op basis van machine learning alles zou herkennen, maar dit bleek niet vlot te werken en heeft geen resultaten opgeleverd. Door deze tekorten liggen de scores van beide platformen voor entityherkenning een stuk lager, maar op de andere entities scoren ze wel aanzienlijk goed. 
 
-Door deze tekorten liggen de scores van beide platformen voor entityherkenning een stuk lager, maar op de andere entities scoren ze wel aanzienlijk goed. 
-
-Uit de resultaten valt het meteen op dat Wit.ai de grote winnaar is bij het herkennen van parameterwaarden. Ook in de grafiek waarbij de scores per entity worden voorgesteld is het duidelijk. Wit.ai scoort op elke entiteit minstens even goed of een stuk beter dan zijn concurrenten.
+Uit de resultaten valt het meteen op dat Wit.ai de grote winnaar is bij het herkennen van parameterwaarden, dit is ook duidelijk te zien in de grafiek waarbij de scores per entity worden voorgesteld. Wit.ai scoort op elke entiteit minstens even goed of een stuk beter dan zijn concurrenten.
 
 \begin{center}
     \begin{longtable}{| l | l |}
@@ -108,7 +106,7 @@ Uit de resultaten valt het meteen op dat Wit.ai de grote winnaar is bij het herk
         \textbf{Rasa} & 0,79452 \\ \hline  
         \textbf{Wit.ai} & 0,95556  \\ \hline  
         \textbf{Dialogflow} & 0,83544 \\ \hline  
-        \caption{Tabel met f-scores per platform voor entityherkenning}                                    
+        \caption{Tabel met F-scores per platform voor entityherkenning}                                    
     \end{longtable}
     \label{tbl:results-entity}
 \end{center}
@@ -117,12 +115,12 @@ Uit de resultaten valt het meteen op dat Wit.ai de grote winnaar is bij het herk
     \label{fig:chart-entity}
     \centering
     \includegraphics[width=\textwidth]{chart-entity}
-    \caption{Grafiek die de f-scores per entity per platform visualiseert}
+    \caption{Grafiek die de F-scores per entity per platform visualiseert}
 \end{figure}
 
 \section{Invloed van spelling op Intent-en-entityherkenning}
 
-Als laatste werd er gekeken naar hoe goed de platformen intents en entities kunnen herkennen als er een aanzienlijke hoeveelheid taalfouten in staan. Dit is delicaat om te valideren, omdat we met te kleine datasets werken om een volledig beeld te kunnen geven. Het is daarom ook slechts een indicatie van hoe goed de platformen hiermee omgaan. Er werden zowel taalfouten in intents als in entities beoordeeld. Opnieuw werd er slechts 1 iteratie uitgevoerd met dezelfde reden als voorgaand experiment. Er werd gebruik gemaakt van dezelfde datasets als bij het vorige experiment om een vergelijking te kunnen maken.
+Als laatste werd er gekeken naar hoe goed de platformen intents en entities kunnen herkennen als er een aanzienlijke hoeveelheid taalfouten in staan. Dit is delicaat om te valideren, omdat we met te kleine datasets werken om een volledig beeld te kunnen geven. Het is daarom ook slechts een indicatie van hoe goed de platformen hiermee omgaan. Er werden zowel taalfouten in intents als in entities beoordeeld. Opnieuw werd er slechts één iteratie uitgevoerd met dezelfde reden als voorgaand experiment. Er werd gebruik gemaakt van dezelfde datasets als bij het vorige experiment om een vergelijking te kunnen maken.
 
 Wat opvalt is dat de resultaten van intentherkenning duidelijk lager liggen als er spellingsfouten gemaakt worden. Daarbij blijft IBM Watson wel het beste scoren. De sterkste daling in resultaten kunnen we vinden bij Dialogflow, die 22\% lager scoort.
 
@@ -135,14 +133,14 @@ Wat opvalt is dat de resultaten van intentherkenning duidelijk lager liggen als 
         \textbf{Rasa} & 0,63333 \\ \hline  
         \textbf{Wit.ai} & 0,54545  \\ \hline  
         \textbf{Dialogflow} & 0,50000 \\ \hline  
-        \caption{Tabel met f-scores per platform voor intentherkenning bij het gebruik van spellingsfouten}                                    
+        \caption{Tabel met F-scores per platform voor intentherkenning bij het gebruik van spellingsfouten}                                    
     \end{longtable}
     \label{tbl:results-intent-spelling}
 \end{center}
 
 \subsection{Entityherkenning}
 
-Opnieuw werden ook de prestaties van entityherkenning in acht genomen. Daarbij gelden dezelfde limitaties als vorig experiment van IBM Watson en LUIS. Hierbij liggen de resultaten ook gemiddeld lager dan voordien. De grote winnaar blijft immers wel Wit.ai, die nog steeds heel erg goede resultaten kan voorleggen. De grootste dalers zijn Rasa en Dialogflow die respectievelijk dalen met 34\% en 27\%.
+Opnieuw werden ook de prestaties van entityherkenning in acht genomen, daarbij gelden dezelfde limitaties als vorig experiment van IBM Watson en LUIS. Hierbij liggen de resultaten ook gemiddeld lager dan voordien. De grote winnaar blijft immers wel Wit.ai, die nog steeds heel erg goede resultaten kan voorleggen. De grootste dalers zijn Rasa en Dialogflow die respectievelijk dalen met 34\% en 27\%.
 
 \begin{center}
     \begin{longtable}{| l | l |}
@@ -153,7 +151,7 @@ Opnieuw werden ook de prestaties van entityherkenning in acht genomen. Daarbij g
         \textbf{Rasa} & 0,44828 \\ \hline  
         \textbf{Wit.ai} & 0,81013  \\ \hline  
         \textbf{Dialogflow} & 0,57143 \\ \hline  
-        \caption{Tabel met f-scores per platform voor entityherkenning bij spellingsfouten}                                    
+        \caption{Tabel met F-scores per platform voor entityherkenning bij spellingsfouten}                                    
     \end{longtable}
     \label{tbl:results-entity-spelling}
 \end{center}
@@ -162,7 +160,7 @@ Opnieuw werden ook de prestaties van entityherkenning in acht genomen. Daarbij g
     \label{fig:chart-entity-spelling}
     \centering
     \includegraphics[width=\textwidth]{chart-entity-spelling}
-    \caption{Grafiek die de f-scores per entity per platform visualiseert bij het gebruik van spellingsfouten}
+    \caption{Grafiek die de F-scores per entity per platform visualiseert bij het gebruik van spellingsfouten}
 \end{figure}
 
 
