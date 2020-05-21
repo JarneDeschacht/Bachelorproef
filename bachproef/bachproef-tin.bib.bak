@@ -183,10 +183,20 @@
 
 @Electronic{sklearn2020,
   author  = {Scikit-learn},
-  title   = {sklearn.modelSelection.KFold},
+  title   = {Scikit-learn - Machine Learning in Python},
   year    = {2020},
   url     = {https://scikit-learn.org/stable/index.html},
   urldate = {2020-04-26},
+}
+
+@InProceedings{Turing1950,
+  author    = {Turing, Alan},
+  title     = {Computing machinery and intelligence},
+  booktitle = {Computing Machinery and Intelligence},
+  year      = {1950},
+  chapter   = {49},
+  pages     = {433-460},
+  url       = {https://www.csee.umbc.edu/courses/471/papers/turing.pdf},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
