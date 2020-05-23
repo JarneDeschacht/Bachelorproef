@@ -60,7 +60,7 @@ plt.xticks([r + barWidth*2 for r in range(len(ibm_watson))],
             "datum",
             "tijdstip",
             "aantal_personen",
-            "onboardService_type"])
+            "onboardService_type"],fontsize=13,rotation=15)
 
 # Create legend & Show graphic
 plt.legend()

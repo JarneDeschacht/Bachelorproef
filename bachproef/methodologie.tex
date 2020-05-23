@@ -121,7 +121,7 @@ Precision en recall vertellen weinig over de kwaliteit van het model \autocite{T
 
 De F-score (harmonisch gemiddelde) bereken je als volgt:
 \begin{itemize}
-    \item $F= 2 * \frac{precision*recall}{precision+recall}\\$
+    \item F-score $= 2 * \frac{precision*recall}{precision+recall}\\$
 \end{itemize}
 
 In het voorbeeld van het paard is de F-score ongeveer gelijk aan 90\%.
@@ -154,7 +154,7 @@ Agenten gebruiken intents om de intentie van berichten die gebruikers sturen te 
     \caption{Het aanmaken van een intent met voorbeeldzinnen in Dialogflow waarbij er ook entities worden aangeduid}
 \end{figure}
 
-Het is mogelijk om contexten toe te voegen aan de intents, dat wordt gebruikt om parameterwaarden bij te houden gedurende de conversatie. Op die manier moet de chatbot geen informatie vragen aan de gebruiker die hij al had gekregen in een vorig bericht, dat maakt de gebruikerservaring een stuk aangenamer. Contexten zullen in deze bachelorproef niet verder worden gebruikt, maar het is wel een interessante functie die Dialogflow heeft.
+In Dialogflow is het mogelijk om contexten te gebruiken, dit is gelijkaardig met de context in natuurlijke taal. Indien iemand zegt `Ik koop het`, dan moet de chatbot weten waar die 'het' naar verwijst. Dialogflow maakt gebruik van input en output contexten en kunnen toegevoegd worden aan intents. Input contexten zijn parameters die doorgegeven moeten worden aan een specifieke intent, voordat de die uitgevoerd kan worden. Output contexten zijn parameterwaarden die herkend worden in de intent en actief worden, zodat ze dan als input contexten in andere intents gebruikt kunnen worden. Bij elke intput context die er wordt toegevoegd, wordt er automatisch ook een output context toegevoegd. Het is wel mogelijk om extra output contexten toe te voegen indien dit nodig is. Onderstaande afbeelding bevat een voorbeeld van hoe contexten gebruikt kunnen worden in Dialogflow. Om de intent 'AnnuleerBusreis' uit te voeren in het vereist dat de bestemming en datum gekend zijn, zonder die informatie is het niet mogelijk om te weten wat juist geannuleerd moet worden. Contexten en entities lijken erg op elkaar en dit kan voor verwarring zorgen. Een context is niets meer dan een entity die globaal gebruikt en doorgegeven kan worden doorheen verschillende intents. Contexten zullen in deze bachelorproef niet worden gebruikt, maar het is wel een interessante functie die Dialogflow heeft.
 
 \begin{figure}[H]
     \label{fig:dialogflow-context}
@@ -163,7 +163,7 @@ Het is mogelijk om contexten toe te voegen aan de intents, dat wordt gebruikt om
     \caption{Het toevoegen van contexten in een intent in Dialogflow}
 \end{figure}
 
-Aangezien er heel wat systeementiteiten zijn voorzien in Dialogflow, kan het zijn dat het niet meteen nodig is om zelf entities aan te maken, maar het is wel mogelijk. Bij het aanmaken van een entiteit kunnen verschillende waarden toegevoegd worden om de agent deze entiteit te doen herkennen bij user input. Er kunnen synoniemen gegeven worden en er is een mogelijkheid om een specifiek patroon op te geven waarvoor een entiteit herkend wordt in zinnen. De gemaakte entiteiten kunnen dan net zoals systeementiteiten toegevoegd worden aan voorbeeldzinnen in de intents.
+Aangezien er heel wat systeementiteiten zijn voorzien in Dialogflow, kan het zijn dat het niet meteen nodig is om zelf entities aan te maken, maar het is wel mogelijk. Bij het aanmaken van een entiteit kunnen verschillende waarden toegevoegd worden om de agent deze entiteit te doen herkennen bij user input. Er kunnen synoniemen gegeven worden en er is een mogelijkheid om een specifiek patroon op te geven waarvoor een entiteit herkend wordt in zinnen. De gemaakte entiteiten kunnen dan net zoals systeementiteiten toegevoegd worden aan voorbeeldzinnen in de intents. In deze bachelorproef wordt indien mogelijk altijd 'fuzzy matching' gebruikt bij de entiteiten. Deze optie zorgt er voor dat woorden die verkeerd geschreven zijn en spellingsfouten bevatten, toch herkend kunnen worden als entiteit zonder dat de woorden perfect juist geschreven hoeven te zijn.
 
 \begin{figure}[H]
     \label{fig:dialogflow-entity}
@@ -172,7 +172,7 @@ Aangezien er heel wat systeementiteiten zijn voorzien in Dialogflow, kan het zij
     \caption{Het aanmaken en beheren van een entiteit in Dialogflow}
 \end{figure}
 
-Met Dialogflow is het mogelijk om als ontwikkelaar eerdere berichten die eindgebruikers hebben gestuurd naar de agent te valideren, zodat die zinnen gebruikt kunnen worden als extra voorbeeldzinnen bij de intents. Op deze manier wordt de agent steeds slimmer doorheen zijn levensloop, doordat hij meer data krijgt. Het is ook mogelijk om een intentclassificatie te weigeren en ook om de herkende intent te wijzigen en toch goed te keuren. 
+Met Dialogflow is het mogelijk om als ontwikkelaar eerdere berichten die eindgebruikers hebben gestuurd naar de agent te valideren, zodat die zinnen gebruikt kunnen worden als extra voorbeeldzinnen bij de intents. Op deze manier wordt de agent steeds slimmer doorheen zijn levensloop, doordat hij meer data krijgt. In onderstaande afbeelding is weergegeven hoe je dit als ontwikkelaar kunt doen. Alle berichten die gebruikers naar de agent hebben gestuurd, staan hier chronologisch weergegeven. Daarbij staat ook vermeld welke intent herkend werd door de agent op dat moment. Door middel van de vinkjes, annuleer-tekens of vuilbakjes, kun je aangeven wat je hiermee precies wilt doen. Met een groen vinkje bevestig je dat de herkende intent ook de juiste was en met het vuilbakje geef je aan dat het fout was en dat je dit niet wil toevoegen als een extra voorbeeldzin. De annuleer-tekens worden gebruikt om aan te geven dat de intentherkenning fout was en dat je dit bericht wilt toevoegen aan de default fallback intent. Indien een intentherkenning fout was, kun je ook de herkende intent wijzigen en toch goedkeuren. Met de approve knop bovenaan, wordt alles definitief opgeslaan en verdwijnen deze berichten uit de lijst. De berichten waarbij er een groen vinkje stond, worden toegevoegd als nieuwe voorbeeldzinnen bij de respectievelijke intent. Op termijn kun je op deze manier een erg grote lijst van voorbeeldzinnen per intent bekomen, wat goed is voor de kwaliteit van de agent.
 
 \begin{figure}[H]
     \label{fig:dialogflow-validate}
@@ -181,7 +181,14 @@ Met Dialogflow is het mogelijk om als ontwikkelaar eerdere berichten die eindgeb
     \caption{Het valideren van user input om het model uit te breiden in Dialogflow}
 \end{figure}
 
-Dialogflow is eenvoudig te integreren met andere diensten. Het enige dat je hiervoor als ontwikkelaar moet doen is de integratie aanzetten. Er komt dan informatie beschikbaar op het scherm die uitlegt wat je precies moet doen om het te activeren. Het is ook mogelijk om zelf een applicatie te schrijven die gebruik maakt van de API van Dialogflow.
+Dialogflow is eenvoudig te integreren met andere diensten. Het enige dat je hiervoor als ontwikkelaar moet doen, is de integratie aanzetten op een scherm in Dialogflow. Er komt daarna informatie beschikbaar op het scherm die uitlegt wat je precies moet doen om het werkende te krijgen. Het is ook mogelijk om zelf een applicatie te schrijven die gebruik maakt van de API van Dialogflow.
+
+\begin{figure}[H]
+    \label{fig:dialogflow-integrations}
+    \centering
+    \includegraphics[width=\textwidth]{dialogflow-integrations}
+    \caption{Het integreren van een Dialogflow agent in andere diensten}
+\end{figure}
 
 De chatbot testen kan via de user interface (UI) gebeuren. Dit kan worden gedaan door een bericht te sturen naar de ingebouwde conversatiemodule. Bij het sturen van een bericht krijg je informatie over welke intent is herkend, wat het antwoord is en welke paramaters herkend werden. Het is ook mogelijk om meer gedetailleerde resultaten te zien. Opnieuw zal er in deze bachelorproef geen speciale aandacht besteed worden aan het antwoorden naar gebruikers.
 
@@ -213,7 +220,7 @@ IBM werkt voor het trainen van zijn assistenten met zogenaamde skills, deze beva
     \caption{Het aanmaken van een skill in IBM Watson}
 \end{figure}
 
-Eens een skill is aangemaakt, kan het configureren van de skill beginnen. Het toevoegen van een intent is ook hier eenvoudig, want er is enkel een naam en een aantal voorbeeldzinnen nodig. IBM Watson legt geen restricties op het aantal voorbeeldzinnen, maar opnieuw is het aangeraden om er 10-15 te voorzien per intent. Het configureren van intents verschilt ook met de andere platformen, omdat er geen entities toegevoegd kunnen worden aan de intents en aan de voorbeeldzinnen. Dat is een functionaliteit die IBM met hun chatbotplatform achter de schermen gaat doen voor de ontwikkelaar. Watson gaat zelf op zoek naar entiteiten in de voorbeeldzinnen zonder dat de ontwikkelaar daar enige tijd in hoeft te stoppen. Dat betekent dat het proces van het ontwikkelen van een chatbot efficiënter kan verlopen. Watson heeft net zoals bovenstaande platformen een aantal ingebouwde entities waarvoor je niets hoeft te doen. Hoe goed deze methode zal werken, zal blijken uit het experiment.
+Eens een skill is aangemaakt, kan het configureren van de skill beginnen. Het toevoegen van een intent is ook hier eenvoudig, want er is enkel een naam en een aantal voorbeeldzinnen nodig. IBM Watson legt geen restricties op het aantal voorbeeldzinnen, maar opnieuw is het aangeraden om er 10-15 te voorzien per intent. Het configureren van intents verschilt ook met de andere platformen, omdat er geen entities toegevoegd kunnen worden aan de intents en aan de voorbeeldzinnen. In de andere platformen moet je zelf aanduiden welke woorden in de zin behoren tot een entity. In onderstaand voorbeeld is het duidelijk dat je 9 augustus niet zelf moet toewijzen aan de entiteit 'datum'. Dat is een functionaliteit die IBM met hun chatbotplatform achter de schermen gaat doen voor de ontwikkelaar. Watson gaat zelf op zoek naar entiteiten in de voorbeeldzinnen zonder dat de ontwikkelaar daar enige tijd in hoeft te stoppen om ze zelf allemaal aan te duiden. Dat betekent dat het proces van het ontwikkelen van een chatbot efficiënter kan verlopen. Watson heeft net zoals bovenstaande platformen een aantal ingebouwde entities waarvoor je niets hoeft te doen. Hoe goed deze methode zal werken, zal blijken uit het experiment.
 
 \begin{figure}[H]
     \label{fig:watson-intent}
@@ -222,7 +229,7 @@ Eens een skill is aangemaakt, kan het configureren van de skill beginnen. Het to
     \caption{Het configureren van een intent in IBM Watson}
 \end{figure}
 
-In IBM Watson kunnen ook eigen entiteiten toegevoegd worden, dat komt vrijwel volledig overeen met hoe dat gedaan wordt in Dialogflow. Er kunnen waarden voor die entiteit toegevoegd worden alsook synoniemen. Het is ook mogelijk om op basis van patronen entiteiten uit berichten te halen. Het enige verschil met Dialogflow is de manier dat entiteiten gebruikt worden, want zoals eerder vermeld moet de ontwikkelaar buiten het creëren van de entiteit niets doen om het te gebruiken.
+In IBM Watson kunnen ook eigen entiteiten toegevoegd worden, dat komt vrijwel volledig overeen met hoe dat gedaan wordt in Dialogflow. Er kunnen waarden voor die entiteit toegevoegd worden alsook synoniemen. Het is ook mogelijk om op basis van patronen entiteiten uit berichten te halen. Het enige verschil met Dialogflow is de manier waarop entiteiten gebruikt worden, want zoals eerder vermeld moet de ontwikkelaar buiten het creëren van de entiteit niets doen om het te gebruiken, de entiteiten moeten niet aangeduid worden in de voorbeeldzinnen in de intents.
 
 \begin{figure}[H]
     \label{fig:watson-entity}
@@ -279,7 +286,7 @@ Het toevoegen en configureren van intents is vrij gelijkaardig aan de manier die
     \caption{Het configureren van een intent in LUIS}
 \end{figure}
 
-LUIS biedt een een grote hoeveelheid vooraf gebouwde intents, entities en zelfs domeinen aan. Domeinen zijn een verzameling van vooraf getrainde modellen van intents en entities die samenwerken. Dit kan een grote impact hebben op de prestaties van LUIS. Verder is het mogelijk om zelf entities toe te voegen en te gebruiken. Indien je als ontwikkelaar systeementiteiten wil gebruiken, is het wel noodzakelijk om die eerst toe te voegen, want indien je dit niet doet, zal het niet mogelijk zijn om ze te gebruiken in de utterances. Er zijn verschillende soorten entiteittypes om uit te kiezen. Opvallend is wel dat er bij LUIS geen waarden voor de entiteit moeten meegegeven worden. Dat betekent dat het niet nodig is om bijvoorbeeld de waarden 'morgen' of 'vrijdag' toe te kennen aan de entiteit 'datum'.
+LUIS biedt een een grote hoeveelheid vooraf gebouwde intents, entities en zelfs domeinen aan. Domeinen zijn een verzameling van vooraf getrainde modellen van intents en entities die samenwerken. Dit wordt niet ondersteund in het Nederlands en zal daarom niet verder worden besproken. Verder is het mogelijk om zelf entities toe te voegen en te gebruiken. Indien je als ontwikkelaar systeementiteiten wil gebruiken, is het wel noodzakelijk om die eerst toe te voegen, want indien je dit niet doet, zal het niet mogelijk zijn om ze te gebruiken in de utterances. Er zijn verschillende soorten entiteittypes om uit te kiezen. Opvallend is wel dat er bij LUIS geen waarden voor de entiteit moeten meegegeven worden. Dat betekent dat het niet nodig is om bijvoorbeeld de waarden 'morgen' of 'vrijdag' toe te kennen aan de entiteit 'datum'.
 
 \begin{figure}[H]
     \label{fig:luis-entity}
@@ -288,7 +295,7 @@ LUIS biedt een een grote hoeveelheid vooraf gebouwde intents, entities en zelfs 
     \caption{Het aanmaken van een entiteit binnen LUIS}
 \end{figure}
 
-Met LUIS is het net zoals bij Dialogflow mogelijk om eerder ingevoerde data van gebruikers toe te wijzen aan een specifieke intent. Het enige verschil bij LUIS is dat enkel utterances waarover hij onzeker is nog moet goedgekeurd worden door de ontwikkelaar, de rest gebeurt automatisch.
+Met LUIS is het net zoals bij Dialogflow mogelijk om als ontwikkelaar eerdere berichten die eindgebruikers hebben gestuurd naar de applicatie te valideren. Het enige verschil bij LUIS is dat enkel utterances waarover hij onzeker is, nog moeten gevalideerd worden door de ontwikkelaar, de rest gebeurt automatisch.
 
 \begin{figure}[H]
     \label{fig:luis-validate}
@@ -346,22 +353,22 @@ Eenmaal de applicatie aangemaakt is, kan het trainen beginnen. De werking van in
     \caption{Het kiezen van een intent bij het trainen in Wit.ai}
 \end{figure}
 
-Net zoals bij andere platformen is het mogelijk om extra entities toe te voegen aan de voorbeeldzinnen. Er is keuze uit een aantal voorgedefinieerde entities, maar het is ook mogelijk om zelf entities aan te maken.
+Net zoals bij de andere platformen is het mogelijk om extra entities toe te wijzen aan woorden in de voorbeeldzinnen. Er is keuze uit een aantal voorgedefinieerde entities, maar het is ook mogelijk om zelf entities aan te maken en te gebruiken.
 
 \begin{figure}[H]
     \label{fig:wit-entity}
     \centering
     \includegraphics[width=0.65\textwidth]{wit-entity}
-    \caption{Het toevoegen van extra entities aan een voorbeeldzin in Wit.ai}
+    \caption{Het aanduiden van entities in een voorbeeldzin in Wit.ai}
 \end{figure}
 
-Het is ook mogelijk om extra waarden en synoniemen toe te voegen aan de entities.
+Het is opnieuw mogelijk om extra waarden en synoniemen toe te voegen aan de entities, net zoals in de andere platformen.
 
 \begin{figure}[H]
     \label{fig:wit-intent-manage}
     \centering
     \includegraphics[width=0.85\textwidth]{wit-entity-manage}
-    \caption{Het beheren van entities in Wit.ai}
+    \caption{Het configureren van entities in Wit.ai}
 \end{figure}
 
 Wit.ai bevat geen module om de gebouwde applicatie te valideren, het biedt wel een API aan om dat te doen. Deze API zal later ook gebruikt worden om training te automatiseren, maar meer hierover in een latere sectie. Om gebruik te maken van deze API, werd een tool, genaamd Postman, gebruikt. Daarmee kan eenvoudig een verzoek naar de server van Wit.ai verstuurd worden om de chatbot te testen.
@@ -423,7 +430,7 @@ Eens de configuratie van Rasa is gebeurd en er een aantal intents toegevoegd zij
     \caption{Het trainen van de NLU module van Rasa}
 \end{figure}
 
-Als de training succesvol afgerond is, dan is het mogelijk om de NLU module te testen. Dit kan gedaan worden door het commando ‘rasa shell nlu’ uit te voeren. Daarbij wordt een server opgestart waarnaar berichten kunnen worden gestuurd en intents en entities herkend kunnen worden. 
+Als de training succesvol afgerond is, dan is het mogelijk om de NLU module te testen. Dit kan gedaan worden door het commando ‘rasa shell nlu’ uit te voeren. Daarbij wordt een lokale server opgestart waarnaar berichten kunnen worden gestuurd en intents en entities herkend kunnen worden. Indien deze server publiek toegangelijk moet zijn, kan het eventueel op Google Cloud, AWS of Microsoft Azure gezet worden. Bij antwoord van de server is de herkende intent zichtbaar, alsook de herkende entities. Bij de intent staat er aangegeven hoe zeker de applicatie is van de intent die hij heeft gekozen, in onderstaand voorbeeld is dit 99.985\%, wat goed is, want meestal ligt dit percentage lager.
 
 \begin{figure}[H]
     \label{fig:rasa-test}

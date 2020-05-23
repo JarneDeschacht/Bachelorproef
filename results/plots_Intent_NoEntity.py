@@ -90,7 +90,7 @@ plt.xticks([r + barWidth*2 for r in range(len(ibm_watson))],
             "annuleerBusreis",
             "geefOnboardServices",
             "meldKlachten",
-            "huurBusMetChauffeur"])
+            "huurBusMetChauffeur"],fontsize=13,rotation=15)
 
 # Create legend & Show graphic
 plt.legend()
